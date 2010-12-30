@@ -3,35 +3,40 @@
   <meta content='text/html; charset=utf-8' http-equiv='content-type' />
   <meta name='author' content='Nicholas Fine' />
   <link href='http://feeds.feedburner.com/ndfine' rel='alternate' title='Nicholas Fine' type='application/atom+xml' />
+  <link href='/stylesheets/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+  <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
+  <!--[if lt IE 8]>
+  <link href='/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
+  <![endif]-->
+  <link href="//fonts.googleapis.com/css?family=Lekton:400,italic,700" rel="stylesheet" type="text/css" >
+
   <title>{{ page.title }}</title>
 </head>
-<body>
-  <div id='header'>
-    <h1><a href='/'>Nicholas Fine</a></h1>
-  </div>
-  <div id='nav'>
-    <ul>
-      <li><a href='/about.html'>About</a></li>
-      <li><a href='/posts.html'>All Posts</a></li>
-      <li><a href='http://github.com/yrgoldteeth'>My Github Repositories</a></li>
-    </ul>
-  </div>
-  <div id='content'>
-    {{ content }}
-  </div>
-  <div id='footer'>
-    <div id='contact'>
-      <h3>Contact:</h3>
+<body class='two-col'>
+  <div id='container'>
+    <div id='header'>
+      <h1><a href='/'>Nicholas Fine</a></h1>
+    </div>
+    <div id='sidebar'>
       <ul>
+        <li><a href='/about.html'>About</a></li>
+        <li><a href='/posts.html'>All Posts</a></li>
+        <li><a href='http://github.com/yrgoldteeth'>My Github Repositories</a></li>
+      </ul>
+    </div>
+    <div id='content'>
+      {{ content }}
+    </div>
+    <div id='footer'>
+      <h3>Contact:</h3>
+      <ul class='contact'>
         <li>nicholas.fine(at)gmail.com</li>
         <li><a href='http://github.com/yrgoldteeth'>Github</a></li>
         <li><a href='http://reddit.com/user/yrgoldteeth'>Reddit</a></li>
         <li><a href='http://twitter.com/yrgoldteeth'>Twitter</a></li>
       </ul>
-    </div>
-    <div id='colophon'>
       <h3>Powered By:</h3>
-      <ul>
+      <ul class='colophon'>
         <li><a href='http://github.com/mojombo/jekyll'>Jekyll</a></li>
         <li><a href='http://pages.github.com'>Github Pages</a></li>
         <li><a href='http://github.com/yrgoldteeth/yrgoldteeth.github.com'>Source</a></li>
