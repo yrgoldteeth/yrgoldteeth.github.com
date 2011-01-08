@@ -1,3 +1,4 @@
 _drafts/*
 *.swp
 _site/*
+tmp/*
