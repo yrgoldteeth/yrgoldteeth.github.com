@@ -1,0 +1,14 @@
+---
+layout: post
+title: Entirely Too Cold
+---
+
+## {{ page.title }}
+
+It was entirely too cold here in Alabama for a while.  Abstracts from photographs of the ice:
+
+<a href="/images/abstracts/ice_abstract_1.jpg"><img src='/images/abstracts/thumbs/ice_abstract_1.jpg' alt='Ice Abstract 1 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract_2.jpg"><img src='/images/abstracts/thumbs/ice_abstract_2.jpg' alt='Ice Abstract 2 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract_3.jpg"><img src='/images/abstracts/thumbs/ice_abstract_3.jpg' alt='Ice Abstract 3 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract_4.jpg"><img src='/images/abstracts/thumbs/ice_abstract_4.jpg' alt='Ice Abstract 4 - January 2011' /></a>
+
