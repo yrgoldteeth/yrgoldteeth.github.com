@@ -10,7 +10,7 @@ title: Finding The Group-wise Maximum in Rails3 / Arel
 Recently at work we ran across a situation where we needed an efficient way
 to find the [Group-wise maximum of a certain column](http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html)
 in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
-combine a ORDER BY statement play nicely with GROUP BY statements, we were able to get the results with two queries,
+combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
 but due to the volume of data, this would eventually have too much overhead to be sustainable.  
 Once I determined that using a left join on itself would be the way to go at the problem, I set 
 out to figure out the solution using the new [Arel syntax](https://github.com/rails/arel).
