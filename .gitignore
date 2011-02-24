@@ -3,3 +3,5 @@ _drafts/*
 _site/*
 tmp/*
 .sass-cache/*
+images/*.m4v
+ignore.markdown
