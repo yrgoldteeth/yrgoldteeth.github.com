@@ -41,7 +41,12 @@ class Postmaker
     @pinboard = Pinboard.new
     @posts = pinboard.posts_to_blog
     return true unless posts && posts.any?
-    posts.each {|p| generate_post(p)}
+    case posts
+    when Hash
+      generate_post(posts)
+    when Array
+      posts.each {|p| generate_post(p)}
+    end
   end
 
   def generate_post post
