@@ -1,0 +1,12 @@
+---
+layout: post
+title: visits (After The Storm)
+---
+
+## {{ page.title }}
+
+> But they also skirted much of Alabama. Such is the nature of tornadoes: even large ones deliver not the broad, flattening destruction of a hurricane, but pinpoint devastation.  
+
+<strong><a href='http://www.economist.com/blogs/democracyinamerica/2011/04/tornadoes_american_south'>http://www.economist.com/blogs/democracyinamerica/2011/04/tornadoes_american_south</a></strong>
+
+Post automatically generated from my <a href="http://pinboard.in/u:ndfine">pinboard</a>
