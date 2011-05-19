@@ -1,0 +1,12 @@
+---
+layout: post
+title: The Washington Monthly - The Magazine - The Information Sage
+---
+
+## {{ page.title }}
+
+> Good design, then, is not about making dull numbers somehow become magically exhilarating, it is about picking the right numbers in the first place.  
+
+<strong><a href='http://www.washingtonmonthly.com/magazine/mayjune_2011/features/the_information_sage029137.php?page=all&print=true'>http://www.washingtonmonthly.com/magazine/mayjune_2011/features/the_information_sage029137.php?page=all&print=true</a></strong>
+
+Post automatically generated from my <a href="http://pinboard.in/u:ndfine">pinboard</a>
