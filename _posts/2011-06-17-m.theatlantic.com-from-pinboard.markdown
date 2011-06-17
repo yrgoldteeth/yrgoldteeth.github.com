@@ -1,0 +1,16 @@
+---
+layout: post
+title: The Brain on Trial - Magazine - The Atlantic
+---
+
+## {{ page.title }}
+
+> Along any axis that we use to measure human beings, we discover a wide-ranging distribution, whether in empathy, intelligence, impulse control, or aggression. People are not created equal. Although this variability is often imagined to be best swept under the rug, it is in fact the engine of evolution. In each generation, nature tries out as many varieties as it can produce, along all available dimensions.
+  
+> 
+  
+> Variation gives rise to lushly diverse societies—but it serves as a source of trouble for the legal system, which is largely built on the premise that humans are all equal before the law. This myth of human equality suggests that people are equally capable of controlling impulses, making decisions, and comprehending consequences. While admirable in spirit, the notion of neural equality is simply not true.  
+
+<strong><a href='http://m.theatlantic.com/magazine/print/2011/07/the-brain-on-trial/8520/'>http://m.theatlantic.com/magazine/print/2011/07/the-brain-on-trial/8520/</a></strong>
+
+Post automatically generated from my <a href="http://pinboard.in/u:ndfine">pinboard</a>
