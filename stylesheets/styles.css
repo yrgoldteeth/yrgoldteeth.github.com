@@ -22,6 +22,7 @@ h1 {
 h2 {
     font-size: 36px;
     margin: 24px 0 6px;
+    max-width: 476px;
 }
 h3 {
     border-left:.5em solid #07100D;
@@ -62,19 +63,6 @@ li {
 }
 li ul, li ul {
     margin-left: 30px;
-}
-body #header #footer {
-    display: inline;
-    float: left;
-    margin-right: 10px;
-}
-body #footer li {
-  padding-right: 1em;
-  display: inline;
-}
-.nav li {
-    display: inline;
-    padding-right: 1em;
 }
 p {
   padding-left: 21px;
