@@ -72,6 +72,7 @@ end
 if File.exist?('./.instapaper/config')
   instapaper_url = File.readlines('./.instapaper/config').map(&:strip).first
   `wget #{instapaper_url} -O ipaper.rss`
-  i = Instapaper.new('./ipaper.rss', true).run
+  i = Instapaper.new('./ipaper.rss', true)
+  i.run
   Pusher.new if i.new_links?
 end
