@@ -2,9 +2,10 @@ require 'crack'
 PAGE_FILE = './instapaper.markdown'
 
 class Instapaper
-  attr_accessor :file, :existing_links, :delete_after_complete, :links
+  attr_accessor :file, :existing_links, :delete_after_complete, :links, :complete
   
   def initialize file, delete_after_complete=false
+    @complete = false
     @file = file
     @delete_after_complete = delete_after_complete
     @existing_links = []
@@ -16,6 +17,7 @@ class Instapaper
     parse_file
     write_links_to_file if new_links?
     clean_up if delete_after_complete
+    @complete = true
   end
 
   def generate_li link
@@ -74,5 +76,5 @@ if File.exist?('./.instapaper/config')
   `wget #{instapaper_url} -O ipaper.rss`
   i = Instapaper.new('./ipaper.rss', true)
   i.run
-  Pusher.new if i.new_links?
+  Pusher.new if i.new_links? && i.complete
 end
