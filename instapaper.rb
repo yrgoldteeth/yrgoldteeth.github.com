@@ -63,8 +63,8 @@ end
 
 class Pusher
   def initialize
-    cmd = "cd /home/ubuntu/code/yrgoldteeth.github.com && git add instapaper.markdown;"
-    cmd += "git commit -m'update instapaper favorites';git push origin master"
+    cmd = "cd /home/ubuntu/code/yrgoldteeth.github.com && git add . &&"
+    cmd += "git commit -m'update instapaper favorites' && git push origin master"
     `#{cmd}`
   end
 end
