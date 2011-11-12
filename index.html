@@ -2,13 +2,9 @@
 layout: default
 title: Nicholas Fine
 ---
-<div id='recent-posts'>
-  {% for post in site.posts limit: 4 %}
-  <div class='post'>
-    <h2><a href='{{ post.url }}'>{{ post.date | date_to_string }}</a></h2>
-    {{ post.content }}
-  </div>
-  {% endfor %}
-  <br />
-  <p><a href='/posts.html'>See all posts...</a></p>
-</div>
+{% for post in site.posts limit: 4 %}
+<h3><a href='{{ post.url }}'>{{ post.date | date_to_string }}</a></h3>
+<article>
+{{ post.content }}
+</article>
+{% endfor %}

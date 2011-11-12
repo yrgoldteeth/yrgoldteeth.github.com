@@ -6,3 +6,4 @@ tmp/*
 images/*.m4v
 ignore.markdown
 vendor/ruby
+.instapaper/config
