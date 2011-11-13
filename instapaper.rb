@@ -1,6 +1,6 @@
 PAGE_FILE = './instapaper.markdown'
 INDEX_FILE = './.generators/instapaper_recent'
-EXISTING_FILE = './.metafilter/existing_links'
+EXISTING_FILE = './.instapaper/existing_links'
 
 require './generator_methods'
 class Instapaper

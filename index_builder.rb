@@ -10,7 +10,7 @@ module IndexBuilder
     index_file.puts("</ul>")
     index_file.puts(generate_title('Metafilter'))
     index_file.puts("<ul class='unstyled'>")
-    File.open('./.generators/mefi_recent)').readlines.each{|l|index_file.puts(l)}
+    File.open('./.generators/mefi_recent').readlines.each{|l|index_file.puts(l)}
     index_file.puts("</ul>")
     4.times{index_file.puts("</div>")}
     index_file.puts("</body>")
@@ -19,7 +19,7 @@ module IndexBuilder
   end
 
   def generate_title section
-    "<h3 class='sidebar'>#{section}</h3>"
+    "<h3 class='sidebar'>Recent #{section} Favorites</h3>"
   end
 
 end
