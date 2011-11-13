@@ -3,7 +3,7 @@ layout: post
 title: visits (After The Storm)
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > But they also skirted much of Alabama. Such is the nature of tornadoes: even large ones deliver not the broad, flattening destruction of a hurricane, but pinpoint devastation.  
 

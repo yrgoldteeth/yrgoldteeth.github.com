@@ -3,7 +3,7 @@ layout: post
 title: Reading As Cartography - Ta-Nehisi Coates
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > 
   

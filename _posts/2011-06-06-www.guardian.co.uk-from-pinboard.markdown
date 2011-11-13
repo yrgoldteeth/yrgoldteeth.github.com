@@ -3,7 +3,7 @@ layout: post
 title: Damian/Fucked Up on Skrewdriver and the insular nature of hardcore punk | The Guardian
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > I am sure my ability to have such an ironic detachment from the band is born out of white privilege which of course has led me to feel conflicted about talking about this band. 
   

@@ -3,7 +3,7 @@ layout: post
 title: FEMA Gets Its Groove Back - BusinessWeek
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Fugate has what he describes as a "Waffle House" theory of emergency management to assess how bad a situation is after a disaster. "If the Waffle House is open and serving food and has got a full menu, then it's green," he said during an interview inside a FEMA mobile home parked outside a fire station in Joplin. "If the Waffle House is open but has a limited menu, it's yellow, and if the Waffle House isn't open, that's red." (Joplin's local Waffle House survived.)  
 

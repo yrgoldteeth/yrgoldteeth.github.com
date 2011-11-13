@@ -3,7 +3,7 @@ layout: post
 title: Things Have Rules (Ftrain.com)
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > They are always saying, he is not just a programmer but a real artist. They always say hackers and entrepreneurs are like landscape painters or concert pianists. These Howard Roarkish types. No one ever says that hackers are just like a situationist who works in absences or a person who shreds incunabula to make papier-mâché doll heads or crucifies a coyote while repeating the word ‘sand’ for six hours. Not that people are still crucifying coyotes.  
 

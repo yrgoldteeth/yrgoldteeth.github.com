@@ -3,7 +3,7 @@ layout: post
 title: Paris Review - The Art of Fiction No. 158, Shelby Foote
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > INTERVIEWER
   

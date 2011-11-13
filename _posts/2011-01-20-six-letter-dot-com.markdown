@@ -3,7 +3,7 @@ layout: post
 title: Six letter dot com
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 Considering that I make my living predominantly writing code that runs on webservers, I had a lingering sense of
 guilt that I had no "web presence" to speak of outside of a mostly-ignored Facebook profile and a neglected Twitter

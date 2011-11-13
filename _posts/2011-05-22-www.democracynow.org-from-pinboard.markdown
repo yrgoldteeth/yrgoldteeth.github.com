@@ -3,7 +3,7 @@ layout: post
 title: David Simon, Creator of Acclaimed HBO Series "The Wire"- As Profit Motive Guts Newspapers, Communities Lose Out
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > What I say will likely conflict with what representatives of the newspaper industry will claim, and I can imagine little agreement with those who speak for new media. From the captains of the newspaper industry, you may hear a certain martyrology, a claim that they were heroically serving democracy, only to be undone by a cataclysmic shift in technology. From those speaking on behalf of new media, weblogs and that which goes “twitter,” you will be treated to assurances that American journalism has a perfectly fine future online and that a great democratization is taking place. Well, a plague on both their houses.  
 

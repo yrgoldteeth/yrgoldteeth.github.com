@@ -3,7 +3,7 @@ layout: post
 title: Cheering for state-imposed death | Glenn Greenwald - salon.com
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > [K]eeping them in a state of Endless War for more than a decade, training them to publicly rejoice when the Government puts bullets into people's heads or injects poison into their veins -- even if that act is justifiable -- inevitably degrades the citizenry and the character of their nation.  
 

@@ -3,7 +3,7 @@ layout: post
 title: NOLA 2010 - Five Photographs
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 Five photographs from New Orleans.  The first four are from my honeymoon in June 2010, and the last is presumably a
 group of Vietnamese veterans marching in the Veteran's Day parade last year.  

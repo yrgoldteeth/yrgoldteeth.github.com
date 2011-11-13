@@ -3,7 +3,7 @@ layout: post
 title: The Washington Monthly - The Magazine - The Information Sage
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Good design, then, is not about making dull numbers somehow become magically exhilarating, it is about picking the right numbers in the first place.  
 

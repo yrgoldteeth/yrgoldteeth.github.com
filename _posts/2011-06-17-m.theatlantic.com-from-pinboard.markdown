@@ -3,7 +3,7 @@ layout: post
 title: The Brain on Trial - Magazine - The Atlantic
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Along any axis that we use to measure human beings, we discover a wide-ranging distribution, whether in empathy, intelligence, impulse control, or aggression. People are not created equal. Although this variability is often imagined to be best swept under the rug, it is in fact the engine of evolution. In each generation, nature tries out as many varieties as it can produce, along all available dimensions.
   

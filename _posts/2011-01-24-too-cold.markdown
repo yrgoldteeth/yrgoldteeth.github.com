@@ -3,7 +3,7 @@ layout: post
 title: Entirely Too Cold
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 It was entirely too cold here in Alabama for a while.  Abstracts from photographs of the ice:
 

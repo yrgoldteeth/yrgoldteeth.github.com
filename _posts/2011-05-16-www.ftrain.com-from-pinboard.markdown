@@ -3,7 +3,7 @@ layout: post
 title: Nanolaw with Daughter - Ftrain
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Then would come the game. Cameras in the phone of every parent. Sensors on the goals; sensors in the ref's whistle; in the ball; in the lamps that light the field. Yellow cards, goals, offsides, all recorded from many angles and tagged with time, location, temperature, whether for the memories or to limit liability—the motion of 22 bobbing ponytails transformed into lines of light.
   

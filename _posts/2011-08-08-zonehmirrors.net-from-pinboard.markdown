@@ -3,7 +3,7 @@ layout: post
 title: So awesome. Anonymous hacks Syrian Defense site - Mirrored page
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > To the Syrian people: The world stands with you against the brutal regime of Bashar Al-Assad. Know that time and history are on your side - tyrants use violence because they have nothing else, and the more violent they are, the more fragile they become. We salute your determination to be non-violent in the face of the regime's brutality, and admire your willingness to pursue justice, not mere revenge. All tyrants will fall, and thanks to your bravery Bashar Al-Assad is next.
   

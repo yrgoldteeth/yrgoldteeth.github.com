@@ -3,7 +3,7 @@ layout: post
 title: Wright Thompson on Dean Faulker Wells and a Yoknapatawpha wake | Grantland
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > We rushed outside when word passed that the Chevron dimmed its lights in memory of Dean. We're still not sure if that actually happened; we arrived in the yard too late. We drank the Four Roses. Then we drank the Jack Daniel's. We drank from the bottle until the whiskey was gone. We drank French red wine from Johnny Vaught tumblers. At some point, there was a long, elaborate series of puns about the unfortunately named Ole Miss football coach. Is it wrong that there was laughter? We told simply filthy jokes.
   

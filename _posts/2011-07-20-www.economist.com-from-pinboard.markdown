@@ -3,7 +3,7 @@ layout: post
 title: Unemployment and jobs- Work for post-materialists | The Economist
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > So, yeah, I'd like to see wage subsidies and a 4% inflation target. But I'd also like to see a shift away from economic policy that pushes us so insistently into the "employee" role. What does the government call you if you are working but not on somebody's payroll with social security and Medicare taxes automatically deducted from your wages? Self-employed! You must work for somebody, even if it's yourself. But I don't want to be a tiny business that hires me. I don't want to be my own boss. I don't want to be a boss at all, or to have one. I just want to work and get paid for it, on terms agreeable to the parties involved.
   

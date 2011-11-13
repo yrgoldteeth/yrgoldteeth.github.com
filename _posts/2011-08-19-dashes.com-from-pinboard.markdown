@@ -3,7 +3,7 @@ layout: post
 title: What they're protecting us from | dashes.com
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > So, who is this man? He’s the anchor baby of an activist Arab muslim who came to the U.S. on a student visa and had a child out of wedlock. He’s a non-Christian, arugula-eating, drug-using follower of unabashedly old-fashioned liberal teachings from the hippies and folk music stars of the 60s. And he believes in science, in things that science can demonstrate like climate change and Pi having a value more specific than “3”, and in extending responsible benefits to his employees while encouraging his company to lead by being environmentally responsible.
   

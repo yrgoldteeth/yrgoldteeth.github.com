@@ -3,7 +3,7 @@ layout: post
 title: Finding The Group-wise Maximum in Rails3 / Arel
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 [cross posted at Isotope11's blog](http://www.isotope11.com/blog/group-wise-max-rails3)
 
@@ -15,7 +15,7 @@ but due to the volume of data, this would eventually have too much overhead to b
 Once I determined that using a left join on itself would be the way to go at the problem, I set 
 out to figure out the solution using the new [Arel syntax](https://github.com/rails/arel).
 
-### Example
+##### Example
 
 This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
 ChildThings can have duplicate rows with the same key, and we were looking to return only the newest

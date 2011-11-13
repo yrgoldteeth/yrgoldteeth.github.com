@@ -3,7 +3,7 @@ layout: post
 title: Some Random Links
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 I'm still not so great on updating this on the regular.  I've been digging
 through old photos and doing some processing on my huge cache of live music

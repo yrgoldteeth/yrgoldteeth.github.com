@@ -3,7 +3,7 @@ layout: post
 title: Heartbreaking. - Sports Illustrated on Tuscaloosa tornado
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Three other towering oaks had fallen on the house across the street from Kelton’s, killing the three students inside. With nearly the entire Alabama baseball team standing in Kelton’s yard, the family of a female victim arrived.
   

@@ -3,7 +3,7 @@ layout: post
 title: Spinning a Web | David Pelfrey - Black & White
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > In that context, I wondered if he might still sit on the CRT board of directors. Wiedmeyer responded, via phone, that he had no comment. I explained that I wanted only to know if he remained on the board. “I can’t comment on that, you will have to ask the director,” he replied. I again stated that I required only a simple confirmation of membership, at which time Wiedmeyer would only breathe into the phone. I asked if his membership was an official BBA secret, or just something he was ashamed of; still more breathing.
   

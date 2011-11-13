@@ -3,7 +3,7 @@ layout: post
 title: Gray's "Elegy Written in a Country Church-Yard".
 ---
 
-## {{ page.title }}
+#### {{ page.title }}
 
 > Full many a flower is born to blush unseen,
   
