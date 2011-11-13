@@ -33,6 +33,7 @@ class Instapaper
     links.each{|link| markdown_file.puts(generate_li(link));save_link(link)}
     markdown_file.puts('  </ul>')
     markdown_file.puts('</div>')
+    markdown_file.close
   end
 
   def save_link link
