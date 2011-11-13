@@ -112,6 +112,10 @@ nav,
 section {
   display: block;
 }
+article {
+  border-bottom: 2px solid #7c9cb9;
+  margin-bottom: 10px;
+}
 audio, canvas, video {
   display: inline-block;
   *display: inline;
@@ -444,6 +448,10 @@ h3 {
   font-size: 18px;
   margin-bottom: 8px;
 }
+h3.sidebar {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 h3 small {
   font-size: 14px;
 }
@@ -479,6 +487,9 @@ ol {
 li {
   line-height: 18px;
   color: #808080;
+}
+li.sidebar {
+  margin-bottom: 5px;
 }
 li.post-link {
   padding-bottom: 10px;

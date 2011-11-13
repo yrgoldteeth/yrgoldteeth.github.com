@@ -1,8 +1,10 @@
-require 'crack'
 PAGE_FILE = './instapaper.markdown'
 INDEX_FILE = './.generators/instapaper_recent'
+EXISTING_FILE = './.metafilter/existing_links'
 
+require './generator_methods'
 class Instapaper
+  include GeneratorMethods
   attr_accessor :file, :existing_links, :delete_after_complete, :links, :complete
   
   def initialize file, delete_after_complete=false
@@ -11,28 +13,6 @@ class Instapaper
     @delete_after_complete = delete_after_complete
     @existing_links = []
     @links = []
-  end
-
-  def run
-    get_existing_links
-    parse_file
-    write_links_to_file if new_links?
-    clean_up if delete_after_complete
-    @complete = true
-  end
-
-  def generate_li link
-    pub_date = Time.parse(link['pubDate']).strftime('%b %e %Y')
-    href = link['link']
-    title = link['title']
-    "    <li class='post-link'><span class='label'>#{pub_date}</span><br /><a href='#{href}'>#{title}</a></li>"
-  end
-
-  def generate_index_li link
-    pub_date = Time.parse(link['pubDate']).strftime('%b %e %Y')
-    href = link['link']
-    title = link['title']
-    "    <li class='sidebar'><span class='label'>#{pub_date}</span><br /><a href='#{href}'>#{title}</a></li>"
   end
 
   def write_links_to_file
@@ -45,43 +25,6 @@ class Instapaper
     markdown_file.puts('</div>')
     markdown_file.close
   end
-
-  def save_link link
-    File.open('./.instapaper/existing_links','a'){|f|f.puts link['link']} unless existing_links.include?(link['link'])
-  end
-
-  def parse_file
-    @links = Crack::XML.parse(File.open(file))['rss']['channel']['item']
-  end
-
-  def new_links?
-    new_links.any? ? puts('New Links Found') : puts('No New Links')
-    new_links.any?
-  end
-
-  def new_links
-    links.map{|l|l['link']} - existing_links
-  end
-
-  def get_existing_links
-    if File.exist?('./.instapaper/existing_links')
-      @existing_links = File.readlines('./.instapaper/existing_links').map(&:strip)
-    end
-  end
-  
-  def clean_up
-    File.unlink file if delete_after_complete
-  end
-end
-
-module Pusher
-  extend self
-
-  def push_it_real_good
-    cmd = "cd /home/ubuntu/code/yrgoldteeth.github.com && git fetch && git merge origin/master && git add ./instapaper.markdown && "
-    cmd += "git commit -m'update instapaper favorites' && git push origin master"
-    `#{cmd}`
-  end
 end
 
 if File.exist?('./.instapaper/config')
@@ -89,5 +32,5 @@ if File.exist?('./.instapaper/config')
   `wget #{instapaper_url} -O ipaper.rss`
   i = Instapaper.new('./ipaper.rss', true)
   i.run
-  Pusher.push_it_real_good if i.new_links?
+  Pusher.push_it_real_good(:instapaper) if i.new_links? && defined?(Pusher)
 end
