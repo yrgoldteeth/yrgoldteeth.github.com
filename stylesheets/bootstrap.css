@@ -405,7 +405,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  font-family: 'Goudy Bookletter 1911', serif;
   color: #78b9a0;
 }
 h1 small,
@@ -427,6 +427,8 @@ h1 small {
 h2 {
   font-size: 24px;
   line-height: 36px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 h2 small {
   font-size: 14px;
@@ -436,9 +438,11 @@ h4,
 h5,
 h6 {
   line-height: 36px;
+  margin-bottom: 8px;
 }
 h3 {
   font-size: 18px;
+  margin-bottom: 8px;
 }
 h3 small {
   font-size: 14px;
@@ -1333,8 +1337,9 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   margin-left: -20px;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
 .topbar p {
   margin: 0;
