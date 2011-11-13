@@ -1,5 +1,6 @@
 require 'crack'
 PAGE_FILE = './instapaper.markdown'
+INDEX_FILE = './.generators/instapaper_recent'
 
 class Instapaper
   attr_accessor :file, :existing_links, :delete_after_complete, :links, :complete
@@ -27,10 +28,19 @@ class Instapaper
     "    <li class='post-link'><span class='label'>#{pub_date}</span><br /><a href='#{href}'>#{title}</a></li>"
   end
 
+  def generate_index_li link
+    pub_date = Time.parse(link['pubDate']).strftime('%b %e %Y')
+    href = link['link']
+    title = link['title']
+    "    <li class='sidebar'><span class='label'>#{pub_date}</span><br /><a href='#{href}'>#{title}</a></li>"
+  end
+
   def write_links_to_file
     `cp ./.instapaper/instapaper.markdown .`
     markdown_file = File.open(PAGE_FILE, 'a')
+    index_file = File.open(INDEX_FILE, 'w')
     links.each{|link| markdown_file.puts(generate_li(link));save_link(link)}
+    links[0,4].each{|link| index_file.puts(generate_index_li(link))}
     markdown_file.puts('  </ul>')
     markdown_file.puts('</div>')
     markdown_file.close
