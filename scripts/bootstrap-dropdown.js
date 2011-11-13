@@ -52,4 +52,4 @@
     $('body').dropdown( '[data-dropdown] a.menu, [data-dropdown] .dropdown-toggle' )
   })
 
-}( window.jQuery || window.ender );
+}( window.jQuery || window.ender );$('#topbar').dropdown(
