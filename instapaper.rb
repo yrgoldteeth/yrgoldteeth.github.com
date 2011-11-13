@@ -74,17 +74,20 @@ class Instapaper
   end
 end
 
-#class Pusher
-#  def initialize
-#    cmd = "cd /home/ubuntu/code/yrgoldteeth.github.com && git add . && git add ./instapaper.markdown && "
-#    cmd += "git commit -m'update instapaper favorites' && git push origin master"
-#    `#{cmd}`
-#  end
-#end
+module Pusher
+  extend self
+
+  def push_it_real_good
+    cmd = "cd /home/ubuntu/code/yrgoldteeth.github.com && git fetch && git merge origin/master && git add ./instapaper.markdown && "
+    cmd += "git commit -m'update instapaper favorites' && git push origin master"
+    `#{cmd}`
+  end
+end
 
 if File.exist?('./.instapaper/config')
   instapaper_url = File.readlines('./.instapaper/config').map(&:strip).first
   `wget #{instapaper_url} -O ipaper.rss`
   i = Instapaper.new('./ipaper.rss', true)
   i.run
+  Pusher.push_it_real_good if i.new_links?
 end
