@@ -13,6 +13,7 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>Nov 15 2011</span><br /><a href='http://weldbham.com/secondfront/2011/11/15/remembering-mac-parsons/'>Remembering Mac Parsons</a></li>
     <li class='post-link'><span class='label'>Nov 14 2011</span><br /><a href='http://www.washingtonpost.com/blogs/guest-voices/post/penn-state-my-final-loss-of-faith/2011/11/11/gIQAwmiIDN_blog.html'>Penn State, my final loss of faith - Guest Voices</a></li>
     <li class='post-link'><span class='label'>Nov 11 2011</span><br /><a href='http://bamareport.blogspot.com/2011/11/university-of-alabama-football-report_11.html'>University of Alabama Football Report for 11/11/11</a></li>
     <li class='post-link'><span class='label'>Nov 11 2011</span><br /><a href='http://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/'>→ Don’t Call Yourself A Programmer, And Other Career Advice</a></li>
@@ -22,6 +23,5 @@ some of my favorites.
     <li class='post-link'><span class='label'>Oct 10 2011</span><br /><a href='http://www.belgraviadispatch.com/2011/10/occupy_wall_street.html'>The Belgravia Dispatch: Occupy Wall Street: An Early Assessment</a></li>
     <li class='post-link'><span class='label'>Oct  9 2011</span><br /><a href='http://m.wired.com/magazine/2011/09/mf_harmon/all/1'>How Dan Harmon Drives Himself Crazy Making Community | Magazine</a></li>
     <li class='post-link'><span class='label'>Oct  7 2011</span><br /><a href='http://www.wired.com/magazine/2011/09/ff_uvb76/all/1'>Inside the Russian Short Wave Radio Enigma | Magazine</a></li>
-    <li class='post-link'><span class='label'>Sep  3 2011</span><br /><a href='http://www.stonekettle.com/2011/03/america-you-keeping-using-that-word.html'>Stonekettle Station: America: You Keep Using That Word…</a></li>
   </ul>
 </div>
