@@ -1,7 +1,7 @@
-INDEX_FILE = './.generators/mefi_recent'
-EXISTING_FILE = './.metafilter/existing_links'
+INDEX_FILE = "#{ENV['HOME']}/code/yrgoldteeth.github.com/.generators/mefi_recent"
+EXISTING_FILE = "#{ENV['HOME']}/code/yrgoldteeth.github.com/.metafilter/existing_links"
 
-require './generator_methods'
+require "#{ENV['HOME']}/code/yrgoldteeth.github.com/generator_methods"
 class Metafilter
   include GeneratorMethods
   attr_accessor :file, :existing_links, :delete_after_complete, :links, :complete
@@ -22,8 +22,8 @@ class Metafilter
   end
   
 end
-
-`wget http://www.metafilter.com/favorites/128709/posts/rss -O mefi.rss`
-m = Metafilter.new('./mefi.rss', true)
+cmd = "wget http://www.metafilter.com/favorites/128709/posts/rss -O #{ENV['HOME']}/tmp/mefi.rss"
+`#{cmd}`
+m = Metafilter.new("#{ENV['HOME']}/tmp/mefi.rss", true)
 m.run
 Pusher.push_it_real_good(:mefi) if m.new_links? && defined?(Pusher)

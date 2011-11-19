@@ -29,7 +29,7 @@ module GeneratorMethods
   end
   
   def generate_li link
-    pub_date = Time.parse(link['pubDate']).strftime('%b %e %Y')
+    pub_date = Time.parse(link['pubDate']).strftime('%e %b %Y')
     href = link['link']
     title = link['title']
     "    <li class='post-link'><span class='label'>#{pub_date}</span><br /><a href='#{href}'>#{title}</a></li>"
