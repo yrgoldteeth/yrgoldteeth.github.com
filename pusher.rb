@@ -1,4 +1,4 @@
-require './index_builder'
+require "#{ENV['HOME']}/code/yrgoldteeth.github.com/index_builder"
 module Pusher
   extend self
 

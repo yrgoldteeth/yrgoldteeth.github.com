@@ -22,8 +22,7 @@ class Metafilter
   end
   
 end
-cmd = "wget http://www.metafilter.com/favorites/128709/posts/rss -O #{ENV['HOME']}/tmp/mefi.rss"
-`#{cmd}`
+`wget http://www.metafilter.com/favorites/128709/posts/rss -O #{ENV['HOME']}/tmp/mefi.rss`
 m = Metafilter.new("#{ENV['HOME']}/tmp/mefi.rss", true)
 m.run
 Pusher.push_it_real_good(:mefi) if m.new_links? && defined?(Pusher)
