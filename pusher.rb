@@ -9,7 +9,7 @@ module Pusher
     when :instapaper
       cmd += "git add ./.instapaper/existing_links ./instapaper.markdown _layouts/* && git commit -m'update instapaper favorites' " 
     when :mefi
-      cmd += "git add ./.metafilter/existing_links _layouts/* && git commit -m'update instapaper favorites' " 
+      cmd += "git add ./.metafilter/existing_links _layouts/* && git commit -m'update mefi favorites' " 
     end
     cmd += "&& git push origin master"
     `#{cmd}`
