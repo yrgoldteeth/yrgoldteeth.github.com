@@ -13,6 +13,7 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>20 Nov 2011</span><br /><a href='http://m.newyorker.com/reporting/2011/08/08/110808fa_fact_gopnik?currentPage=all'>Personal History: Dog Story : The New Yorker</a></li>
     <li class='post-link'><span class='label'>15 Nov 2011</span><br /><a href='http://gilesbowkett.blogspot.com/2011/11/beats-and-peaces.html'>Beats And Peaces</a></li>
     <li class='post-link'><span class='label'>15 Nov 2011</span><br /><a href='http://weldbham.com/secondfront/2011/11/15/remembering-mac-parsons/'>Remembering Mac Parsons</a></li>
     <li class='post-link'><span class='label'>14 Nov 2011</span><br /><a href='http://www.washingtonpost.com/blogs/guest-voices/post/penn-state-my-final-loss-of-faith/2011/11/11/gIQAwmiIDN_blog.html'>Penn State, my final loss of faith - Guest Voices</a></li>
