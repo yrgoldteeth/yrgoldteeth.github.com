@@ -60,7 +60,7 @@ class Postmaker
     file.puts "title: #{post['description'].gsub(':','-')}"
     file.puts '---'
     file.puts ''
-    file.puts '## {{ page.title }}'
+    file.puts '#### {{ page.title }}'
     file.puts ''
     post['extended'].each_line do |line|
       file.puts "> #{line}  "
