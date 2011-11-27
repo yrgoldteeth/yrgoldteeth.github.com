@@ -9,7 +9,7 @@ title: University of Alabama Football Report for 11/25/11
   
 > 
   
-> Because it is the Iron Bowl, even the Southside Birmingham hipsters who say don’t watch football will watch football.
+> Because it is the Iron Bowl, even the Southside Birmingham hipsters who say [they] don’t watch football will watch football.
   
 > 
   
