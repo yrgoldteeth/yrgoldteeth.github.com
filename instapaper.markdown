@@ -13,6 +13,7 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>27 Nov 2011</span><br /><a href='http://www.newyorker.com/fiction/features/2011/10/31/111031fi_fiction_saunders?mbid=social_retweet'>George Saunders: “Tenth of December” : The New Yorker</a></li>
     <li class='post-link'><span class='label'>20 Nov 2011</span><br /><a href='http://m.newyorker.com/reporting/2011/08/08/110808fa_fact_gopnik?currentPage=all'>Personal History: Dog Story : The New Yorker</a></li>
     <li class='post-link'><span class='label'>15 Nov 2011</span><br /><a href='http://gilesbowkett.blogspot.com/2011/11/beats-and-peaces.html'>Beats And Peaces</a></li>
     <li class='post-link'><span class='label'>15 Nov 2011</span><br /><a href='http://weldbham.com/secondfront/2011/11/15/remembering-mac-parsons/'>Remembering Mac Parsons</a></li>
