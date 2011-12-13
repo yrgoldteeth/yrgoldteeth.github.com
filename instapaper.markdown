@@ -13,6 +13,9 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>13 Dec 2011</span><br /><a href='http://m.motherjones.com/politics/2011/12/tim-cole-rick-perry'>No Country for Innocent Men | Mother Jones</a></li>
+    <li class='post-link'><span class='label'>12 Dec 2011</span><br /><a href='http://m.vanityfair.com/politics/2012/01/stiglitz-depression-201201.print'>The Book of Jobs | Politics | Vanity Fair</a></li>
+    <li class='post-link'><span class='label'>11 Dec 2011</span><br /><a href='http://www.heaviestcorner.org/?p=1633'>Flash Flood! or All Activity is Not Created Equal</a></li>
     <li class='post-link'><span class='label'>10 Dec 2011</span><br /><a href='http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report.html'>University of Alabama Football Report for 12/09/11</a></li>
     <li class='post-link'><span class='label'>27 Nov 2011</span><br /><a href='http://www.newyorker.com/fiction/features/2011/10/31/111031fi_fiction_saunders?mbid=social_retweet'>George Saunders: “Tenth of December” : The New Yorker</a></li>
     <li class='post-link'><span class='label'>20 Nov 2011</span><br /><a href='http://m.newyorker.com/reporting/2011/08/08/110808fa_fact_gopnik?currentPage=all'>Personal History: Dog Story : The New Yorker</a></li>
