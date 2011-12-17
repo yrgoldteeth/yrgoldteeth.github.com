@@ -19,7 +19,14 @@ module IndexBuilder
   end
 
   def generate_title section
-    "<h3 class='sidebar'>Recent #{section} Favorites</h3>"
+    case section
+    when 'Metafilter'
+      link = 'http://www.metafilter.com/favorites/128709'
+    when 'Instapaper'
+      link = '/instapaper'
+    end
+    "<h3 class='sidebar'><a href="#{link}">Recent #{section} Favorites</a></h3>"
   end
+
 
 end
