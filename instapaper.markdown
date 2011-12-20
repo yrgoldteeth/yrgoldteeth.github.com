@@ -13,6 +13,9 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>19 Dec 2011</span><br /><a href='http://kingcockfight.wordpress.com/2011/12/19/the-alabama-coloring-book-democratic-peoples-republic-of-clayton-dance-party/'>THE ALABAMA COLORING BOOK: Democratic People’s Republic of Clayton dance party!</a></li>
+    <li class='post-link'><span class='label'>19 Dec 2011</span><br /><a href='http://budiansky.blogspot.com/2011/12/you-can-be-historian-too.html'>You can be a historian, too</a></li>
+    <li class='post-link'><span class='label'>18 Dec 2011</span><br /><a href='http://www.bu.edu/agni/interviews/online/2011/gresko.html'>AGNI Online: Open to Influence: Jonathan Lethem on Reading, Writing and Concepts of Originality by Brian Gresko</a></li>
     <li class='post-link'><span class='label'>13 Dec 2011</span><br /><a href='http://m.motherjones.com/politics/2011/12/tim-cole-rick-perry'>No Country for Innocent Men | Mother Jones</a></li>
     <li class='post-link'><span class='label'>12 Dec 2011</span><br /><a href='http://m.vanityfair.com/politics/2012/01/stiglitz-depression-201201.print'>The Book of Jobs | Politics | Vanity Fair</a></li>
     <li class='post-link'><span class='label'>11 Dec 2011</span><br /><a href='http://www.heaviestcorner.org/?p=1633'>Flash Flood! or All Activity is Not Created Equal</a></li>
@@ -59,6 +62,5 @@ some of my favorites.
     <li class='post-link'><span class='label'>16 Apr 2011</span><br /><a href='http://www.guernicamag.com/interviews/2530/simon_4_1_11/'>Guernica / The Straight Dope</a></li>
     <li class='post-link'><span class='label'> 4 Apr 2011</span><br /><a href='http://thisrecording.com/today/2011/4/4/in-which-we-explore-the-archives-of-david-foster-wallace.html'>In Which We Explore The Archives Of David Foster Wallace - Home - This Recording</a></li>
     <li class='post-link'><span class='label'> 3 Apr 2011</span><br /><a href='http://www.bostonreview.net/BR36.2/leland_de_la_durantaye_david_foster_wallace.php'>How to Be Happy</a></li>
-    <li class='post-link'><span class='label'>13 Feb 2011</span><br /><a href='http://www.themorningnews.org/archives/personal_essays/work_is_a_four-letter_word.php'>Work Is a Four-Letter Word by Jeffrey Essmann - The Morning News</a></li>
   </ul>
 </div>
