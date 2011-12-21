@@ -25,7 +25,7 @@ module IndexBuilder
     when 'Instapaper'
       link = '/instapaper'
     end
-    "<h3 class='sidebar'><a href="#{link}">Recent #{section} Favorites</a></h3>"
+    "<h3 class='sidebar'><a href='#{link}'>Recent #{section} Favorites</a></h3>"
   end
 
 
