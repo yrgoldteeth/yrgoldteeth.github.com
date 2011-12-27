@@ -13,6 +13,8 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>22 Dec 2011</span><br /><a href='http://kingcockfight.wordpress.com/2011/12/12/secret-ingredient/'>Secret ingredient. | King Cockfight. — Alabama, according to its betters.</a></li>
+    <li class='post-link'><span class='label'>20 Dec 2011</span><br /><a href='http://blog.madebydna.com/all/code/2011/12/05/ajax-in-rails-3.html'>Made by Dna - Ajax in Rails 3.1 - A Roadmap</a></li>
     <li class='post-link'><span class='label'>19 Dec 2011</span><br /><a href='http://kingcockfight.wordpress.com/2011/12/19/the-alabama-coloring-book-democratic-peoples-republic-of-clayton-dance-party/'>THE ALABAMA COLORING BOOK: Democratic People’s Republic of Clayton dance party!</a></li>
     <li class='post-link'><span class='label'>19 Dec 2011</span><br /><a href='http://budiansky.blogspot.com/2011/12/you-can-be-historian-too.html'>You can be a historian, too</a></li>
     <li class='post-link'><span class='label'>18 Dec 2011</span><br /><a href='http://www.bu.edu/agni/interviews/online/2011/gresko.html'>AGNI Online: Open to Influence: Jonathan Lethem on Reading, Writing and Concepts of Originality by Brian Gresko</a></li>
@@ -60,7 +62,5 @@ some of my favorites.
     <li class='post-link'><span class='label'>19 Apr 2011</span><br /><a href='http://lindsaar.net/rails-static-pages'>Rails Static Pages (Episode #168 - April 19, 2011)</a></li>
     <li class='post-link'><span class='label'>16 Apr 2011</span><br /><a href='http://www.brocku.ca/MeadProject/James/James_1912/James_1912_11.html'>William James: Essays in Radical Empiricism: Chapter 11: Humanism and Truth Once More</a></li>
     <li class='post-link'><span class='label'>16 Apr 2011</span><br /><a href='http://www.guernicamag.com/interviews/2530/simon_4_1_11/'>Guernica / The Straight Dope</a></li>
-    <li class='post-link'><span class='label'> 4 Apr 2011</span><br /><a href='http://thisrecording.com/today/2011/4/4/in-which-we-explore-the-archives-of-david-foster-wallace.html'>In Which We Explore The Archives Of David Foster Wallace - Home - This Recording</a></li>
-    <li class='post-link'><span class='label'> 3 Apr 2011</span><br /><a href='http://www.bostonreview.net/BR36.2/leland_de_la_durantaye_david_foster_wallace.php'>How to Be Happy</a></li>
   </ul>
 </div>
