@@ -13,6 +13,16 @@ some of my favorites.
 
 <div id='posts'>
   <ul class='unstyled'>
+    <li class='post-link'><span class='label'>27 Jan 2012</span><br /><a href='http://www.everydayshouldbesaturday.com/2012/1/27/2752603/friday-proposed-the-place-where-you-are-from-sucks'>FRIDAY PROPOSED: THE PLACE WHERE YOU ARE FROM SUCKS</a></li>
+    <li class='post-link'><span class='label'>25 Jan 2012</span><br /><a href='http://www.newyorker.com/arts/critics/atlarge/2012/01/30/120130crat_atlarge_gopnik?currentPage=all'>Mass Incarceration and Criminal Justice in America : The New Yorker</a></li>
+    <li class='post-link'><span class='label'>23 Jan 2012</span><br /><a href='http://kingcockfight.wordpress.com/2012/01/23/the-cockfight-candidate-prospectus-2012-the-republican-race-for-alabamas-sixth-congressional-district-the-douche-belt/'>THE COCKFIGHT CANDIDATE PROSPECTUS 2012: The Republican race for Alabama’s Sixth Congressional District — ‘The Douche-Belt’</a></li>
+    <li class='post-link'><span class='label'>16 Jan 2012</span><br /><a href='http://bigthink.com/ideas/41845?page=all'>Physics, Miracles, and Witchcraft: 50 Years of "A Wrinkle in Time" | Book Think | Big Think</a></li>
+    <li class='post-link'><span class='label'>16 Jan 2012</span><br /><a href='http://www.thedailybeast.com/newsweek/2012/01/15/andrew-sullivan-how-obama-s-long-game-will-outsmart-his-critics.html'>Andrew Sullivan: How Obama's Long Game Will Outsmart His Critics - The Daily Beast</a></li>
+    <li class='post-link'><span class='label'>13 Jan 2012</span><br /><a href='http://www.nytimes.com/2012/01/13/us/in-laurens-sc-the-redneck-shop-and-its-neighbor.html?_r=1&pagewanted=all'>In Laurens, S.C., the Redneck Shop and Its Neighbor - NYTimes.com</a></li>
+    <li class='post-link'><span class='label'>11 Jan 2012</span><br /><a href='http://www.nybooks.com/articles/archives/1988/oct/27/insider-baseball/?pagination=false'>Insider Baseball</a></li>
+    <li class='post-link'><span class='label'> 9 Jan 2012</span><br /><a href='http://bamareport.blogspot.com/2012/01/university-of-alabama-football-report.html'>University of Alabama Football Report for 1/09/12: National Championship Edition</a></li>
+    <li class='post-link'><span class='label'>30 Dec 2011</span><br /><a href='http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report_30.html'>University of Alabama Football Report for 12/30/11</a></li>
+    <li class='post-link'><span class='label'>28 Dec 2011</span><br /><a href='http://teddziuba.com/2011/12/process.html'>Who Needs Process?</a></li>
     <li class='post-link'><span class='label'>22 Dec 2011</span><br /><a href='http://kingcockfight.wordpress.com/2011/12/12/secret-ingredient/'>Secret ingredient. | King Cockfight. — Alabama, according to its betters.</a></li>
     <li class='post-link'><span class='label'>20 Dec 2011</span><br /><a href='http://blog.madebydna.com/all/code/2011/12/05/ajax-in-rails-3.html'>Made by Dna - Ajax in Rails 3.1 - A Roadmap</a></li>
     <li class='post-link'><span class='label'>19 Dec 2011</span><br /><a href='http://kingcockfight.wordpress.com/2011/12/19/the-alabama-coloring-book-democratic-peoples-republic-of-clayton-dance-party/'>THE ALABAMA COLORING BOOK: Democratic People’s Republic of Clayton dance party!</a></li>
@@ -52,15 +62,5 @@ some of my favorites.
     <li class='post-link'><span class='label'>16 May 2011</span><br /><a href='http://nymag.com/print/?/arts/tv/upfronts/2011/roseanne-barr-2011-5/'>And I Should Know</a></li>
     <li class='post-link'><span class='label'>14 May 2011</span><br /><a href='http://www.theparisreview.org/interviews/931/the-art-of-fiction-no-158-shelby-foote'>Paris Review - The Art of Fiction No. 158, Shelby Foote</a></li>
     <li class='post-link'><span class='label'>12 May 2011</span><br /><a href='http://www.ftrain.com/things-have-rules.html'>Things Have Rules (Ftrain.com)</a></li>
-    <li class='post-link'><span class='label'> 7 May 2011</span><br /><a href='http://www.texasobserver.org/dateline/he-who-casts-the-first-stone'>He Who Casts the First Stone</a></li>
-    <li class='post-link'><span class='label'> 5 May 2011</span><br /><a href='http://www.economist.com/node/18648254'>Osama bin Laden | The Economist</a></li>
-    <li class='post-link'><span class='label'> 5 May 2011</span><br /><a href='http://www.economist.com/blogs/democracyinamerica/2011/05/counterterrorism'>Counterterrorism: Lester Freamon's finest hour | The Economist</a></li>
-    <li class='post-link'><span class='label'>29 Apr 2011</span><br /><a href='http://www.economist.com/blogs/democracyinamerica/2011/04/tornadoes_american_south'>visits (After The Storm)</a></li>
-    <li class='post-link'><span class='label'>26 Apr 2011</span><br /><a href='http://teddziuba.com/2011/04/amazon-the-purpose-of-pain.html'>Amazon — The Purpose of Pain</a></li>
-    <li class='post-link'><span class='label'>20 Apr 2011</span><br /><a href='http://www.nytimes.com/2011/04/17/magazine/mag-17Sugar-t.html?_r=3&pagewanted=all'>Is Sugar Toxic?</a></li>
-    <li class='post-link'><span class='label'>19 Apr 2011</span><br /><a href='http://weblog.rubyonrails.org/2011/4/18/why-http-streaming'>Why http streaming? (Episode #168 - April 19, 2011)</a></li>
-    <li class='post-link'><span class='label'>19 Apr 2011</span><br /><a href='http://lindsaar.net/rails-static-pages'>Rails Static Pages (Episode #168 - April 19, 2011)</a></li>
-    <li class='post-link'><span class='label'>16 Apr 2011</span><br /><a href='http://www.brocku.ca/MeadProject/James/James_1912/James_1912_11.html'>William James: Essays in Radical Empiricism: Chapter 11: Humanism and Truth Once More</a></li>
-    <li class='post-link'><span class='label'>16 Apr 2011</span><br /><a href='http://www.guernicamag.com/interviews/2530/simon_4_1_11/'>Guernica / The Straight Dope</a></li>
   </ul>
 </div>
