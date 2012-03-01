@@ -1,0 +1,26 @@
+body {
+  background-image: url(/img/farmer.png);
+  background-repeat: repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Merriweather', serif;
+}
+article p {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#posts .well {
+  display: block;
+  min-height: 100px;
+}
+
+#posts h6 {
+  padding-top: 10px;
+}
+

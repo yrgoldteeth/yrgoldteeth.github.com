@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+    <meta content='Nicholas Fine' name='author' />
+    <link href='http://feeds.feedburner.com/ndfine' rel='alternate' title='Nicholas Fine' type='application/atom+xml' />
+    <link href='http://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css' />
+    <link href='/assets/screen.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/assets/application.js' type='text/javascript'></script>
+    <title>Nicholas Fine</title>
+  </head>
+  <body>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container-fluid'>
+          <a class='brand' href='/'>
+            Nicholas Fine
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span9'>
+          
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/04/01/compiling-compass-on-heroku.html'>Getting Compass to Compile Stylesheets on Heroku</a></h2>
+      
+      <span class='label'>01 Apr 2011</span>
+      
+    </div>
+    
+      <p>While developing <a href="http://groovemux.com">Groovemux</a>, my homage to the late <a href="http://en.wikipedia.org/wiki/Muxtape">Muxtape</a> I kept running into this issue where my stylesheets in compass were not being compiled on heroku correctly, causing a 500 error every time the app was restarted.</p>
+
+<p>Happily, I ran across <a href="http://frontcube.com/blog/2011/how-to-get-sass-to-work-with-rails-3-on-heroku-without-using-any-plugins">this posting</a>, and it worked like a charm.</p>
+
+<p>Also, you should listen to the first mix created for Groovemux <a href="http://groovemux.com/tapes/groovemux">here</a>.  I'm fairly certain it only works in Chrome and Safari.</p>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/03/29/live-shots.html'>Various Pictures Of Live Music 2006-2009</a></h2>
+      
+      <span class='label'>29 Mar 2011</span>
+      
+    </div>
+    
+      <p>Like I mentioned earlier, I had been going through my cache of live music photos.</p>
+
+<p><a href="/images/livemusic/tbiapb_hnm_1r.jpg"><img src='/images/livemusic/thumbs/tbiapb_hnm_1r.jpg' alt='TBIAPB!, Hot New Mexicans, One Reason, Beer' /></a></p>
+
+<h5>TBIAPB!, Hot New Mexicans, One Reason, Beer @ The Farmhouse, Cleveland MS</h5>
+
+<p><a href="/images/livemusic/legion.jpg"><img src='/images/livemusic/thumbs/legion.jpg' alt='Legion' /></a></p>
+
+<h5>Legion @ Cave9, Birmingham AL</h5>
+
+<p><a href="/images/livemusic/tcpof.jpg"><img src='/images/livemusic/thumbs/tcpof.jpg' alt='The Cleansing Power of Fire' /></a></p>
+
+<h5>The Cleansing Power of Fire @ Cave9, Birmingham AL</h5>
+
+<p><a href="/images/livemusic/lickgoldensky.jpg"><img src='/images/livemusic/thumbs/lickgoldensky.jpg' alt='Lickgoldensky' /></a></p>
+
+<h5>Lickgoldensky @ Cave9, Birmingham AL</h5>
+
+<p><a href="/images/livemusic/hnm.jpg"><img src='/images/livemusic/thumbs/hnm.jpg' alt='Hot New Mexicans' /></a></p>
+
+<h5>Hot New Mexicans @ Hal &amp; Mals, Jackson MS</h5>
+
+<p><a href="/images/livemusic/gaslight_anthem.jpg"><img src='/images/livemusic/thumbs/gaslight_anthem.jpg' alt='Gaslight Anthem' /></a></p>
+
+<h5>Gaslight Anthem @ Cave9, Birmingham AL</h5>
+
+<p><a href="/images/livemusic/glass_and_ashes.jpg"><img src='/images/livemusic/thumbs/glass_and_ashes.jpg' alt='Glass and Ashes' /></a></p>
+
+<h5>Glass and Ashes @ Jake's, Birmingham AL</h5>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/02/24/groupwise-max-rails3.html'>Finding The Group-wise Maximum in Rails3 / Arel</a></h2>
+      
+      <span class='label'>24 Feb 2011</span>
+      
+    </div>
+    
+      <p><a href="http://www.isotope11.com/blog/group-wise-max-rails3">cross posted at Isotope11's blog</a></p>
+
+<p>Recently at work we ran across a situation where we needed an efficient way
+to find the <a href="http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html">Group-wise maximum of a certain column</a>
+in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
+combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
+but due to the volume of data, this would eventually have too much overhead to be sustainable.<br/>
+Once I determined that using a left join on itself would be the way to go at the problem, I set
+out to figure out the solution using the new <a href="https://github.com/rails/arel">Arel syntax</a>.</p>
+
+<h5>Example</h5>
+
+<p>This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
+ChildThings can have duplicate rows with the same key, and we were looking to return only the newest
+results for each distinct key found in the ParentThing's ChildThings.</p>
+
+<pre><code>class ParentThing &lt; ActiveRecord::Base
+  has_many :child_things
+end
+
+class ChildThing &lt; ActiveRecord::Base
+  belongs_to :parent_thing
+end
+</code></pre>
+
+<p>The solution was to add a single named scope to the ChildThing class:</p>
+
+<pre><code>class ChildThing &lt; ActiveRecord::Base
+  belongs_to :parent_thing
+
+  scope :newest_results, 
+    joins('LEFT JOIN child_things c2 ON child_things.key = c2.key AND child_things.created_at &gt; c2.created_at'),
+    where('c2.key is NULL')
+
+end
+</code></pre>
+
+<p>So, now if p is an instance of ParentThing:</p>
+
+<pre><code>p.child_things.newest_results 
+</code></pre>
+
+<p>will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing's ChildThing
+full collection.</p>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/02/07/random-links.html'>Some Random Links</a></h2>
+      
+      <span class='label'>07 Feb 2011</span>
+      
+    </div>
+    
+      <p>I'm still not so great on updating this on the regular.  I've been digging
+through old photos and doing some processing on my huge cache of live music
+shots, which has been a fun trip down nostalgia lane.</p>
+
+<p>Beyond that, I'm here to rep:</p>
+
+<p><a href="http://bamareport.blogspot.com/2011/02/university-of-alabama-football-report.html">My favorite Alabama Football blogger in memory of his dog...</a></p>
+
+<blockquote><p>My dog is reference-able in a university library system. She's mentioned by name in the acknowledgments of my master's thesis.  That's the section where my classmates put their thesis chairs' names. My thesis chair went on sabbatical for half the damn year; my dog was there every day.</p></blockquote>
+
+<p><a href="http://teddziuba.com/2011/02/the-case-against-queues.html">The case against queues...</a></p>
+
+<blockquote><p>Depending on your queue implementation, when you pop a message off, it's gone. The consumer acknowledges receipt of it, and the queue forgets about it. So, if your data processor fails, you've got data loss. Collecting messages [with] syslog, your processor program is just processing a text file, and can process it again if something goes wrong. Throw in some split and xargs, and you've got parallel processing. Event messages aren't text? You fucked up. Go buy a subscription to the Microsoft Developer Network.</p></blockquote>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/01/24/too-cold.html'>Entirely Too Cold</a></h2>
+      
+      <span class='label'>24 Jan 2011</span>
+      
+    </div>
+    
+      <p>It was entirely too cold here in Alabama for a while.  Abstracts from photographs of the ice:</p>
+
+<p><a href="/images/abstracts/ice_abstract1.jpg"><img src='/images/abstracts/thumbs/ice_abstract1.jpg' alt='Ice Abstract 1 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract2.jpg"><img src='/images/abstracts/thumbs/ice_abstract2.jpg' alt='Ice Abstract 2 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract3.jpg"><img src='/images/abstracts/thumbs/ice_abstract3.jpg' alt='Ice Abstract 3 - January 2011' /></a>
+<a href="/images/abstracts/ice_abstract4.jpg"><img src='/images/abstracts/thumbs/ice_abstract4.jpg' alt='Ice Abstract 4 - January 2011' /></a></p>
+
+    
+  </article>
+
+
+<ul class='pager'>
+  
+    <li>
+      
+        <a href='/page9'>Previous</a>
+      
+    </li>
+  
+  
+    <li>
+      <a href='/page11'>Next</a>
+    </li>
+  
+</ul>
+  
+
+
+        </div>
+        <div class='span3'>
+          <div class='well sidebar-nav'>
+            <ul class='nav nav-list'>
+              <li class='nav-header'>
+                Ceci n'est pas un menu
+              </li>
+              <li>
+                <a href='/about'>
+                  <i class='icon-user'></i>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='/posts'>
+                  <i class='icon-book'></i>
+                  Archives
+                </a>
+              </li>
+              <li>
+                <a href='http://github.com/yrgoldteeth'>
+                  <i class='icon-cog'></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href='http://pinboard.in/u:ndfine'>
+                  <i class='icon-folder-open'></i>
+                  Pinboard
+                </a>
+              </li>
+              <li>
+                <a href='http://twitter.com/yrgoldteeth'>
+                  <i class='icon-retweet'></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href='mailto:nick@ndfine.com'>
+                  <i class='icon-envelope'></i>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href='http://feeds.feedburner.com/ndfine'>
+                  <i class='icon-share-alt'></i>
+                  Feed
+                </a>
+              </li>
+              <li class='nav-header'>
+                Projects
+              </li>
+              <li>
+                <a href='http://annotatethebastards.org'>Annotate the Bastards!</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/darkdowncss'>Darkdown.css</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/whereabouts'>Whereabouts</a>
+              </li>
+              <li>
+                <a href='http://www.isotope11.com/blog/datasciencetheater3000-refactord'>Data Science Theatre 3000</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/bootstrap-will_paginate/'>bootstrap-will_paginate</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/css3-progress-bar-rails/'>css3-progress-bar-rails</a>
+              </li>
+              <li class='nav-header'>
+                Colophon
+              </li>
+              <li>
+                <a href='http://github.com/mojombo/jekyll'>Jekyll</a>
+              </li>
+              <li>
+                <a href='http://twitter.github.com/bootstrap/'>Twitter Bootstrap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

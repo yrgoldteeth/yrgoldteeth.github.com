@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+    <meta content='Nicholas Fine' name='author' />
+    <link href='http://feeds.feedburner.com/ndfine' rel='alternate' title='Nicholas Fine' type='application/atom+xml' />
+    <link href='http://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css' />
+    <link href='/assets/screen.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/assets/application.js' type='text/javascript'></script>
+    <title>CSS3 Progress Bars for Rails</title>
+  </head>
+  <body>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container-fluid'>
+          <a class='brand' href='/'>
+            Nicholas Fine
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span9'>
+          <article>
+  <div class='well'>
+    
+      <h2><a href='/2012/01/03/css3-progress-bars-for-rails.html'>CSS3 Progress Bars for Rails</a></h2>
+    
+    <span class='label'>03 Jan 2012</span>
+    
+  </div>
+  
+    <link href='/stylesheets/css3-progress-bar.css' rel='stylesheet' type='text/css' />
+
+When one of us at [Isotope11][iso] runs across something interesting or useful on the internet,
+we'll send the link to all the other devs.  Over the recent holiday, [Josh][josh] sent a link to
+another [Josh][ds] and his new fancy [CSS3 Progress Bars][dsblog].  I had an immediate need for 
+something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
+some simple options.  
+
+I created a gem, [css3-progress-bar-rails][gh] that can be dropped into a Rails 3.1+ project to
+utilize these status bars.  To install, add 'css3-progress-bar-rails' to your Gemfile, and add
+require 'css3-progress-bar' into your application.css, so that the CSS is picked up by the Rails
+asset pipeline.  
+
+**Examples**  
+
+    <%= progress_bar(55) %>  
+
+<div class='bar_container'>
+  <div class='bar_mortice'>
+    <div class='progress' style='width: 55%;'></div>
+  </div>
+</div>  
+<br />
+    
+    <%= progress_bar(33, :color => 'blue', :rounded => true) %>  
+
+<div class='bar_container rounded_bar_container blue_container'>
+  <div class='bar_mortice rounded blue_mortice'>
+    <div class='progress rounded blue' style='width: 33%;'></div>
+  </div>
+</div>
+<br />
+
+    <%= progress_bar(83, :color => 'orange', :rounded => true, :tiny => true) %>   
+
+<div class='bar_container rounded_bar_container orange_container container_tiny'>
+  <div class='bar_mortice rounded orange_mortice mortice_tiny'>
+    <div class='progress rounded orange progress_tiny' style='width: 83%;'></div>
+  </div>
+</div>
+<br />
+    
+    <%= combo_progress_bar([19, 9, 20, 10]) %>   
+
+<div class='bar_container'>
+  <div class='bar_mortice'>
+    <div class='progress green' style='width: 19%;'></div>
+    <div class='progress orange' style='width: 9%;'></div>
+    <div class='progress pink' style='width: 20%;'></div>
+    <div class='progress blue' style='width: 10%;'></div>
+  </div>
+</div>
+<br />
+    
+    <%= combo_progress_bar([12, 15, 18, 22, 10], :tiny => true) %>   
+
+<div class='bar_container container_tiny'>
+  <div class='bar_mortice mortice_tiny'>
+    <div class='progress green progress_tiny' style='width: 12%;'></div>
+    <div class='progress orange progress_tiny' style='width: 15%;'></div>
+    <div class='progress pink progress_tiny' style='width: 18%;'></div>
+    <div class='progress blue progress_tiny' style='width: 22%;'></div>
+    <div class='progress purple progress_tiny' style='width: 10%;'></div>
+  </div>
+</div>
+<br />
+
+
+[josh]: https://twitter.com/#!/knewter
+[iso]: http://isotope11.com
+[ds]: http://dipperstove.com
+[dsblog]: http://dipperstove.com/design/css3-progress-bars.html
+[gh]: https://github.com/yrgoldteeth/css3-progress-bar-rails
+
+  
+</article>
+
+        </div>
+        <div class='span3'>
+          <div class='well sidebar-nav'>
+            <ul class='nav nav-list'>
+              <li class='nav-header'>
+                Ceci n'est pas un menu
+              </li>
+              <li>
+                <a href='/about'>
+                  <i class='icon-user'></i>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='/posts'>
+                  <i class='icon-book'></i>
+                  Archives
+                </a>
+              </li>
+              <li>
+                <a href='http://github.com/yrgoldteeth'>
+                  <i class='icon-cog'></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href='http://pinboard.in/u:ndfine'>
+                  <i class='icon-folder-open'></i>
+                  Pinboard
+                </a>
+              </li>
+              <li>
+                <a href='http://twitter.com/yrgoldteeth'>
+                  <i class='icon-retweet'></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href='mailto:nick@ndfine.com'>
+                  <i class='icon-envelope'></i>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href='http://feeds.feedburner.com/ndfine'>
+                  <i class='icon-share-alt'></i>
+                  Feed
+                </a>
+              </li>
+              <li class='nav-header'>
+                Projects
+              </li>
+              <li>
+                <a href='http://annotatethebastards.org'>Annotate the Bastards!</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/darkdowncss'>Darkdown.css</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/whereabouts'>Whereabouts</a>
+              </li>
+              <li>
+                <a href='http://www.isotope11.com/blog/datasciencetheater3000-refactord'>Data Science Theatre 3000</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/bootstrap-will_paginate/'>bootstrap-will_paginate</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/css3-progress-bar-rails/'>css3-progress-bar-rails</a>
+              </li>
+              <li class='nav-header'>
+                Colophon
+              </li>
+              <li>
+                <a href='http://github.com/mojombo/jekyll'>Jekyll</a>
+              </li>
+              <li>
+                <a href='http://twitter.github.com/bootstrap/'>Twitter Bootstrap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

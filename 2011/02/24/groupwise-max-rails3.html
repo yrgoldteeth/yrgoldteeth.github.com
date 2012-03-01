@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+    <meta content='Nicholas Fine' name='author' />
+    <link href='http://feeds.feedburner.com/ndfine' rel='alternate' title='Nicholas Fine' type='application/atom+xml' />
+    <link href='http://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css' />
+    <link href='/assets/screen.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/assets/application.js' type='text/javascript'></script>
+    <title>Finding The Group-wise Maximum in Rails3 / Arel</title>
+  </head>
+  <body>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container-fluid'>
+          <a class='brand' href='/'>
+            Nicholas Fine
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span9'>
+          <article>
+  <div class='well'>
+    
+      <h2><a href='/2011/02/24/groupwise-max-rails3.html'>Finding The Group-wise Maximum in Rails3 / Arel</a></h2>
+    
+    <span class='label'>24 Feb 2011</span>
+    
+  </div>
+  
+    [cross posted at Isotope11's blog](http://www.isotope11.com/blog/group-wise-max-rails3)
+
+Recently at work we ran across a situation where we needed an efficient way
+to find the [Group-wise maximum of a certain column](http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html)
+in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
+combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
+but due to the volume of data, this would eventually have too much overhead to be sustainable.  
+Once I determined that using a left join on itself would be the way to go at the problem, I set 
+out to figure out the solution using the new [Arel syntax](https://github.com/rails/arel).
+
+##### Example
+
+This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
+ChildThings can have duplicate rows with the same key, and we were looking to return only the newest
+results for each distinct key found in the ParentThing's ChildThings.
+
+    class ParentThing < ActiveRecord::Base
+      has_many :child_things
+    end
+
+    class ChildThing < ActiveRecord::Base
+      belongs_to :parent_thing
+    end
+
+The solution was to add a single named scope to the ChildThing class:
+    
+    class ChildThing < ActiveRecord::Base
+      belongs_to :parent_thing
+
+      scope :newest_results, 
+        joins('LEFT JOIN child_things c2 ON child_things.key = c2.key AND child_things.created_at > c2.created_at'),
+        where('c2.key is NULL')
+    
+    end
+
+So, now if p is an instance of ParentThing: 
+
+    p.child_things.newest_results 
+
+will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing's ChildThing
+full collection.
+
+
+  
+</article>
+
+        </div>
+        <div class='span3'>
+          <div class='well sidebar-nav'>
+            <ul class='nav nav-list'>
+              <li class='nav-header'>
+                Ceci n'est pas un menu
+              </li>
+              <li>
+                <a href='/about'>
+                  <i class='icon-user'></i>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='/posts'>
+                  <i class='icon-book'></i>
+                  Archives
+                </a>
+              </li>
+              <li>
+                <a href='http://github.com/yrgoldteeth'>
+                  <i class='icon-cog'></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href='http://pinboard.in/u:ndfine'>
+                  <i class='icon-folder-open'></i>
+                  Pinboard
+                </a>
+              </li>
+              <li>
+                <a href='http://twitter.com/yrgoldteeth'>
+                  <i class='icon-retweet'></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href='mailto:nick@ndfine.com'>
+                  <i class='icon-envelope'></i>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href='http://feeds.feedburner.com/ndfine'>
+                  <i class='icon-share-alt'></i>
+                  Feed
+                </a>
+              </li>
+              <li class='nav-header'>
+                Projects
+              </li>
+              <li>
+                <a href='http://annotatethebastards.org'>Annotate the Bastards!</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/darkdowncss'>Darkdown.css</a>
+              </li>
+              <li>
+                <a href='http://yrgoldteeth.github.com/whereabouts'>Whereabouts</a>
+              </li>
+              <li>
+                <a href='http://www.isotope11.com/blog/datasciencetheater3000-refactord'>Data Science Theatre 3000</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/bootstrap-will_paginate/'>bootstrap-will_paginate</a>
+              </li>
+              <li>
+                <a href='https://rubygems.org/gems/css3-progress-bar-rails/'>css3-progress-bar-rails</a>
+              </li>
+              <li class='nav-header'>
+                Colophon
+              </li>
+              <li>
+                <a href='http://github.com/mojombo/jekyll'>Jekyll</a>
+              </li>
+              <li>
+                <a href='http://twitter.github.com/bootstrap/'>Twitter Bootstrap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Nicholas Fine</title>
+ <link href="http://ndfine.com/atom.xml" rel="self"/>
+ <link href="http://ndfine.com/"/>
+ <updated>2012-03-01T13:43:38-06:00</updated>
+ <id>http://ndfine.com/</id>
+ <author>
+   <name>Nicholas Fine</name>
+   <email>nicholas.fine@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>n+1- Raise the Crime Rate</title>
+   
+   <link href="http://nplusonemag.com/raise-the-crime-rate"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/02/03/nplusonemag.com-from-pinboard.html"/>
+   <author>
+     <name>Christopher Glazek</name>
+   </author>
+   
+   <updated>2012-02-03T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/02/03/nplusonemag.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;Crime has not fallen in the United States—it’s been shifted. Just as Wall Street connived with regulators to transfer financial risk from spendthrift banks to careless home buyers, so have federal, state, and local legislatures succeeded in rerouting criminal risk away from urban centers and concentrating it in a proliferating web of hyperhells. The statistics touting the country’s crime-reduction miracle, when juxtaposed with those documenting the quantity of rape and assault that takes place each year within the correctional system, are exposed as not merely a lie, or even a damn lie—but as the single most shameful lie in American life.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>University of Alabama Football Report for 1/09/12- National Championship Edition</title>
+   
+   <link href="http://bamareport.blogspot.com/2012/01/university-of-alabama-football-report.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/01/10/bamareport.blogspot.com-from-pinboard.html"/>
+   <author>
+     <name>J</name>
+   </author>
+   
+   <updated>2012-01-10T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/01/10/bamareport.blogspot.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;Why should the axis between one’s education and employment be a recipe for instant poverty? How can the wealthiest nation on the planet have cities falling apart from road to bridge to levee? When did good health become a luxury item? None of these questions will be answered by a football game, but—hell, if you’re honest with yourself—none of them will be addressed by your elected representatives either.&lt;/p&gt;
+
+&lt;p&gt;How much do you really understand about macroeconomics? Can you predict the consequences of a zoning board decision? How self-destructive is the average American? If you’re honest with yourself, you’re not going to have ready answers. Listening to a politician is likely the quickest way to lose touch with reality.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CSS3 Progress Bars for Rails</title>
+   
+   <link href="http://ndfine.com/2012/01/03/css3-progress-bars-for-rails.html"/>
+   
+   <updated>2012-01-03T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/01/03/css3-progress-bars-for-rails</id>
+   <content type="html">&lt;p&gt;&lt;link href='/stylesheets/css3-progress-bar.css' rel='stylesheet' type='text/css' /&gt;&lt;/p&gt;
+
+&lt;p&gt;When one of us at &lt;a href=&quot;http://isotope11.com&quot;&gt;Isotope11&lt;/a&gt; runs across something interesting or useful on the internet,
+we'll send the link to all the other devs.  Over the recent holiday, &lt;a href=&quot;https://twitter.com/#!/knewter&quot;&gt;Josh&lt;/a&gt; sent a link to
+another &lt;a href=&quot;http://dipperstove.com&quot;&gt;Josh&lt;/a&gt; and his new fancy &lt;a href=&quot;http://dipperstove.com/design/css3-progress-bars.html&quot;&gt;CSS3 Progress Bars&lt;/a&gt;.  I had an immediate need for
+something like this in a Rails project, so I wrote some helper methods to generate the HTML with
+some simple options.&lt;/p&gt;
+
+&lt;p&gt;I created a gem, &lt;a href=&quot;https://github.com/yrgoldteeth/css3-progress-bar-rails&quot;&gt;css3-progress-bar-rails&lt;/a&gt; that can be dropped into a Rails 3.1+ project to
+utilize these status bars.  To install, add 'css3-progress-bar-rails' to your Gemfile, and add
+require 'css3-progress-bar' into your application.css, so that the CSS is picked up by the Rails
+asset pipeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(55) %&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class='bar_container'&gt;
+  &lt;div class='bar_mortice'&gt;
+    &lt;div class='progress' style='width: 55%;'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;br /&gt;
+
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(33, :color =&amp;gt; 'blue', :rounded =&amp;gt; true) %&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class='bar_container rounded_bar_container blue_container'&gt;
+  &lt;div class='bar_mortice rounded blue_mortice'&gt;
+    &lt;div class='progress rounded blue' style='width: 33%;'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(83, :color =&amp;gt; 'orange', :rounded =&amp;gt; true, :tiny =&amp;gt; true) %&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class='bar_container rounded_bar_container orange_container container_tiny'&gt;
+  &lt;div class='bar_mortice rounded orange_mortice mortice_tiny'&gt;
+    &lt;div class='progress rounded orange progress_tiny' style='width: 83%;'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= combo_progress_bar([19, 9, 20, 10]) %&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class='bar_container'&gt;
+  &lt;div class='bar_mortice'&gt;
+    &lt;div class='progress green' style='width: 19%;'&gt;&lt;/div&gt;
+    &lt;div class='progress orange' style='width: 9%;'&gt;&lt;/div&gt;
+    &lt;div class='progress pink' style='width: 20%;'&gt;&lt;/div&gt;
+    &lt;div class='progress blue' style='width: 10%;'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&amp;gt; true) %&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class='bar_container container_tiny'&gt;
+  &lt;div class='bar_mortice mortice_tiny'&gt;
+    &lt;div class='progress green progress_tiny' style='width: 12%;'&gt;&lt;/div&gt;
+    &lt;div class='progress orange progress_tiny' style='width: 15%;'&gt;&lt;/div&gt;
+    &lt;div class='progress pink progress_tiny' style='width: 18%;'&gt;&lt;/div&gt;
+    &lt;div class='progress blue progress_tiny' style='width: 22%;'&gt;&lt;/div&gt;
+    &lt;div class='progress purple progress_tiny' style='width: 10%;'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>University of Alabama Football Report for 12/30/11</title>
+   
+   <link href="http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report_30.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/30/bamareport.blogspot.com-from-pinboard.html"/>
+   <author>
+     <name>J</name>
+   </author>
+   
+   <updated>2011-12-30T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/30/bamareport.blogspot.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;He dreamed he walked the aisle to see Hank Williams lie in repose. A Cadillacwide pearlwhite casket with a black lead sheet inlay along the length denoting the melody of “Ramblin’ Man.” Inside, the man himself. Pale. His dermis thin like phyllo dough. Somehow a smirk cobbled on his lips. The points of his white lapels sharp as rapiers. Fingertips crannied on the brim of the matching hat.&lt;/p&gt;
+
+&lt;p&gt;The son was there. Drunk in his leather. His eyes barely seen behind aviators as he stood at his father’s feet with Ghostface Killah. The palm of his bloated hand slapping the casketlid with a muffled thump.&lt;/p&gt;
+
+&lt;p&gt;“Daddy’s not wearin pants.”&lt;/p&gt;
+
+&lt;p&gt;“Shit!”&lt;/p&gt;
+
+&lt;p&gt;“No shit. Last request.” With this he gripped the crook of his elbow, made a fist, and raised his flexed arm to eye level. “Nahmean, Tony?”&lt;/p&gt;
+
+&lt;p&gt;“Real talk.”&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Domino | From Eschaton</title>
+   
+   <link href="http://feedproxy.google.com/~r/blogspot/bRuz/~3/Jo6SjfTD2Js/domino.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/29/feedproxy.google.com-from-pinboard.html"/>
+   <author>
+     <name>Duncan Black</name>
+   </author>
+   
+   <updated>2011-12-29T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/29/feedproxy.google.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it's absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Oh I don't know why</title>
+   
+   <link href="http://ndfine.com/2011/12/27/oh-I-dont-know-why.html"/>
+   
+   <updated>2011-12-27T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/27/oh-I-dont-know-why</id>
+   <content type="html">&lt;p&gt;Happy Various Holidays That Occur Near The End Of The Year!&lt;/p&gt;
+
+&lt;p&gt;Now, watch some adorable Korean kids singing The Ramones en masse:&lt;/p&gt;
+
+&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/sVJfErLlyLI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A Christmas Message From America's Rich | Matt Taibbi</title>
+   
+   <link href="http://www.rollingstone.com/politics/blogs/taibblog/a-christmas-message-from-americas-rich-20111222"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/22/www.rollingstone.com-from-pinboard.html"/>
+   <author>
+     <name>Matt Taibbi</name>
+   </author>
+   
+   <updated>2011-12-22T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/22/www.rollingstone.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;But it seems to me that if you’re broke enough that you’re not paying any income tax, you’ve got nothing but skin in the game. You’ve got it all riding on how well America works.&lt;/p&gt;
+
+&lt;p&gt;You can’t afford private security: you need to depend on the police. You can’t afford private health care: Medicare is all you have. You get arrested, you’re not hiring Davis, Polk to get you out of jail: you rely on a public defender to negotiate a court system you’d better pray deals with everyone from the same deck. And you can’t hire landscapers to manicure your lawn and trim your trees: you need the garbage man to come on time and you need the city to patch the potholes in your street.&lt;/p&gt;
+
+&lt;p&gt;And in the bigger picture, of course, you need the state and the private sector both to be functioning well enough to provide you with regular work, and a safe place to raise your children, and clean water and clean air.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Will Paginate link renderer for Twitter Bootstrap</title>
+   
+   <link href="http://ndfine.com/2011/12/17/twitter-bootstrap-will-paginate.html"/>
+   
+   <updated>2011-12-17T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/17/twitter-bootstrap-will-paginate</id>
+   <content type="html">&lt;p&gt;The &lt;a href=&quot;http://github.com/mislav/will_paginate&quot;&gt;will_paginate&lt;/a&gt; library makes adding pagination functionality to
+Rails apps (and other Ruby frameworks) a breeze.  Recently I have been working
+on an app using Twitter's &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; styling framework, and had a need
+for some pagination.  I dropped the method for the page links into a
+&lt;code&gt;.pagination&lt;/code&gt; div and saw this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/bootstrap-will-paginate-before.jpg' alt='twitter-bootstrap-before' /&gt;&lt;/p&gt;
+
+&lt;p&gt;That was decidedly not what I was looking for, so I reached out to Google and found
+Isaac Bowen's &lt;a href=&quot;http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap&quot;&gt;solution&lt;/a&gt;, which worked exactly as advertised:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/bootstrap-will-paginate-after.jpg' alt='twitter-bootstrap-after' /&gt;&lt;/p&gt;
+
+&lt;p&gt;As I've already found this solution useful in at least two different projects,
+I decided to wire it all up into a Rails engine and release it as a &lt;a href=&quot;http://github.com/yrgoldteeth/bootstrap-will_paginate&quot;&gt;gem&lt;/a&gt;.
+Just add &lt;code&gt;bootstrap-will_paginate&lt;/code&gt; to your Rails project's Gemfile
+and you're ready to go.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dear Congress, It’s No Longer OK To Not Know How The Internet Works</title>
+   
+   <link href="http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/17/motherboard.vice.com-from-pinboard.html"/>
+   <author>
+     <name>Joshua Kopstein</name>
+   </author>
+   
+   <updated>2011-12-17T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/17/motherboard.vice.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;So it was as proponents of the Hollywood-funded bill curmudgeonly shot down all but two amendments proposed by its opponents, who fought to dramatically alter the document to preserve security and free speech on the net. But the chilling takeaway of this whole debacle was the irrefutable air of anti-intellectualism; that inescapable absurdity that we have members of Congress voting on a technical bill who do not posses any technical knowledge on the subject and do not find it imperative to recognize those who do.&lt;/p&gt;
+
+&lt;p&gt;This used to be funny, but now it’s really just terrifying. We’re dealing with legislation that will completely change the face of the internet and free speech for years to come. Yet here we are, still at the mercy of underachieving Congressional know-nothings that have more in common with the slacker students sitting in the back of math class than elected representatives. The fact that some of the people charged with representing us must be dragged kicking and screaming out of their complacency on such matters is no longer endearing — it’s just pathetic and sad.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Life will suck if they censor the internet.</title>
+   
+   <link href="http://ndfine.com/2011/12/15/life-will-suck-if-they-censor-the-internet.html"/>
+   
+   <updated>2011-12-15T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/15/life-will-suck-if-they-censor-the-internet</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://getyourcensoron.com&quot;&gt;Get your censor on&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Out Of The No-Accountability Frying Pan, Into The No-Accountability Fire</title>
+   
+   <link href="http://www.slate.com/blogs/moneybox/2011/12/13/out_of_the_no_accountability_frying_pan_into_the_no_accountability_fire.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/13/www.slate.com-from-pinboard.html"/>
+   <author>
+     <name>Matthew Yglesias</name>
+   </author>
+   
+   <updated>2011-12-13T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/13/www.slate.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;Ultimately, though, what matters is not the underlying organizational structure of the service provider but whether or not the system is set up so that resources and students flow toward effective providers and away from ineffective ones. If we end up privatizing K-12 education only in order to replicate (or even intensify in the name of &quot;flexibility&quot;) the same results-don't-matter attitude that reformers complain about, it'll be the tragedy of the century.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>University of Alabama Football Report for 12/09/11</title>
+   
+   <link href="http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/10/bamareport.blogspot.com-from-pinboard.html"/>
+   <author>
+     <name>J</name>
+   </author>
+   
+   <updated>2011-12-10T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/10/bamareport.blogspot.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;Too many people compare college football to the NFL, but a more accurate analog can be found in another lucrative cartel: the Mexican drug trade. The SEC, like Juarez, may be the focal point of a lot of the action, but even beyond its dominant rep, the game is on all over.&lt;/p&gt;
+
+&lt;p&gt;I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Foreclosed Futures | The New Yorker</title>
+   
+   <link href="http://www.newyorker.com/online/blogs/comment/2011/12/foreclosed-futures.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/08/www.newyorker.com-from-pinboard.html"/>
+   <author>
+     <name>George Packer</name>
+   </author>
+   
+   <updated>2011-12-08T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/12/08/www.newyorker.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;We should be long past the point of assigning blame, or worrying about creating moral hazard, let alone rewarding “losers.” Foreclosure is a national tragedy and a relentless drag on economic growth. Jobs can’t be created until demand increases, and demand won’t increase until consumers get out of debt, and housing is the biggest obstacle. If we had healthy institutions, the White House, both parties in Congress, the leaders of the biggest banks, and consumer groups would have sat down together and worked out a solution that keeps millions of people in their homes without wiping their debts completely clean. But we don’t, and so the history of the past few years has been written by Rick Santelli and Occupy Wall Street.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>One line of sed for Rails 3.1 asset path helpers</title>
+   
+   <link href="http://ndfine.com/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers.html"/>
+   
+   <updated>2011-11-27T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers</id>
+   <content type="html">&lt;p&gt;With the advent of the new asset pipeline in Rails 3.1.x, I have had to
+convert many stylesheets into erb templates to make use of the asset_path('/path/to/img')
+helpers.  This seemed like an obvious job for a little &lt;a href=&quot;http://www.gnu.org/software/sed/manual/sed.html&quot;&gt;sed&lt;/a&gt;,
+so I pulled this together.&lt;/p&gt;
+
+&lt;p&gt;Say you have a stylesheet from the &lt;a href=&quot;http://jqueryui.com&quot;&gt;jQuery UI&lt;/a&gt; project that looks like
+&lt;a href=&quot;/stylesheets/jquery-ui-1.8.14.custom.css&quot;&gt;this&lt;/a&gt;.  Type the following on a command line on
+a system with sed installed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed 's/url(\([^(]*\))/url(&amp;lt;%= asset_path(&quot;\1&quot;) %&amp;gt;)/g' jquery-ui-1.8.14.custom.css &amp;gt; jquery-ui-1.8.14.custom.css.erb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should get results like this partial diff of the two files:&lt;/p&gt;
+
+&lt;pre class='prettyprint'&gt;    
+  62c62
+  &lt; .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+  ---
+  &gt; .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(&lt;%= asset_path(&quot;images/ui-bg_highlight-soft_100_eeeeee_1x100.png&quot;) %&gt;) 50% top repeat-x; color: #333333; }
+  64c64
+  &lt; .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  ---
+  &gt; .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(&lt;%= asset_path(&quot;images/ui-bg_gloss-wave_35_f6a828_500x100.png&quot;) %&gt;) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  69c69
+  &lt; .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  ---
+  &gt; .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(&lt;%= asset_path(&quot;images/ui-bg_glass_100_f6f6f6_1x400.png&quot;) %&gt;) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  71c71
+  &lt; .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+  ---
+  &gt; .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(&lt;%= asset_path(&quot;images/ui-bg_glass_100_fdf5ce_1x400.png&quot;) %&gt;) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+&lt;/pre&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>University of Alabama Football Report for 11/25/11</title>
+   
+   <link href="http://bamareport.blogspot.com/2011/11/university-of-alabama-football-report_25.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/11/26/bamareport.blogspot.com-from-pinboard.html"/>
+   <author>
+     <name>J</name>
+   </author>
+   
+   <updated>2011-11-26T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2011/11/26/bamareport.blogspot.com-from-pinboard</id>
+   <content type="html">&lt;p&gt;Because it is the Iron Bowl, people in the state of Alabama will delay weddings or induce childbirth.&lt;/p&gt;
+
+&lt;p&gt;Because it is the Iron Bowl, even the Southside Birmingham hipsters who say [they] don’t watch football will watch football.&lt;/p&gt;
+
+&lt;p&gt;With so much of college football mired in scandal, corruption, graft, and compromise, it is comforting to find the bedrock upon which one can build a pure fandom, free from any computer rankings or poll-watch politicking or cable television broadcast markets. One can still find the line drawn between allegiance and opposition.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
