@@ -1,9 +1,0 @@
-_drafts/*
-*.swp
-_site/*
-tmp/*
-.sass-cache/*
-images/*.m4v
-ignore.markdown
-vendor/ruby
-.instapaper/config
