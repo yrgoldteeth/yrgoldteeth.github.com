@@ -43,6 +43,80 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers.html'>One line of sed for Rails 3.1 asset path helpers</a></h2>
+      
+      <span class='label'>27 Nov 2011</span>
+      
+    </div>
+    
+      <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to
+convert many stylesheets into erb templates to make use of the asset_path('/path/to/img')
+helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>,
+so I pulled this together.</p>
+
+<p>Say you have a stylesheet from the <a href="http://jqueryui.com">jQuery UI</a> project that looks like
+<a href="/stylesheets/jquery-ui-1.8.14.custom.css">this</a>.  Type the following on a command line on
+a system with sed installed:</p>
+
+<pre><code>sed 's/url(\([^(]*\))/url(&lt;%= asset_path("\1") %&gt;)/g' jquery-ui-1.8.14.custom.css &gt; jquery-ui-1.8.14.custom.css.erb
+</code></pre>
+
+<p>You should get results like this partial diff of the two files:</p>
+
+<pre class='prettyprint'>    
+  62c62
+  < .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+  ---
+  > .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(<%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %>) 50% top repeat-x; color: #333333; }
+  64c64
+  < .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  ---
+  > .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(<%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %>) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  69c69
+  < .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  ---
+  > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(<%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  71c71
+  < .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+  ---
+  > .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(<%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+</pre>
+
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://bamareport.blogspot.com/2011/11/university-of-alabama-football-report_25.html'>University of Alabama Football Report for 11/25/11</a>
+      </h2>
+      
+      <span class='label'>26 Nov 2011</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2011/11/26/bamareport.blogspot.com-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>Because it is the Iron Bowl, people in the state of Alabama will delay weddings or induce childbirth.</p>
+
+<p>Because it is the Iron Bowl, even the Southside Birmingham hipsters who say [they] don’t watch football will watch football.</p>
+
+<p>With so much of college football mired in scandal, corruption, graft, and compromise, it is comforting to find the bedrock upon which one can build a pure fandom, free from any computer rankings or poll-watch politicking or cable television broadcast markets. One can still find the line drawn between allegiance and opposition.</p>
+
+        <small><cite>J</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
         <h2><a href='/2011/11/24/happy-thanksgiving.html'>Happy Thanksgiving!</a></h2>
       
       <span class='label'>24 Nov 2011</span>
@@ -108,54 +182,6 @@
 <p>Now, I hear what some of you might say already: “It’s not fair. Why should some people be rewarded for breaking the rules?” I’m sorry--I thought I was talking to college football fans. Aren’t you used to this by now? Plus, shouldn't you respect the dogged determinism of a people who somehow make contributions across the board in industry, governance, culture, and athletics in spite of a full-force gale of xenophobia? You may disagree, but, again, respect the commitment.</p>
 
         <small><cite>J</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://www.washingtonpost.com/blogs/spirited-atheist/post/the-sacralized-myth-of-911/2011/09/07/gIQAIJ8O9J_blog.html?wprss=spirited-atheist'>The sacralized myth of 9/11 - The Spirited Atheist - The Washington Post</a>
-      </h2>
-      
-      <span class='label'>08 Sep 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/09/08/www.washingtonpost.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>What sacralizers usually mean when they say “never forget” is, “Never forget the symbolic grievance that we can use for political purposes.” They don’t mean never forget the real horror and pain, experienced individually as well as collectively, of the lives that were lost.</p>
-
-        <small><cite>The Spirited Atheist</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://feeds.salon.com/~r/salon/greenwald/~3/PV4eZ9GDSg8/death'>Cheering for state-imposed death</a>
-      </h2>
-      
-      <span class='label'>08 Sep 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/09/08/feeds.salon.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>[K]eeping them in a state of Endless War for more than a decade, training them to publicly rejoice when the Government puts bullets into people's heads or injects poison into their veins -- even if that act is justifiable -- inevitably degrades the citizenry and the character of their nation.</p>
-
-        <small><cite>Glenn Greenwald</cite></small>
       </blockquote>
     
   </article>
