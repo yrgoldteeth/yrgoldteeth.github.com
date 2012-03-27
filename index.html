@@ -43,6 +43,22 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2012/03/27/update-to-bootstrap-will-paginate.html'>Update to bootstrap-will_paginate</a></h2>
+      
+      <span class='label'>27 Mar 2012</span>
+      
+    </div>
+    
+      <p>Just pushed an update to <a href="https://rubygems.org/gems/bootstrap-will_paginate">bootstrap-will_paginate</a> that <a href="https://github.com/yrgoldteeth/bootstrap-will_paginate/pull/5">fixes</a> a bug
+on sending the option <code>:page_links => false</code> to a will_paginate
+setup block.  Big thanks to <a href="https://github.com/jann">jann@github</a> for the fix!</p>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
       <h2>
         <a href='http://www.everydayshouldbesaturday.com/2012/3/20/2887941/rick-ross-wishes-you-a-happy-vernal-equinox'>EDSBS | Rick Ross Wishes You A Happy Vernal Equinox</a>
       </h2>
@@ -152,109 +168,6 @@ His righteous wrath and be judged.</p>
 
         <small><cite>J</cite></small>
       </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-        <h2><a href='/2012/01/03/css3-progress-bars-for-rails.html'>CSS3 Progress Bars for Rails</a></h2>
-      
-      <span class='label'>03 Jan 2012</span>
-      
-    </div>
-    
-      <p><link href='/stylesheets/css3-progress-bar.css' rel='stylesheet' type='text/css' /></p>
-
-<p>When one of us at <a href="http://isotope11.com">Isotope11</a> runs across something interesting or useful on the internet,
-we'll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
-another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for
-something like this in a Rails project, so I wrote some helper methods to generate the HTML with
-some simple options.</p>
-
-<p>I created a gem, <a href="https://github.com/yrgoldteeth/css3-progress-bar-rails">css3-progress-bar-rails</a> that can be dropped into a Rails 3.1+ project to
-utilize these status bars.  To install, add 'css3-progress-bar-rails' to your Gemfile, and add
-require 'css3-progress-bar' into your application.css, so that the CSS is picked up by the Rails
-asset pipeline.</p>
-
-<p><strong>Examples</strong></p>
-
-<pre><code>&lt;%= progress_bar(55) %&gt;  
-</code></pre>
-
-<div class='bar_container'>
-  <div class='bar_mortice'>
-    <div class='progress' style='width: 55%;'></div>
-  </div>
-</div>
-
-
-<p></p>
-
-<br />
-
-
-<pre><code>&lt;%= progress_bar(33, :color =&gt; 'blue', :rounded =&gt; true) %&gt;  
-</code></pre>
-
-<div class='bar_container rounded_bar_container blue_container'>
-  <div class='bar_mortice rounded blue_mortice'>
-    <div class='progress rounded blue' style='width: 33%;'></div>
-  </div>
-</div>
-
-
-<br />
-
-
-<pre><code>&lt;%= progress_bar(83, :color =&gt; 'orange', :rounded =&gt; true, :tiny =&gt; true) %&gt;   
-</code></pre>
-
-<div class='bar_container rounded_bar_container orange_container container_tiny'>
-  <div class='bar_mortice rounded orange_mortice mortice_tiny'>
-    <div class='progress rounded orange progress_tiny' style='width: 83%;'></div>
-  </div>
-</div>
-
-
-<br />
-
-
-<pre><code>&lt;%= combo_progress_bar([19, 9, 20, 10]) %&gt;   
-</code></pre>
-
-<div class='bar_container'>
-  <div class='bar_mortice'>
-    <div class='progress green' style='width: 19%;'></div>
-    <div class='progress orange' style='width: 9%;'></div>
-    <div class='progress pink' style='width: 20%;'></div>
-    <div class='progress blue' style='width: 10%;'></div>
-  </div>
-</div>
-
-
-<br />
-
-
-<pre><code>&lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&gt; true) %&gt;   
-</code></pre>
-
-<div class='bar_container container_tiny'>
-  <div class='bar_mortice mortice_tiny'>
-    <div class='progress green progress_tiny' style='width: 12%;'></div>
-    <div class='progress orange progress_tiny' style='width: 15%;'></div>
-    <div class='progress pink progress_tiny' style='width: 18%;'></div>
-    <div class='progress blue progress_tiny' style='width: 22%;'></div>
-    <div class='progress purple progress_tiny' style='width: 10%;'></div>
-  </div>
-</div>
-
-
-<br />
-
-
-
-
     
   </article>
 

@@ -4,13 +4,26 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-03-22T11:45:33-05:00</updated>
+ <updated>2012-03-27T09:08:49-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Update to bootstrap-will_paginate</title>
+   
+   <link href="http://ndfine.com/2012/03/27/update-to-bootstrap-will-paginate.html"/>
+   
+   <updated>2012-03-27T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2012/03/27/update-to-bootstrap-will-paginate</id>
+   <content type="html">&lt;p&gt;Just pushed an update to &lt;a href=&quot;https://rubygems.org/gems/bootstrap-will_paginate&quot;&gt;bootstrap-will_paginate&lt;/a&gt; that &lt;a href=&quot;https://github.com/yrgoldteeth/bootstrap-will_paginate/pull/5&quot;&gt;fixes&lt;/a&gt; a bug
+on sending the option &lt;code&gt;:page_links =&gt; false&lt;/code&gt; to a will_paginate
+setup block.  Big thanks to &lt;a href=&quot;https://github.com/jann&quot;&gt;jann@github&lt;/a&gt; for the fix!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>EDSBS | Rick Ross Wishes You A Happy Vernal Equinox</title>
@@ -350,21 +363,6 @@ and you're ready to go.&lt;/p&gt;
    <content type="html">&lt;p&gt;Too many people compare college football to the NFL, but a more accurate analog can be found in another lucrative cartel: the Mexican drug trade. The SEC, like Juarez, may be the focal point of a lot of the action, but even beyond its dominant rep, the game is on all over.&lt;/p&gt;
 
 &lt;p&gt;I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Foreclosed Futures | The New Yorker</title>
-   
-   <link href="http://www.newyorker.com/online/blogs/comment/2011/12/foreclosed-futures.html"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/08/www.newyorker.com-from-pinboard.html"/>
-   <author>
-     <name>George Packer</name>
-   </author>
-   
-   <updated>2011-12-08T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/08/www.newyorker.com-from-pinboard</id>
-   <content type="html">&lt;p&gt;We should be long past the point of assigning blame, or worrying about creating moral hazard, let alone rewarding “losers.” Foreclosure is a national tragedy and a relentless drag on economic growth. Jobs can’t be created until demand increases, and demand won’t increase until consumers get out of debt, and housing is the biggest obstacle. If we had healthy institutions, the White House, both parties in Congress, the leaders of the biggest banks, and consumer groups would have sat down together and worked out a solution that keeps millions of people in their homes without wiping their debts completely clean. But we don’t, and so the history of the past few years has been written by Rick Santelli and Occupy Wall Street.&lt;/p&gt;
 </content>
  </entry>
  
