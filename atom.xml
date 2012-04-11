@@ -4,13 +4,30 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-03-27T09:08:49-05:00</updated>
+ <updated>2012-04-11T14:06:19-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Weld Birmingham | Bham City Hall shows leadership, Bham school board shows its...</title>
+   
+   <link href="http://weldbham.com/secondfront/2012/04/10/bham-city-hall-shows-leadership-bham-school-board-shows-shows-its/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/04/11/bham-city-schools-from-pinboard.html"/>
+   <author>
+     <name>Kyle Whitmire</name>
+   </author>
+   
+   <updated>2012-04-11T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2012/04/11/bham-city-schools-from-pinboard</id>
+   <content type="html">&lt;p&gt;During the afternoon meeting, two parents brought their children with them to the podium, and the crowd laughed when both infants immediately began clutching at the microphone. But the sad thing is that both those parents wanted to put their children — neither of which were yet of school age — in the Birmingham City Schools. They, among others, were determined make this city’s schools a good place for their kids.&lt;/p&gt;
+
+&lt;p&gt;Mohandas Gandhi said that poverty is the most subtle form of violence. Is enrolling your children in Birmingham City Schools a subtle form of child abuse?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Update to bootstrap-will_paginate</title>
@@ -346,23 +363,6 @@ and you're ready to go.&lt;/p&gt;
    <updated>2011-12-13T00:00:00-06:00</updated>
    <id>http://ndfine.com/2011/12/13/www.slate.com-from-pinboard</id>
    <content type="html">&lt;p&gt;Ultimately, though, what matters is not the underlying organizational structure of the service provider but whether or not the system is set up so that resources and students flow toward effective providers and away from ineffective ones. If we end up privatizing K-12 education only in order to replicate (or even intensify in the name of &quot;flexibility&quot;) the same results-don't-matter attitude that reformers complain about, it'll be the tragedy of the century.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>University of Alabama Football Report for 12/09/11</title>
-   
-   <link href="http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report.html"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/10/bamareport.blogspot.com-from-pinboard.html"/>
-   <author>
-     <name>J</name>
-   </author>
-   
-   <updated>2011-12-10T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/10/bamareport.blogspot.com-from-pinboard</id>
-   <content type="html">&lt;p&gt;Too many people compare college football to the NFL, but a more accurate analog can be found in another lucrative cartel: the Mexican drug trade. The SEC, like Juarez, may be the focal point of a lot of the action, but even beyond its dominant rep, the game is on all over.&lt;/p&gt;
-
-&lt;p&gt;I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.&lt;/p&gt;
 </content>
  </entry>
  
