@@ -4,7 +4,7 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-12-13T22:38:33-06:00</updated>
+ <updated>2012-12-13T22:46:58-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
@@ -24,6 +24,21 @@
    <updated>2012-12-13T00:00:00-06:00</updated>
    <id>http://ndfine.com/2012/12/13/nick-offerman-interview-from-pinboard</id>
    <content type="html">&lt;p&gt;Canoeing the L.A. River unironically is like doing non-union theater in Chicago. Not a lot of people are going to hear about it, but you have the beauty of performing in a Harold Pinter play and you’re just happy to have done it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>On the meaning of ‘design’</title>
+   
+   <link href="http://hickox.org/on-the-meaning-of-design/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/13/Hickox-on-design-from-pinboard.html"/>
+   <author>
+     <name>David Hickox</name>
+   </author>
+   
+   <updated>2012-12-13T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/12/13/Hickox-on-design-from-pinboard</id>
+   <content type="html">&lt;p&gt;Web development is not typically something that can be done proficiently by one person. The range of tasks requires a level of specialization. But it’s important that we consider all of these specialists as designers working towards meeting our clients’ goals on the web. And most of all, it’s important that we communicate this within our organizations and broadcast it to our clients.&lt;/p&gt;
 </content>
  </entry>
  
@@ -346,25 +361,6 @@ asset pipeline.&lt;/p&gt;
 
 &lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;http://www.youtube.com/embed/sVJfErLlyLI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>A Christmas Message From America's Rich | Matt Taibbi</title>
-   
-   <link href="http://www.rollingstone.com/politics/blogs/taibblog/a-christmas-message-from-americas-rich-20111222"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/22/www.rollingstone.com-from-pinboard.html"/>
-   <author>
-     <name>Matt Taibbi</name>
-   </author>
-   
-   <updated>2011-12-22T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/22/www.rollingstone.com-from-pinboard</id>
-   <content type="html">&lt;p&gt;But it seems to me that if you’re broke enough that you’re not paying any income tax, you’ve got nothing but skin in the game. You’ve got it all riding on how well America works.&lt;/p&gt;
-
-&lt;p&gt;You can’t afford private security: you need to depend on the police. You can’t afford private health care: Medicare is all you have. You get arrested, you’re not hiring Davis, Polk to get you out of jail: you rely on a public defender to negotiate a court system you’d better pray deals with everyone from the same deck. And you can’t hire landscapers to manicure your lawn and trim your trees: you need the garbage man to come on time and you need the city to patch the potholes in your street.&lt;/p&gt;
-
-&lt;p&gt;And in the bigger picture, of course, you need the state and the private sector both to be functioning well enough to provide you with regular work, and a safe place to raise your children, and clean water and clean air.&lt;/p&gt;
 </content>
  </entry>
  
