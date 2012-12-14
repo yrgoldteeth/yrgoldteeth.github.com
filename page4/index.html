@@ -43,6 +43,76 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2011/12/17/twitter-bootstrap-will-paginate.html'>Will Paginate link renderer for Twitter Bootstrap</a></h2>
+      
+      <span class='label'>17 Dec 2011</span>
+      
+    </div>
+    
+      <p>The <a href="http://github.com/mislav/will_paginate">will_paginate</a> library makes adding pagination functionality to
+Rails apps (and other Ruby frameworks) a breeze.  Recently I have been working
+on an app using Twitter's <a href="http://twitter.github.com/bootstrap">Bootstrap</a> styling framework, and had a need
+for some pagination.  I dropped the method for the page links into a
+<code>.pagination</code> div and saw this:</p>
+
+<p><img src='/images/bootstrap-will-paginate-before.jpg' alt='twitter-bootstrap-before' /></p>
+
+<p>That was decidedly not what I was looking for, so I reached out to Google and found
+Isaac Bowen's <a href="http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap">solution</a>, which worked exactly as advertised:</p>
+
+<p><img src='/images/bootstrap-will-paginate-after.jpg' alt='twitter-bootstrap-after' /></p>
+
+<p>As I've already found this solution useful in at least two different projects,
+I decided to wire it all up into a Rails engine and release it as a <a href="http://github.com/yrgoldteeth/bootstrap-will_paginate">gem</a>.
+Just add <code>bootstrap-will_paginate</code> to your Rails project's Gemfile
+and you're ready to go.</p>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works'>Dear Congress, It’s No Longer OK To Not Know How The Internet Works</a>
+      </h2>
+      
+      <span class='label'>17 Dec 2011</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2011/12/17/motherboard.vice.com-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>So it was as proponents of the Hollywood-funded bill curmudgeonly shot down all but two amendments proposed by its opponents, who fought to dramatically alter the document to preserve security and free speech on the net. But the chilling takeaway of this whole debacle was the irrefutable air of anti-intellectualism; that inescapable absurdity that we have members of Congress voting on a technical bill who do not posses any technical knowledge on the subject and do not find it imperative to recognize those who do.</p>
+
+<p>This used to be funny, but now it’s really just terrifying. We’re dealing with legislation that will completely change the face of the internet and free speech for years to come. Yet here we are, still at the mercy of underachieving Congressional know-nothings that have more in common with the slacker students sitting in the back of math class than elected representatives. The fact that some of the people charged with representing us must be dragged kicking and screaming out of their complacency on such matters is no longer endearing — it’s just pathetic and sad.</p>
+
+        <small><cite>Joshua Kopstein</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+        <h2><a href='/2011/12/15/life-will-suck-if-they-censor-the-internet.html'>Life will suck if they censor the internet.</a></h2>
+      
+      <span class='label'>15 Dec 2011</span>
+      
+    </div>
+    
+      <p><a href="http://getyourcensoron.com">Get your censor on</a></p>
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
       <h2>
         <a href='http://www.slate.com/blogs/moneybox/2011/12/13/out_of_the_no_accountability_frying_pan_into_the_no_accountability_fire.html'>Out Of The No-Accountability Frying Pan, Into The No-Accountability Fire</a>
       </h2>
@@ -84,104 +154,6 @@
         <p>Too many people compare college football to the NFL, but a more accurate analog can be found in another lucrative cartel: the Mexican drug trade. The SEC, like Juarez, may be the focal point of a lot of the action, but even beyond its dominant rep, the game is on all over.</p>
 
 <p>I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.</p>
-
-        <small><cite>J</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://www.newyorker.com/online/blogs/comment/2011/12/foreclosed-futures.html'>Foreclosed Futures | The New Yorker</a>
-      </h2>
-      
-      <span class='label'>08 Dec 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/12/08/www.newyorker.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>We should be long past the point of assigning blame, or worrying about creating moral hazard, let alone rewarding “losers.” Foreclosure is a national tragedy and a relentless drag on economic growth. Jobs can’t be created until demand increases, and demand won’t increase until consumers get out of debt, and housing is the biggest obstacle. If we had healthy institutions, the White House, both parties in Congress, the leaders of the biggest banks, and consumer groups would have sat down together and worked out a solution that keeps millions of people in their homes without wiping their debts completely clean. But we don’t, and so the history of the past few years has been written by Rick Santelli and Occupy Wall Street.</p>
-
-        <small><cite>George Packer</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-        <h2><a href='/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers.html'>One line of sed for Rails 3.1 asset path helpers</a></h2>
-      
-      <span class='label'>27 Nov 2011</span>
-      
-    </div>
-    
-      <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to
-convert many stylesheets into erb templates to make use of the asset_path('/path/to/img')
-helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>,
-so I pulled this together.</p>
-
-<p>Say you have a stylesheet from the <a href="http://jqueryui.com">jQuery UI</a> project that looks like
-<a href="/stylesheets/jquery-ui-1.8.14.custom.css">this</a>.  Type the following on a command line on
-a system with sed installed:</p>
-
-<pre><code>sed 's/url(\([^(]*\))/url(&lt;%= asset_path("\1") %&gt;)/g' jquery-ui-1.8.14.custom.css &gt; jquery-ui-1.8.14.custom.css.erb
-</code></pre>
-
-<p>You should get results like this partial diff of the two files:</p>
-
-<pre class='prettyprint'>    
-  62c62
-  < .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
-  ---
-  > .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(<%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %>) 50% top repeat-x; color: #333333; }
-  64c64
-  < .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  ---
-  > .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(<%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %>) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  69c69
-  < .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  ---
-  > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(<%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  71c71
-  < .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-  ---
-  > .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(<%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-</pre>
-
-
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://bamareport.blogspot.com/2011/11/university-of-alabama-football-report_25.html'>University of Alabama Football Report for 11/25/11</a>
-      </h2>
-      
-      <span class='label'>26 Nov 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/11/26/bamareport.blogspot.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>Because it is the Iron Bowl, people in the state of Alabama will delay weddings or induce childbirth.</p>
-
-<p>Because it is the Iron Bowl, even the Southside Birmingham hipsters who say [they] don’t watch football will watch football.</p>
-
-<p>With so much of college football mired in scandal, corruption, graft, and compromise, it is comforting to find the bedrock upon which one can build a pure fandom, free from any computer rankings or poll-watch politicking or cable television broadcast markets. One can still find the line drawn between allegiance and opposition.</p>
 
         <small><cite>J</cite></small>
       </blockquote>
@@ -265,10 +237,16 @@ a system with sed installed:</p>
                 <a href='http://yrgoldteeth.github.com/darkdowncss'>Darkdown.css</a>
               </li>
               <li>
-                <a href='http://yrgoldteeth.github.com/whereabouts'>Whereabouts</a>
+                <a href='http://yrgoldteeth.github.com/whereabouts'>Whereabouts Plugin</a>
               </li>
               <li>
-                <a href='http://www.isotope11.com/blog/datasciencetheater3000-refactord'>Data Science Theatre 3000</a>
+                <a href='https://github.com/yrgoldteeth/teleportd'>Teleportd Gem</a>
+              </li>
+              <li>
+                <a href='https://github.com/yrgoldteeth/city_grid'>City Grid Gem</a>
+              </li>
+              <li>
+                <a href='https://github.com/yrgoldteeth/hungrytable'>Hungrytable Gem</a>
               </li>
               <li>
                 <a href='https://rubygems.org/gems/bootstrap-will_paginate/'>bootstrap-will_paginate</a>

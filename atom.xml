@@ -4,13 +4,70 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-04-26T09:05:29-05:00</updated>
+ <updated>2012-12-13T22:36:46-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>I Would Like To Be A Nonconformist - Interview with Nick Offerman</title>
+   
+   <link href="http://www.believermag.com/issues/201210/?read=interview_offerman"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/13/nick-offerman-interview-from-pinboard.html"/>
+   <author>
+     <name>Nick Offerman</name>
+   </author>
+   
+   <updated>2012-12-13T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/12/13/nick-offerman-interview-from-pinboard</id>
+   <content type="html">&lt;p&gt;Canoeing the L.A. River unironically is like doing non-union theater in Chicago. Not a lot of people are going to hear about it, but you have the beauty of performing in a Harold Pinter play and you’re just happy to have done it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A Rational Conversation - Jessica Hopper Parses the Hallowed Return of Godspeed You Black Emperor</title>
+   
+   <link href="http://www.thedailyswarm.com/swarm/rational-conversation-jessica-hopper/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/10/22/A-Rational-Conversation-from-pinboard.html"/>
+   <author>
+     <name>Eric Drucker and Jessica Hopper</name>
+   </author>
+   
+   <updated>2012-10-22T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2012/10/22/A-Rational-Conversation-from-pinboard</id>
+   <content type="html">&lt;p&gt;ED: It’s been interesting to read the first reviews of the new record. This notion keeps coming up of it being important because nothing out there right now is like it. In Mark Richardson’s Pitchfork review, he wrote, ”[GY!BE] feel out of step in a very necessary way.” It is good to have a band or an artist come around every few years to make you take stock of what you’ve been listening to and why.&lt;/p&gt;
+
+&lt;p&gt;JH: Exactly. A band like Godspeed throws everyone else into high relief. You get a better sense of the moral topography of the underground.&lt;/p&gt;
+
+&lt;p&gt;...&lt;/p&gt;
+
+&lt;p&gt;ED: So for you, the best-case scenario is that a young band sees the 9.3 rating, wants to learn how to get that, does research into Godspeed You! Black Emperor, and decides, “Maybe we could do that, too”?&lt;/p&gt;
+
+&lt;p&gt;JH: Yes.&lt;/p&gt;
+
+&lt;p&gt;ED: I can live with that.&lt;/p&gt;
+
+&lt;p&gt;JH: It’s kind of the best you ask for.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Amanda Palmers Accidental Experiment With Real Communism</title>
+   
+   <link href="http://www.newyorker.com/online/blogs/culture/2012/10/amanda-palmers-kickstarter-scandal.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/10/02/Accidental-Experiment-from-pinboard.html"/>
+   <author>
+     <name>Joshua Clover</name>
+   </author>
+   
+   <updated>2012-10-02T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2012/10/02/Accidental-Experiment-from-pinboard</id>
+   <content type="html">&lt;p&gt;This is a time-honored dodge, which might be called “the Oompa-Loompa defense.” It goes something like this: outsourcing labor to people who will work for less is fine because they are “happy” to do it. Such practices and accompanying rationales have been continually refined—think the helpline that dials a tech in Bangalore. But the fantasy of the happy worker has taken on newer and more mind-bending aspects, as has work itself. It now includes things like the unpaid microlabor of providing content for Web sites. It includes the amateur photographer who provides her images of, say, the police killing a young black man to the local news as an “iReport” for nothing but a credit and a T-shirt. Or a music lover scratching out a review on some hip site for a byline alone. Or consider the subtlest and arguably the most exemplary case: how, in wandering the byways of Facebook and Google, you are diligently rendering gratis a host of information about the preferences and habits of you and your friends—data they sell to advertisers. This, too, is unpaid labor.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Charles Pierce | Presidential Soul</title>
@@ -308,61 +365,6 @@ asset pipeline.&lt;/p&gt;
 &lt;p&gt;You can’t afford private security: you need to depend on the police. You can’t afford private health care: Medicare is all you have. You get arrested, you’re not hiring Davis, Polk to get you out of jail: you rely on a public defender to negotiate a court system you’d better pray deals with everyone from the same deck. And you can’t hire landscapers to manicure your lawn and trim your trees: you need the garbage man to come on time and you need the city to patch the potholes in your street.&lt;/p&gt;
 
 &lt;p&gt;And in the bigger picture, of course, you need the state and the private sector both to be functioning well enough to provide you with regular work, and a safe place to raise your children, and clean water and clean air.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Will Paginate link renderer for Twitter Bootstrap</title>
-   
-   <link href="http://ndfine.com/2011/12/17/twitter-bootstrap-will-paginate.html"/>
-   
-   <updated>2011-12-17T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/17/twitter-bootstrap-will-paginate</id>
-   <content type="html">&lt;p&gt;The &lt;a href=&quot;http://github.com/mislav/will_paginate&quot;&gt;will_paginate&lt;/a&gt; library makes adding pagination functionality to
-Rails apps (and other Ruby frameworks) a breeze.  Recently I have been working
-on an app using Twitter's &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; styling framework, and had a need
-for some pagination.  I dropped the method for the page links into a
-&lt;code&gt;.pagination&lt;/code&gt; div and saw this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/bootstrap-will-paginate-before.jpg' alt='twitter-bootstrap-before' /&gt;&lt;/p&gt;
-
-&lt;p&gt;That was decidedly not what I was looking for, so I reached out to Google and found
-Isaac Bowen's &lt;a href=&quot;http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap&quot;&gt;solution&lt;/a&gt;, which worked exactly as advertised:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src='/images/bootstrap-will-paginate-after.jpg' alt='twitter-bootstrap-after' /&gt;&lt;/p&gt;
-
-&lt;p&gt;As I've already found this solution useful in at least two different projects,
-I decided to wire it all up into a Rails engine and release it as a &lt;a href=&quot;http://github.com/yrgoldteeth/bootstrap-will_paginate&quot;&gt;gem&lt;/a&gt;.
-Just add &lt;code&gt;bootstrap-will_paginate&lt;/code&gt; to your Rails project's Gemfile
-and you're ready to go.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Dear Congress, It’s No Longer OK To Not Know How The Internet Works</title>
-   
-   <link href="http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/17/motherboard.vice.com-from-pinboard.html"/>
-   <author>
-     <name>Joshua Kopstein</name>
-   </author>
-   
-   <updated>2011-12-17T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/17/motherboard.vice.com-from-pinboard</id>
-   <content type="html">&lt;p&gt;So it was as proponents of the Hollywood-funded bill curmudgeonly shot down all but two amendments proposed by its opponents, who fought to dramatically alter the document to preserve security and free speech on the net. But the chilling takeaway of this whole debacle was the irrefutable air of anti-intellectualism; that inescapable absurdity that we have members of Congress voting on a technical bill who do not posses any technical knowledge on the subject and do not find it imperative to recognize those who do.&lt;/p&gt;
-
-&lt;p&gt;This used to be funny, but now it’s really just terrifying. We’re dealing with legislation that will completely change the face of the internet and free speech for years to come. Yet here we are, still at the mercy of underachieving Congressional know-nothings that have more in common with the slacker students sitting in the back of math class than elected representatives. The fact that some of the people charged with representing us must be dragged kicking and screaming out of their complacency on such matters is no longer endearing — it’s just pathetic and sad.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Life will suck if they censor the internet.</title>
-   
-   <link href="http://ndfine.com/2011/12/15/life-will-suck-if-they-censor-the-internet.html"/>
-   
-   <updated>2011-12-15T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/15/life-will-suck-if-they-censor-the-internet</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://getyourcensoron.com&quot;&gt;Get your censor on&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
