@@ -49,35 +49,29 @@
       
     </div>
     
-      <p>Like I mentioned earlier, I had been going through my cache of live music photos.</p>
+      <p>Like I mentioned earlier, I had been going through my cache of live music photos.  </p>
 
-<p><a href="/images/livemusic/tbiapb_hnm_1r.jpg"><img src='/images/livemusic/thumbs/tbiapb_hnm_1r.jpg' alt='TBIAPB!, Hot New Mexicans, One Reason, Beer' /></a></p>
+<p><a href="/images/livemusic/tbiapb_hnm_1r.jpg"><img src="/images/livemusic/thumbs/tbiapb_hnm_1r.jpg" alt="TBIAPB!, Hot New Mexicans, One Reason, Beer" /></a>
+##### TBIAPB!, Hot New Mexicans, One Reason, Beer @ The Farmhouse, Cleveland MS  </p>
 
-<h5>TBIAPB!, Hot New Mexicans, One Reason, Beer @ The Farmhouse, Cleveland MS</h5>
+<p><a href="/images/livemusic/legion.jpg"><img src="/images/livemusic/thumbs/legion.jpg" alt="Legion" /></a>
+##### Legion @ Cave9, Birmingham AL  </p>
 
-<p><a href="/images/livemusic/legion.jpg"><img src='/images/livemusic/thumbs/legion.jpg' alt='Legion' /></a></p>
+<p><a href="/images/livemusic/tcpof.jpg"><img src="/images/livemusic/thumbs/tcpof.jpg" alt="The Cleansing Power of Fire" /></a>
+##### The Cleansing Power of Fire @ Cave9, Birmingham AL  </p>
 
-<h5>Legion @ Cave9, Birmingham AL</h5>
+<p><a href="/images/livemusic/lickgoldensky.jpg"><img src="/images/livemusic/thumbs/lickgoldensky.jpg" alt="Lickgoldensky" /></a>
+##### Lickgoldensky @ Cave9, Birmingham AL  </p>
 
-<p><a href="/images/livemusic/tcpof.jpg"><img src='/images/livemusic/thumbs/tcpof.jpg' alt='The Cleansing Power of Fire' /></a></p>
+<p><a href="/images/livemusic/hnm.jpg"><img src="/images/livemusic/thumbs/hnm.jpg" alt="Hot New Mexicans" /></a>
+##### Hot New Mexicans @ Hal &amp; Mals, Jackson MS</p>
 
-<h5>The Cleansing Power of Fire @ Cave9, Birmingham AL</h5>
+<p><a href="/images/livemusic/gaslight_anthem.jpg"><img src="/images/livemusic/thumbs/gaslight_anthem.jpg" alt="Gaslight Anthem" /></a>
+##### Gaslight Anthem @ Cave9, Birmingham AL</p>
 
-<p><a href="/images/livemusic/lickgoldensky.jpg"><img src='/images/livemusic/thumbs/lickgoldensky.jpg' alt='Lickgoldensky' /></a></p>
+<p><a href="/images/livemusic/glass_and_ashes.jpg"><img src="/images/livemusic/thumbs/glass_and_ashes.jpg" alt="Glass and Ashes" /></a>
+##### Glass and Ashes @ Jake’s, Birmingham AL</p>
 
-<h5>Lickgoldensky @ Cave9, Birmingham AL</h5>
-
-<p><a href="/images/livemusic/hnm.jpg"><img src='/images/livemusic/thumbs/hnm.jpg' alt='Hot New Mexicans' /></a></p>
-
-<h5>Hot New Mexicans @ Hal &amp; Mals, Jackson MS</h5>
-
-<p><a href="/images/livemusic/gaslight_anthem.jpg"><img src='/images/livemusic/thumbs/gaslight_anthem.jpg' alt='Gaslight Anthem' /></a></p>
-
-<h5>Gaslight Anthem @ Cave9, Birmingham AL</h5>
-
-<p><a href="/images/livemusic/glass_and_ashes.jpg"><img src='/images/livemusic/thumbs/glass_and_ashes.jpg' alt='Glass and Ashes' /></a></p>
-
-<h5>Glass and Ashes @ Jake's, Birmingham AL</h5>
 
     
   </article>
@@ -91,21 +85,21 @@
       
     </div>
     
-      <p><a href="http://www.isotope11.com/blog/group-wise-max-rails3">cross posted at Isotope11's blog</a></p>
+      <p><a href="http://www.isotope11.com/blog/group-wise-max-rails3">cross posted at Isotope11’s blog</a></p>
 
 <p>Recently at work we ran across a situation where we needed an efficient way
 to find the <a href="http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html">Group-wise maximum of a certain column</a>
 in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
 combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
-but due to the volume of data, this would eventually have too much overhead to be sustainable.<br/>
-Once I determined that using a left join on itself would be the way to go at the problem, I set
+but due to the volume of data, this would eventually have too much overhead to be sustainable.<br />
+Once I determined that using a left join on itself would be the way to go at the problem, I set 
 out to figure out the solution using the new <a href="https://github.com/rails/arel">Arel syntax</a>.</p>
 
-<h5>Example</h5>
+<h5 id="example">Example</h5>
 
 <p>This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
 ChildThings can have duplicate rows with the same key, and we were looking to return only the newest
-results for each distinct key found in the ParentThing's ChildThings.</p>
+results for each distinct key found in the ParentThing’s ChildThings.</p>
 
 <pre><code>class ParentThing &lt; ActiveRecord::Base
   has_many :child_things
@@ -128,13 +122,14 @@ end
 end
 </code></pre>
 
-<p>So, now if p is an instance of ParentThing:</p>
+<p>So, now if p is an instance of ParentThing: </p>
 
 <pre><code>p.child_things.newest_results 
 </code></pre>
 
-<p>will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing's ChildThing
+<p>will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing’s ChildThing
 full collection.</p>
+
 
     
   </article>
@@ -148,19 +143,17 @@ full collection.</p>
       
     </div>
     
-      <p>I'm still not so great on updating this on the regular.  I've been digging
+      <p>I’m still not so great on updating this on the regular.  I’ve been digging
 through old photos and doing some processing on my huge cache of live music
 shots, which has been a fun trip down nostalgia lane.</p>
 
-<p>Beyond that, I'm here to rep:</p>
+<p>Beyond that, I’m here to rep:</p>
 
-<p><a href="http://bamareport.blogspot.com/2011/02/university-of-alabama-football-report.html">My favorite Alabama Football blogger in memory of his dog...</a></p>
+<p><a href="http://bamareport.blogspot.com/2011/02/university-of-alabama-football-report.html">My favorite Alabama Football blogger in memory of his dog…</a>
+&gt; My dog is reference-able in a university library system. She’s mentioned by name in the acknowledgments of my master’s thesis.  That’s the section where my classmates put their thesis chairs’ names. My thesis chair went on sabbatical for half the damn year; my dog was there every day.</p>
 
-<blockquote><p>My dog is reference-able in a university library system. She's mentioned by name in the acknowledgments of my master's thesis.  That's the section where my classmates put their thesis chairs' names. My thesis chair went on sabbatical for half the damn year; my dog was there every day.</p></blockquote>
-
-<p><a href="http://teddziuba.com/2011/02/the-case-against-queues.html">The case against queues...</a></p>
-
-<blockquote><p>Depending on your queue implementation, when you pop a message off, it's gone. The consumer acknowledges receipt of it, and the queue forgets about it. So, if your data processor fails, you've got data loss. Collecting messages [with] syslog, your processor program is just processing a text file, and can process it again if something goes wrong. Throw in some split and xargs, and you've got parallel processing. Event messages aren't text? You fucked up. Go buy a subscription to the Microsoft Developer Network.</p></blockquote>
+<p><a href="http://teddziuba.com/2011/02/the-case-against-queues.html">The case against queues…</a>
+&gt; Depending on your queue implementation, when you pop a message off, it’s gone. The consumer acknowledges receipt of it, and the queue forgets about it. So, if your data processor fails, you’ve got data loss. Collecting messages [with] syslog, your processor program is just processing a text file, and can process it again if something goes wrong. Throw in some split and xargs, and you’ve got parallel processing. Event messages aren’t text? You fucked up. Go buy a subscription to the Microsoft Developer Network.</p>
 
     
   </article>
@@ -176,10 +169,11 @@ shots, which has been a fun trip down nostalgia lane.</p>
     
       <p>It was entirely too cold here in Alabama for a while.  Abstracts from photographs of the ice:</p>
 
-<p><a href="/images/abstracts/ice_abstract1.jpg"><img src='/images/abstracts/thumbs/ice_abstract1.jpg' alt='Ice Abstract 1 - January 2011' /></a>
-<a href="/images/abstracts/ice_abstract2.jpg"><img src='/images/abstracts/thumbs/ice_abstract2.jpg' alt='Ice Abstract 2 - January 2011' /></a>
-<a href="/images/abstracts/ice_abstract3.jpg"><img src='/images/abstracts/thumbs/ice_abstract3.jpg' alt='Ice Abstract 3 - January 2011' /></a>
-<a href="/images/abstracts/ice_abstract4.jpg"><img src='/images/abstracts/thumbs/ice_abstract4.jpg' alt='Ice Abstract 4 - January 2011' /></a></p>
+<p><a href="/images/abstracts/ice_abstract1.jpg"><img src="/images/abstracts/thumbs/ice_abstract1.jpg" alt="Ice Abstract 1 - January 2011" /></a>
+<a href="/images/abstracts/ice_abstract2.jpg"><img src="/images/abstracts/thumbs/ice_abstract2.jpg" alt="Ice Abstract 2 - January 2011" /></a>
+<a href="/images/abstracts/ice_abstract3.jpg"><img src="/images/abstracts/thumbs/ice_abstract3.jpg" alt="Ice Abstract 3 - January 2011" /></a>
+<a href="/images/abstracts/ice_abstract4.jpg"><img src="/images/abstracts/thumbs/ice_abstract4.jpg" alt="Ice Abstract 4 - January 2011" /></a></p>
+
 
     
   </article>
@@ -193,13 +187,14 @@ shots, which has been a fun trip down nostalgia lane.</p>
       
     </div>
     
-      <p>Five photographs from New Orleans.  The first four are from my honeymoon in June 2010, and the last is presumably a group of Vietnamese veterans marching in the Veteran's Day parade last year.</p>
+      <p>Five photographs from New Orleans.  The first four are from my honeymoon in June 2010, and the last is presumably a group of Vietnamese veterans marching in the Veteran’s Day parade last year.  </p>
 
-<p><a href="/images/nola/nola_1.jpg"><img src='/images/nola/thumbs/nola_1.jpg' alt='NOLA 1 - June 2010' /></a>
-<a href="/images/nola/nola_2.jpg"><img src='/images/nola/thumbs/nola_2.jpg' alt='NOLA 2 - June 2010' /></a>
-<a href="/images/nola/nola_3.jpg"><img src='/images/nola/thumbs/nola_3.jpg' alt='NOLA 3 - June 2010' /></a>
-<a href="/images/nola/nola_4.jpg"><img src='/images/nola/thumbs/nola_4.jpg' alt='NOLA 4 - June 2010' /></a>
-<a href="/images/nola/nola_5.jpg"><img src='/images/nola/thumbs/nola_5.jpg' alt='NOLA 5 - November 2010' /></a></p>
+<p><a href="/images/nola/nola_1.jpg"><img src="/images/nola/thumbs/nola_1.jpg" alt="NOLA 1 - June 2010" /></a>
+<a href="/images/nola/nola_2.jpg"><img src="/images/nola/thumbs/nola_2.jpg" alt="NOLA 2 - June 2010" /></a>
+<a href="/images/nola/nola_3.jpg"><img src="/images/nola/thumbs/nola_3.jpg" alt="NOLA 3 - June 2010" /></a>
+<a href="/images/nola/nola_4.jpg"><img src="/images/nola/thumbs/nola_4.jpg" alt="NOLA 4 - June 2010" /></a>
+<a href="/images/nola/nola_5.jpg"><img src="/images/nola/thumbs/nola_5.jpg" alt="NOLA 5 - November 2010" /></a></p>
+
 
     
   </article>

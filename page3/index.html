@@ -59,7 +59,7 @@
       <blockquote>
         <p>Why should the axis between one’s education and employment be a recipe for instant poverty? How can the wealthiest nation on the planet have cities falling apart from road to bridge to levee? When did good health become a luxury item? None of these questions will be answered by a football game, but—hell, if you’re honest with yourself—none of them will be addressed by your elected representatives either.</p>
 
-<p>How much do you really understand about macroeconomics? Can you predict the consequences of a zoning board decision? How self-destructive is the average American? If you’re honest with yourself, you’re not going to have ready answers. Listening to a politician is likely the quickest way to lose touch with reality.</p>
+<p>How much do you really understand about macroeconomics? Can you predict the consequences of a zoning board decision? How self-destructive is the average American? If you’re honest with yourself, you’re not going to have ready answers. Listening to a politician is likely the quickest way to lose touch with reality.  </p>
 
         <small><cite>J</cite></small>
       </blockquote>
@@ -75,95 +75,77 @@
       
     </div>
     
-      <p><link href='/stylesheets/css3-progress-bar.css' rel='stylesheet' type='text/css' /></p>
+      <link href="/stylesheets/css3-progress-bar.css" rel="stylesheet" type="text/css" />
 
 <p>When one of us at <a href="http://isotope11.com">Isotope11</a> runs across something interesting or useful on the internet,
-we'll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
-another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for
-something like this in a Rails project, so I wrote some helper methods to generate the HTML with
-some simple options.</p>
+we’ll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
+another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for 
+something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
+some simple options.  </p>
 
 <p>I created a gem, <a href="https://github.com/yrgoldteeth/css3-progress-bar-rails">css3-progress-bar-rails</a> that can be dropped into a Rails 3.1+ project to
-utilize these status bars.  To install, add 'css3-progress-bar-rails' to your Gemfile, and add
-require 'css3-progress-bar' into your application.css, so that the CSS is picked up by the Rails
-asset pipeline.</p>
+utilize these status bars.  To install, add ‘css3-progress-bar-rails’ to your Gemfile, and add
+require ‘css3-progress-bar’ into your application.css, so that the CSS is picked up by the Rails
+asset pipeline.  </p>
 
-<p><strong>Examples</strong></p>
+<p><strong>Examples</strong>  </p>
 
 <pre><code>&lt;%= progress_bar(55) %&gt;  
 </code></pre>
 
-<div class='bar_container'>
-  <div class='bar_mortice'>
-    <div class='progress' style='width: 55%;'></div>
+<div class="bar_container">
+  <div class="bar_mortice">
+    <div class="progress" style="width: 55%;"></div>
   </div>
 </div>
-
-
-<p></p>
-
-<br />
-
+<p><br /></p>
 
 <pre><code>&lt;%= progress_bar(33, :color =&gt; 'blue', :rounded =&gt; true) %&gt;  
 </code></pre>
 
-<div class='bar_container rounded_bar_container blue_container'>
-  <div class='bar_mortice rounded blue_mortice'>
-    <div class='progress rounded blue' style='width: 33%;'></div>
+<div class="bar_container rounded_bar_container blue_container">
+  <div class="bar_mortice rounded blue_mortice">
+    <div class="progress rounded blue" style="width: 33%;"></div>
   </div>
 </div>
-
-
-<br />
-
+<p><br /></p>
 
 <pre><code>&lt;%= progress_bar(83, :color =&gt; 'orange', :rounded =&gt; true, :tiny =&gt; true) %&gt;   
 </code></pre>
 
-<div class='bar_container rounded_bar_container orange_container container_tiny'>
-  <div class='bar_mortice rounded orange_mortice mortice_tiny'>
-    <div class='progress rounded orange progress_tiny' style='width: 83%;'></div>
+<div class="bar_container rounded_bar_container orange_container container_tiny">
+  <div class="bar_mortice rounded orange_mortice mortice_tiny">
+    <div class="progress rounded orange progress_tiny" style="width: 83%;"></div>
   </div>
 </div>
-
-
-<br />
-
+<p><br /></p>
 
 <pre><code>&lt;%= combo_progress_bar([19, 9, 20, 10]) %&gt;   
 </code></pre>
 
-<div class='bar_container'>
-  <div class='bar_mortice'>
-    <div class='progress green' style='width: 19%;'></div>
-    <div class='progress orange' style='width: 9%;'></div>
-    <div class='progress pink' style='width: 20%;'></div>
-    <div class='progress blue' style='width: 10%;'></div>
+<div class="bar_container">
+  <div class="bar_mortice">
+    <div class="progress green" style="width: 19%;"></div>
+    <div class="progress orange" style="width: 9%;"></div>
+    <div class="progress pink" style="width: 20%;"></div>
+    <div class="progress blue" style="width: 10%;"></div>
   </div>
 </div>
-
-
-<br />
-
+<p><br /></p>
 
 <pre><code>&lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&gt; true) %&gt;   
 </code></pre>
 
-<div class='bar_container container_tiny'>
-  <div class='bar_mortice mortice_tiny'>
-    <div class='progress green progress_tiny' style='width: 12%;'></div>
-    <div class='progress orange progress_tiny' style='width: 15%;'></div>
-    <div class='progress pink progress_tiny' style='width: 18%;'></div>
-    <div class='progress blue progress_tiny' style='width: 22%;'></div>
-    <div class='progress purple progress_tiny' style='width: 10%;'></div>
+<div class="bar_container container_tiny">
+  <div class="bar_mortice mortice_tiny">
+    <div class="progress green progress_tiny" style="width: 12%;"></div>
+    <div class="progress orange progress_tiny" style="width: 15%;"></div>
+    <div class="progress pink progress_tiny" style="width: 18%;"></div>
+    <div class="progress blue progress_tiny" style="width: 22%;"></div>
+    <div class="progress purple progress_tiny" style="width: 10%;"></div>
   </div>
 </div>
-
-
-<br />
-
-
+<p><br /></p>
 
 
     
@@ -198,6 +180,7 @@ asset pipeline.</p>
 
 <p>“Real talk.”</p>
 
+
         <small><cite>J</cite></small>
       </blockquote>
     
@@ -220,7 +203,8 @@ asset pipeline.</p>
     </div>
     
       <blockquote>
-        <p>The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it's absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.</p>
+        <p>The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it’s absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.  </p>
+
 
         <small><cite>Duncan Black</cite></small>
       </blockquote>
@@ -240,8 +224,7 @@ asset pipeline.</p>
 
 <p>Now, watch some adorable Korean kids singing The Ramones en masse:</p>
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/sVJfErLlyLI" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="480" height="360" src="http://www.youtube.com/embed/sVJfErLlyLI" frameborder="0" allowfullscreen=""></iframe>
 
     
   </article>

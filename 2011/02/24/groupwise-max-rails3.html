@@ -48,47 +48,50 @@
     
   </div>
   
-    [cross posted at Isotope11's blog](http://www.isotope11.com/blog/group-wise-max-rails3)
+    <p><a href="http://www.isotope11.com/blog/group-wise-max-rails3">cross posted at Isotope11’s blog</a></p>
 
-Recently at work we ran across a situation where we needed an efficient way
-to find the [Group-wise maximum of a certain column](http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html)
+<p>Recently at work we ran across a situation where we needed an efficient way
+to find the <a href="http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html">Group-wise maximum of a certain column</a>
 in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
 combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
-but due to the volume of data, this would eventually have too much overhead to be sustainable.  
+but due to the volume of data, this would eventually have too much overhead to be sustainable.<br />
 Once I determined that using a left join on itself would be the way to go at the problem, I set 
-out to figure out the solution using the new [Arel syntax](https://github.com/rails/arel).
+out to figure out the solution using the new <a href="https://github.com/rails/arel">Arel syntax</a>.</p>
 
-##### Example
+<h5 id="example">Example</h5>
 
-This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
+<p>This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
 ChildThings can have duplicate rows with the same key, and we were looking to return only the newest
-results for each distinct key found in the ParentThing's ChildThings.
+results for each distinct key found in the ParentThing’s ChildThings.</p>
 
-    class ParentThing < ActiveRecord::Base
-      has_many :child_things
-    end
+<pre><code>class ParentThing &lt; ActiveRecord::Base
+  has_many :child_things
+end
 
-    class ChildThing < ActiveRecord::Base
-      belongs_to :parent_thing
-    end
+class ChildThing &lt; ActiveRecord::Base
+  belongs_to :parent_thing
+end
+</code></pre>
 
-The solution was to add a single named scope to the ChildThing class:
-    
-    class ChildThing < ActiveRecord::Base
-      belongs_to :parent_thing
+<p>The solution was to add a single named scope to the ChildThing class:</p>
 
-      scope :newest_results, 
-        joins('LEFT JOIN child_things c2 ON child_things.key = c2.key AND child_things.created_at > c2.created_at'),
-        where('c2.key is NULL')
-    
-    end
+<pre><code>class ChildThing &lt; ActiveRecord::Base
+  belongs_to :parent_thing
 
-So, now if p is an instance of ParentThing: 
+  scope :newest_results, 
+    joins('LEFT JOIN child_things c2 ON child_things.key = c2.key AND child_things.created_at &gt; c2.created_at'),
+    where('c2.key is NULL')
 
-    p.child_things.newest_results 
+end
+</code></pre>
 
-will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing's ChildThing
-full collection.
+<p>So, now if p is an instance of ParentThing: </p>
+
+<pre><code>p.child_things.newest_results 
+</code></pre>
+
+<p>will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing’s ChildThing
+full collection.</p>
 
 
   

@@ -59,7 +59,8 @@
       <blockquote>
         <p>Too many people compare college football to the NFL, but a more accurate analog can be found in another lucrative cartel: the Mexican drug trade. The SEC, like Juarez, may be the focal point of a lot of the action, but even beyond its dominant rep, the game is on all over.</p>
 
-<p>I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.</p>
+<p>I heard of a mountaintop village, far from the US border, that one cartel used as a vacation spot. Another town on the Gulf served as a narco retirement village. The point being that weirder normal gets, the more normal weird seems. And that is where we are with college football: we are in deep weird.  </p>
+
 
         <small><cite>J</cite></small>
       </blockquote>
@@ -83,7 +84,8 @@
     </div>
     
       <blockquote>
-        <p>We should be long past the point of assigning blame, or worrying about creating moral hazard, let alone rewarding “losers.” Foreclosure is a national tragedy and a relentless drag on economic growth. Jobs can’t be created until demand increases, and demand won’t increase until consumers get out of debt, and housing is the biggest obstacle. If we had healthy institutions, the White House, both parties in Congress, the leaders of the biggest banks, and consumer groups would have sat down together and worked out a solution that keeps millions of people in their homes without wiping their debts completely clean. But we don’t, and so the history of the past few years has been written by Rick Santelli and Occupy Wall Street.</p>
+        <p>We should be long past the point of assigning blame, or worrying about creating moral hazard, let alone rewarding “losers.” Foreclosure is a national tragedy and a relentless drag on economic growth. Jobs can’t be created until demand increases, and demand won’t increase until consumers get out of debt, and housing is the biggest obstacle. If we had healthy institutions, the White House, both parties in Congress, the leaders of the biggest banks, and consumer groups would have sat down together and worked out a solution that keeps millions of people in their homes without wiping their debts completely clean. But we don’t, and so the history of the past few years has been written by Rick Santelli and Occupy Wall Street.  </p>
+
 
         <small><cite>George Packer</cite></small>
       </blockquote>
@@ -99,9 +101,9 @@
       
     </div>
     
-      <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to
-convert many stylesheets into erb templates to make use of the asset_path('/path/to/img')
-helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>,
+      <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to 
+convert many stylesheets into erb templates to make use of the asset_path(‘/path/to/img’)
+helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>, 
 so I pulled this together.</p>
 
 <p>Say you have a stylesheet from the <a href="http://jqueryui.com">jQuery UI</a> project that looks like
@@ -113,25 +115,24 @@ a system with sed installed:</p>
 
 <p>You should get results like this partial diff of the two files:</p>
 
-<pre class='prettyprint'>    
+<pre class="prettyprint">    
   62c62
-  < .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+  &lt; .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
   ---
-  > .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(<%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %>) 50% top repeat-x; color: #333333; }
+  &gt; .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(&lt;%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %&gt;) 50% top repeat-x; color: #333333; }
   64c64
-  < .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  &lt; .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
   ---
-  > .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(<%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %>) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+  &gt; .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(&lt;%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %&gt;) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
   69c69
-  < .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  &lt; .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
   ---
-  > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(<%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
+  &gt; .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(&lt;%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %&gt;) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
   71c71
-  < .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+  &lt; .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
   ---
-  > .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(<%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
+  &gt; .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(&lt;%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %&gt;) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
 </pre>
-
 
     
   </article>
@@ -157,7 +158,8 @@ a system with sed installed:</p>
 
 <p>Because it is the Iron Bowl, even the Southside Birmingham hipsters who say [they] don’t watch football will watch football.</p>
 
-<p>With so much of college football mired in scandal, corruption, graft, and compromise, it is comforting to find the bedrock upon which one can build a pure fandom, free from any computer rankings or poll-watch politicking or cable television broadcast markets. One can still find the line drawn between allegiance and opposition.</p>
+<p>With so much of college football mired in scandal, corruption, graft, and compromise, it is comforting to find the bedrock upon which one can build a pure fandom, free from any computer rankings or poll-watch politicking or cable television broadcast markets. One can still find the line drawn between allegiance and opposition.  </p>
+
 
         <small><cite>J</cite></small>
       </blockquote>
@@ -173,11 +175,11 @@ a system with sed installed:</p>
       
     </div>
     
-      <h4>Happy Thanksgiving!</h4>
+      <h4 id="happy-thanksgiving">Happy Thanksgiving!</h4>
 
-<p><a href="/images/archie_thanksgiving.jpg"><img src='/images/archie_thanksgiving_thumb.jpg' alt='Archie says nap well!' /></a></p>
+<p><a href="/images/archie_thanksgiving.jpg"><img src="/images/archie_thanksgiving_thumb.jpg" alt="Archie says nap well!" /></a></p>
 
-<p>Archie says: "nap well."</p>
+<p>Archie says: “nap well.”</p>
 
     
   </article>
