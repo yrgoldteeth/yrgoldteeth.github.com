@@ -4,13 +4,34 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-12-26T16:27:54-06:00</updated>
+ <updated>2012-12-28T20:42:49-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>An Act Of Compromise</title>
+   
+   <link href="http://www.newyorker.com/reporting/2012/12/24/121224fa_fact_foer?currentPage=all&mobify=0"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/28/an-act-of-compromise-from-pinboard.html"/>
+   <author>
+     <name>Joshua Foer</name>
+   </author>
+   
+   <updated>2012-12-28T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/12/28/an-act-of-compromise-from-pinboard</id>
+   <content type="html">&lt;p&gt;We can glimpse, glance, visualize, view, look, spy, or ogle. Stare,
+gawk, or gape. Peek, watch, or scrutinize. Each word suggests some
+subtly different quality: looking implies volition; spying suggests
+furtiveness; gawking carries an element of social judgment and a sense
+of surprise. When we try to describe an act of vision, we consider a
+constellation of available meanings. But if thoughts and words exist on
+different planes, then expression must always be an act of compromise.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Things that make OS X tolerable, pt 1</title>
@@ -345,22 +366,6 @@ asset pipeline.  &lt;/p&gt;
 &lt;p&gt;“No shit. Last request.” With this he gripped the crook of his elbow, made a fist, and raised his flexed arm to eye level. “Nahmean, Tony?”&lt;/p&gt;
 
 &lt;p&gt;“Real talk.”&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Domino | From Eschaton</title>
-   
-   <link href="http://feedproxy.google.com/~r/blogspot/bRuz/~3/Jo6SjfTD2Js/domino.html"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2011/12/29/feedproxy.google.com-from-pinboard.html"/>
-   <author>
-     <name>Duncan Black</name>
-   </author>
-   
-   <updated>2011-12-29T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2011/12/29/feedproxy.google.com-from-pinboard</id>
-   <content type="html">&lt;p&gt;The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it’s absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.  &lt;/p&gt;
 
 </content>
  </entry>
