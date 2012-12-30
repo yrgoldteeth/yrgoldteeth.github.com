@@ -4,13 +4,32 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2012-12-29T19:17:12-06:00</updated>
+ <updated>2012-12-30T13:56:32-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Doing it Wrong | Atrios</title>
+   
+   <link href="http://www.eschatonblog.com/2012/12/youre-doing-it-wrong.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/30/doing-it-wrong-atrios-from-pinboard.html"/>
+   <author>
+     <name>Duncan Black</name>
+   </author>
+   
+   <updated>2012-12-30T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2012/12/30/doing-it-wrong-atrios-from-pinboard</id>
+   <content type="html">&lt;p&gt;I know, or at least hope, that reading online newspaper comments is not
+the best window into the soul of humanity, but it certainly is a bit
+depressing sometimes. The lack of sympathy or empathy for basically
+anyone is quite stunning. Everything is always the fault of victims,
+basically.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Yours, Mine, but Not Ours | Jacobin</title>
@@ -291,88 +310,6 @@ His righteous wrath and be judged.&lt;/p&gt;
    <content type="html">&lt;p&gt;Why should the axis between one’s education and employment be a recipe for instant poverty? How can the wealthiest nation on the planet have cities falling apart from road to bridge to levee? When did good health become a luxury item? None of these questions will be answered by a football game, but—hell, if you’re honest with yourself—none of them will be addressed by your elected representatives either.&lt;/p&gt;
 
 &lt;p&gt;How much do you really understand about macroeconomics? Can you predict the consequences of a zoning board decision? How self-destructive is the average American? If you’re honest with yourself, you’re not going to have ready answers. Listening to a politician is likely the quickest way to lose touch with reality.  &lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>CSS3 Progress Bars for Rails</title>
-   
-   <link href="http://ndfine.com/2012/01/03/css3-progress-bars-for-rails.html"/>
-   
-   <updated>2012-01-03T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2012/01/03/css3-progress-bars-for-rails</id>
-   <content type="html">&lt;link href=&quot;/stylesheets/css3-progress-bar.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;When one of us at &lt;a href=&quot;http://isotope11.com&quot;&gt;Isotope11&lt;/a&gt; runs across something interesting or useful on the internet,
-we’ll send the link to all the other devs.  Over the recent holiday, &lt;a href=&quot;https://twitter.com/#!/knewter&quot;&gt;Josh&lt;/a&gt; sent a link to
-another &lt;a href=&quot;http://dipperstove.com&quot;&gt;Josh&lt;/a&gt; and his new fancy &lt;a href=&quot;http://dipperstove.com/design/css3-progress-bars.html&quot;&gt;CSS3 Progress Bars&lt;/a&gt;.  I had an immediate need for 
-something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
-some simple options.  &lt;/p&gt;
-
-&lt;p&gt;I created a gem, &lt;a href=&quot;https://github.com/yrgoldteeth/css3-progress-bar-rails&quot;&gt;css3-progress-bar-rails&lt;/a&gt; that can be dropped into a Rails 3.1+ project to
-utilize these status bars.  To install, add ‘css3-progress-bar-rails’ to your Gemfile, and add
-require ‘css3-progress-bar’ into your application.css, so that the CSS is picked up by the Rails
-asset pipeline.  &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(55) %&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;bar_container&quot;&gt;
-  &lt;div class=&quot;bar_mortice&quot;&gt;
-    &lt;div class=&quot;progress&quot; style=&quot;width: 55%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(33, :color =&amp;gt; 'blue', :rounded =&amp;gt; true) %&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;bar_container rounded_bar_container blue_container&quot;&gt;
-  &lt;div class=&quot;bar_mortice rounded blue_mortice&quot;&gt;
-    &lt;div class=&quot;progress rounded blue&quot; style=&quot;width: 33%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;%= progress_bar(83, :color =&amp;gt; 'orange', :rounded =&amp;gt; true, :tiny =&amp;gt; true) %&amp;gt;   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;bar_container rounded_bar_container orange_container container_tiny&quot;&gt;
-  &lt;div class=&quot;bar_mortice rounded orange_mortice mortice_tiny&quot;&gt;
-    &lt;div class=&quot;progress rounded orange progress_tiny&quot; style=&quot;width: 83%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;%= combo_progress_bar([19, 9, 20, 10]) %&amp;gt;   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;bar_container&quot;&gt;
-  &lt;div class=&quot;bar_mortice&quot;&gt;
-    &lt;div class=&quot;progress green&quot; style=&quot;width: 19%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress orange&quot; style=&quot;width: 9%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress pink&quot; style=&quot;width: 20%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress blue&quot; style=&quot;width: 10%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&amp;gt; true) %&amp;gt;   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;bar_container container_tiny&quot;&gt;
-  &lt;div class=&quot;bar_mortice mortice_tiny&quot;&gt;
-    &lt;div class=&quot;progress green progress_tiny&quot; style=&quot;width: 12%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress orange progress_tiny&quot; style=&quot;width: 15%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress pink progress_tiny&quot; style=&quot;width: 18%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress blue progress_tiny&quot; style=&quot;width: 22%;&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress purple progress_tiny&quot; style=&quot;width: 10%;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 </content>
  </entry>
  
