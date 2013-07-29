@@ -4,13 +4,93 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2013-01-29T12:05:03-06:00</updated>
+ <updated>2013-07-29T08:59:28-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Doubling Down</title>
+   
+   <link href="http://davidsimon.com/doubling-down/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/07/17/doubling-down-from-pinboard.html"/>
+   <author>
+     <name>David Simon</name>
+   </author>
+   
+   <updated>2013-07-17T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2013/07/17/doubling-down-from-pinboard</id>
+   <content type="html">&lt;p&gt;Why not? Because just as good cannot be truly understood to the marrow
+without a corresponding sense of evil, pride in one’s country — if it is
+substantive pride, and not merely the rote, pledge-allegiance mouthings
+of patriotic cliche — requires the sober knowledge that American
+greatness is neither assured, nor heaven-sent. It comes to us from our
+national premise and ideals — and our willingness to maintain those
+things at all hazards. And if you’ve never felt ashamed for us for
+having strayed from our core values in even the most appalling ways —
+say, the wartime detention of Japanese-Americans, or a My Lai or Kent
+State , or Bull Conner, or COINTELPRO, or life sentences for juvenile
+defendants, or prisons-for-profit — then maybe you’ve never really
+acknowledged what the actual stakes are for a republic, or how much
+work, rather than platitude, is required to assure an honorable,
+democratic future. Yes, you claim an all-encompassing pride and you
+wallow in it, brooking not even a mention of anything shameful that
+happens on our watch as citizens. But in fact, real pride is earned and
+internalized only with a grown-up understanding that even a good or
+great nation, while deserving of our allegiance and civic commitment,
+can indeed shame itself. Saying so when it happens is a fundamental of
+self-governance, as all dissent is a fundamental of self-governance.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Paris Bureau -- Dispatch</title>
+   
+   <link href="http://www.theatlantic.com/international/archive/2013/07/the-paris-bureau-dispatch-1/277559/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/07/06/the-paris-bureau-dispatch-1-from-pinboard.html"/>
+   <author>
+     <name>Ta-Nehisi Coates</name>
+   </author>
+   
+   <updated>2013-07-06T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2013/07/06/the-paris-bureau-dispatch-1-from-pinboard</id>
+   <content type="html">&lt;p&gt;But the game is rigged. I know this because I loved my craft for many
+years and it meant nothing to anyone save my mother, my father, my
+siblings, my wife and a few close friends. Then one man of some
+privilege spoke to another man of some privilege and I became a man of
+some privilege with megaphone, which I now employ, across an ocean, to
+bring these thoughts to you. And I love both of these men of
+privilege–power is a fact, it is not morality. Losing is tragic, but it
+is not noble. How many freedom fighters turned despots in the possession
+of superior guns?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Alice's Restaurant, Gritty Thriller Edition</title>
+   
+   <link href="http://www.joshmillard.com/2012/11/22/alices-restaurant-gritty-thriller-edition/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/04/26/alice-s-restaurant-gritty-thriller-edition-from-pinboard.html"/>
+   <author>
+     <name>Josh Millard</name>
+   </author>
+   
+   <updated>2013-04-26T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2013/04/26/alice-s-restaurant-gritty-thriller-edition-from-pinboard</id>
+   <content type="html">&lt;p&gt;ARLO sitting in a holding cell. BIG UGLY approaches, heavy danger vibes,
+this is a bad scene. He stares right down at ARLO, pops knuckles, and
+says: “what are you in for?” &lt;/p&gt;
+
+&lt;p&gt;Arlo stares right back at him, all intensity. Cut over to super-fast
+montage of ARLO fighting a guy, ARLO killing the guy, ARLO chucking the
+guy over a cliff, body falling among a pile of trash. &lt;/p&gt;
+
+&lt;p&gt;Cut back to ARLO staring up at BIG UGLY. Deadpan response: “littering”.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Crimes against history are crimes against humanity | Digby</title>
@@ -274,67 +354,6 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
    <content type="html">&lt;p&gt;During the afternoon meeting, two parents brought their children with them to the podium, and the crowd laughed when both infants immediately began clutching at the microphone. But the sad thing is that both those parents wanted to put their children — neither of which were yet of school age — in the Birmingham City Schools. They, among others, were determined make this city’s schools a good place for their kids.&lt;/p&gt;
 
 &lt;p&gt;Mohandas Gandhi said that poverty is the most subtle form of violence. Is enrolling your children in Birmingham City Schools a subtle form of child abuse?&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Update to bootstrap-will_paginate</title>
-   
-   <link href="http://ndfine.com/2012/03/27/update-to-bootstrap-will-paginate.html"/>
-   
-   <updated>2012-03-27T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/03/27/update-to-bootstrap-will-paginate</id>
-   <content type="html">&lt;p&gt;Just pushed an update to &lt;a href=&quot;https://rubygems.org/gems/bootstrap-will_paginate&quot;&gt;bootstrap-will_paginate&lt;/a&gt; that &lt;a href=&quot;https://github.com/yrgoldteeth/bootstrap-will_paginate/pull/5&quot;&gt;fixes&lt;/a&gt; a bug
-on sending the option &lt;code&gt;:page_links =&amp;gt; false&lt;/code&gt; to a will_paginate
-setup block.  Big thanks to &lt;a href=&quot;https://github.com/jann&quot;&gt;jann@github&lt;/a&gt; for the fix!&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>EDSBS | Rick Ross Wishes You A Happy Vernal Equinox</title>
-   
-   <link href="http://www.everydayshouldbesaturday.com/2012/3/20/2887941/rick-ross-wishes-you-a-happy-vernal-equinox"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/03/21/rick-ross-vernal-equinox-from-pinboard.html"/>
-   <author>
-     <name>Spencer Hall</name>
-   </author>
-   
-   <updated>2012-03-21T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/03/21/rick-ross-vernal-equinox-from-pinboard</id>
-   <content type="html">&lt;p&gt;Easter morning&lt;/p&gt;
-
-&lt;p&gt;Hustle made&lt;/p&gt;
-
-&lt;p&gt;Got them eggs&lt;/p&gt;
-
-&lt;p&gt;They Faberge&lt;/p&gt;
-
-&lt;p&gt;You got some chickens&lt;/p&gt;
-
-&lt;p&gt;I got that Faberge&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Stonekettle Station | Afghanistan - The Punch Line</title>
-   
-   <link href="http://www.stonekettle.com/2012/03/afghanistan-punch-line.html"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/03/14/afghanistan-the-punch-line-from-pinboard.html"/>
-   <author>
-     <name>Jim Wright</name>
-   </author>
-   
-   <updated>2012-03-14T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/03/14/afghanistan-the-punch-line-from-pinboard</id>
-   <content type="html">&lt;p&gt;Tens of thousands of supposedly civilized Americans think the senseless
-slaughter of sixteen men, women, and children was a good start. Their comments
-fill the halls of America and litter the airwaves and the internet and they
-don’t even have the common decency to be ashamed. The murderous clamor of the
-ignorant and foolish and the brutally stupid fouls our national discourse and
-stains our national soul. I’ll say in complete honesty that I truly hope that
-their God does indeed exist and that one day these fuckers will stand before
-His righteous wrath and be judged.&lt;/p&gt;
 </content>
  </entry>
  

@@ -43,6 +43,88 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2012/03/27/update-to-bootstrap-will-paginate.html'>Update to bootstrap-will_paginate</a></h2>
+      
+      <span class='label'>27 Mar 2012</span>
+      
+    </div>
+    
+      <p>Just pushed an update to <a href="https://rubygems.org/gems/bootstrap-will_paginate">bootstrap-will_paginate</a> that <a href="https://github.com/yrgoldteeth/bootstrap-will_paginate/pull/5">fixes</a> a bug
+on sending the option <code>:page_links =&gt; false</code> to a will_paginate
+setup block.  Big thanks to <a href="https://github.com/jann">jann@github</a> for the fix!</p>
+
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://www.everydayshouldbesaturday.com/2012/3/20/2887941/rick-ross-wishes-you-a-happy-vernal-equinox'>EDSBS | Rick Ross Wishes You A Happy Vernal Equinox</a>
+      </h2>
+      
+      <span class='label'>21 Mar 2012</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2012/03/21/rick-ross-vernal-equinox-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>Easter morning</p>
+
+<p>Hustle made</p>
+
+<p>Got them eggs</p>
+
+<p>They Faberge</p>
+
+<p>You got some chickens</p>
+
+<p>I got that Faberge</p>
+
+        <small><cite>Spencer Hall</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://www.stonekettle.com/2012/03/afghanistan-punch-line.html'>Stonekettle Station | Afghanistan - The Punch Line</a>
+      </h2>
+      
+      <span class='label'>14 Mar 2012</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2012/03/14/afghanistan-the-punch-line-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>Tens of thousands of supposedly civilized Americans think the senseless
+slaughter of sixteen men, women, and children was a good start. Their comments
+fill the halls of America and litter the airwaves and the internet and they
+don’t even have the common decency to be ashamed. The murderous clamor of the
+ignorant and foolish and the brutally stupid fouls our national discourse and
+stains our national soul. I’ll say in complete honesty that I truly hope that
+their God does indeed exist and that one day these fuckers will stand before
+His righteous wrath and be judged.</p>
+
+        <small><cite>Jim Wright</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
       <h2>
         <a href='http://nplusonemag.com/raise-the-crime-rate'>n+1- Raise the Crime Rate</a>
       </h2>
@@ -86,151 +168,6 @@
 <p>How much do you really understand about macroeconomics? Can you predict the consequences of a zoning board decision? How self-destructive is the average American? If you’re honest with yourself, you’re not going to have ready answers. Listening to a politician is likely the quickest way to lose touch with reality.  </p>
 
         <small><cite>J</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-        <h2><a href='/2012/01/03/css3-progress-bars-for-rails.html'>CSS3 Progress Bars for Rails</a></h2>
-      
-      <span class='label'>03 Jan 2012</span>
-      
-    </div>
-    
-      <link href="/stylesheets/css3-progress-bar.css" rel="stylesheet" type="text/css" />
-
-<p>When one of us at <a href="http://isotope11.com">Isotope11</a> runs across something interesting or useful on the internet,
-we’ll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
-another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for 
-something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
-some simple options.  </p>
-
-<p>I created a gem, <a href="https://github.com/yrgoldteeth/css3-progress-bar-rails">css3-progress-bar-rails</a> that can be dropped into a Rails 3.1+ project to
-utilize these status bars.  To install, add ‘css3-progress-bar-rails’ to your Gemfile, and add
-require ‘css3-progress-bar’ into your application.css, so that the CSS is picked up by the Rails
-asset pipeline.  </p>
-
-<p><strong>Examples</strong>  </p>
-
-<pre><code>&lt;%= progress_bar(55) %&gt;  
-</code></pre>
-
-<div class="bar_container">
-  <div class="bar_mortice">
-    <div class="progress" style="width: 55%;"></div>
-  </div>
-</div>
-<p><br /></p>
-
-<pre><code>&lt;%= progress_bar(33, :color =&gt; 'blue', :rounded =&gt; true) %&gt;  
-</code></pre>
-
-<div class="bar_container rounded_bar_container blue_container">
-  <div class="bar_mortice rounded blue_mortice">
-    <div class="progress rounded blue" style="width: 33%;"></div>
-  </div>
-</div>
-<p><br /></p>
-
-<pre><code>&lt;%= progress_bar(83, :color =&gt; 'orange', :rounded =&gt; true, :tiny =&gt; true) %&gt;   
-</code></pre>
-
-<div class="bar_container rounded_bar_container orange_container container_tiny">
-  <div class="bar_mortice rounded orange_mortice mortice_tiny">
-    <div class="progress rounded orange progress_tiny" style="width: 83%;"></div>
-  </div>
-</div>
-<p><br /></p>
-
-<pre><code>&lt;%= combo_progress_bar([19, 9, 20, 10]) %&gt;   
-</code></pre>
-
-<div class="bar_container">
-  <div class="bar_mortice">
-    <div class="progress green" style="width: 19%;"></div>
-    <div class="progress orange" style="width: 9%;"></div>
-    <div class="progress pink" style="width: 20%;"></div>
-    <div class="progress blue" style="width: 10%;"></div>
-  </div>
-</div>
-<p><br /></p>
-
-<pre><code>&lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&gt; true) %&gt;   
-</code></pre>
-
-<div class="bar_container container_tiny">
-  <div class="bar_mortice mortice_tiny">
-    <div class="progress green progress_tiny" style="width: 12%;"></div>
-    <div class="progress orange progress_tiny" style="width: 15%;"></div>
-    <div class="progress pink progress_tiny" style="width: 18%;"></div>
-    <div class="progress blue progress_tiny" style="width: 22%;"></div>
-    <div class="progress purple progress_tiny" style="width: 10%;"></div>
-  </div>
-</div>
-<p><br /></p>
-
-
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report_30.html'>University of Alabama Football Report for 12/30/11</a>
-      </h2>
-      
-      <span class='label'>30 Dec 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/12/30/bamareport.blogspot.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>He dreamed he walked the aisle to see Hank Williams lie in repose. A Cadillacwide pearlwhite casket with a black lead sheet inlay along the length denoting the melody of “Ramblin’ Man.” Inside, the man himself. Pale. His dermis thin like phyllo dough. Somehow a smirk cobbled on his lips. The points of his white lapels sharp as rapiers. Fingertips crannied on the brim of the matching hat.</p>
-
-<p>The son was there. Drunk in his leather. His eyes barely seen behind aviators as he stood at his father’s feet with Ghostface Killah. The palm of his bloated hand slapping the casketlid with a muffled thump.</p>
-
-<p>“Daddy’s not wearin pants.”</p>
-
-<p>“Shit!”</p>
-
-<p>“No shit. Last request.” With this he gripped the crook of his elbow, made a fist, and raised his flexed arm to eye level. “Nahmean, Tony?”</p>
-
-<p>“Real talk.”</p>
-
-
-        <small><cite>J</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://feedproxy.google.com/~r/blogspot/bRuz/~3/Jo6SjfTD2Js/domino.html'>Domino | From Eschaton</a>
-      </h2>
-      
-      <span class='label'>29 Dec 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/12/29/feedproxy.google.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it’s absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.  </p>
-
-
-        <small><cite>Duncan Black</cite></small>
       </blockquote>
     
   </article>

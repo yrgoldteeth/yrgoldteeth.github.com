@@ -43,6 +43,151 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2012/01/03/css3-progress-bars-for-rails.html'>CSS3 Progress Bars for Rails</a></h2>
+      
+      <span class='label'>03 Jan 2012</span>
+      
+    </div>
+    
+      <link href="/stylesheets/css3-progress-bar.css" rel="stylesheet" type="text/css" />
+
+<p>When one of us at <a href="http://isotope11.com">Isotope11</a> runs across something interesting or useful on the internet,
+we’ll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
+another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for 
+something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
+some simple options.  </p>
+
+<p>I created a gem, <a href="https://github.com/yrgoldteeth/css3-progress-bar-rails">css3-progress-bar-rails</a> that can be dropped into a Rails 3.1+ project to
+utilize these status bars.  To install, add ‘css3-progress-bar-rails’ to your Gemfile, and add
+require ‘css3-progress-bar’ into your application.css, so that the CSS is picked up by the Rails
+asset pipeline.  </p>
+
+<p><strong>Examples</strong>  </p>
+
+<pre><code>&lt;%= progress_bar(55) %&gt;  
+</code></pre>
+
+<div class="bar_container">
+  <div class="bar_mortice">
+    <div class="progress" style="width: 55%;"></div>
+  </div>
+</div>
+<p><br /></p>
+
+<pre><code>&lt;%= progress_bar(33, :color =&gt; 'blue', :rounded =&gt; true) %&gt;  
+</code></pre>
+
+<div class="bar_container rounded_bar_container blue_container">
+  <div class="bar_mortice rounded blue_mortice">
+    <div class="progress rounded blue" style="width: 33%;"></div>
+  </div>
+</div>
+<p><br /></p>
+
+<pre><code>&lt;%= progress_bar(83, :color =&gt; 'orange', :rounded =&gt; true, :tiny =&gt; true) %&gt;   
+</code></pre>
+
+<div class="bar_container rounded_bar_container orange_container container_tiny">
+  <div class="bar_mortice rounded orange_mortice mortice_tiny">
+    <div class="progress rounded orange progress_tiny" style="width: 83%;"></div>
+  </div>
+</div>
+<p><br /></p>
+
+<pre><code>&lt;%= combo_progress_bar([19, 9, 20, 10]) %&gt;   
+</code></pre>
+
+<div class="bar_container">
+  <div class="bar_mortice">
+    <div class="progress green" style="width: 19%;"></div>
+    <div class="progress orange" style="width: 9%;"></div>
+    <div class="progress pink" style="width: 20%;"></div>
+    <div class="progress blue" style="width: 10%;"></div>
+  </div>
+</div>
+<p><br /></p>
+
+<pre><code>&lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&gt; true) %&gt;   
+</code></pre>
+
+<div class="bar_container container_tiny">
+  <div class="bar_mortice mortice_tiny">
+    <div class="progress green progress_tiny" style="width: 12%;"></div>
+    <div class="progress orange progress_tiny" style="width: 15%;"></div>
+    <div class="progress pink progress_tiny" style="width: 18%;"></div>
+    <div class="progress blue progress_tiny" style="width: 22%;"></div>
+    <div class="progress purple progress_tiny" style="width: 10%;"></div>
+  </div>
+</div>
+<p><br /></p>
+
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report_30.html'>University of Alabama Football Report for 12/30/11</a>
+      </h2>
+      
+      <span class='label'>30 Dec 2011</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2011/12/30/bamareport.blogspot.com-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>He dreamed he walked the aisle to see Hank Williams lie in repose. A Cadillacwide pearlwhite casket with a black lead sheet inlay along the length denoting the melody of “Ramblin’ Man.” Inside, the man himself. Pale. His dermis thin like phyllo dough. Somehow a smirk cobbled on his lips. The points of his white lapels sharp as rapiers. Fingertips crannied on the brim of the matching hat.</p>
+
+<p>The son was there. Drunk in his leather. His eyes barely seen behind aviators as he stood at his father’s feet with Ghostface Killah. The palm of his bloated hand slapping the casketlid with a muffled thump.</p>
+
+<p>“Daddy’s not wearin pants.”</p>
+
+<p>“Shit!”</p>
+
+<p>“No shit. Last request.” With this he gripped the crook of his elbow, made a fist, and raised his flexed arm to eye level. “Nahmean, Tony?”</p>
+
+<p>“Real talk.”</p>
+
+
+        <small><cite>J</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
+      <h2>
+        <a href='http://feedproxy.google.com/~r/blogspot/bRuz/~3/Jo6SjfTD2Js/domino.html'>Domino | From Eschaton</a>
+      </h2>
+      
+      <span class='label'>29 Dec 2011</span>
+      
+        <span class='label label-info'>From Pinboard</span>
+        <a href='/2011/12/29/feedproxy.google.com-from-pinboard.html' class='btn btn-mini btn-info'>
+          <i class='icon-bookmark'></i>
+        </a>
+      
+    </div>
+    
+      <blockquote>
+        <p>The stories of those exceptional individuals who rise above the system are heartwarming, but as a society we compare those individuals with the people who were born on third and narrowly manage to stay there even as they inexplicably and repeatedly try to steal second. When kids born to insane privilege barely manage to navigate their way through their teen and college years, it’s absurd to expect a significant number of kids facing racism and other barriers to all hit homers their first time on the field.  </p>
+
+
+        <small><cite>Duncan Black</cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
         <h2><a href='/2011/12/27/oh-I-dont-know-why.html'>Oh I don't know why</a></h2>
       
       <span class='label'>27 Dec 2011</span>
@@ -84,78 +229,6 @@
 
         <small><cite>Matt Taibbi</cite></small>
       </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-        <h2><a href='/2011/12/17/twitter-bootstrap-will-paginate.html'>Will Paginate link renderer for Twitter Bootstrap</a></h2>
-      
-      <span class='label'>17 Dec 2011</span>
-      
-    </div>
-    
-      <p>The <a href="http://github.com/mislav/will_paginate">will_paginate</a> library makes adding pagination functionality to 
-Rails apps (and other Ruby frameworks) a breeze.  Recently I have been working
-on an app using Twitter’s <a href="http://twitter.github.com/bootstrap">Bootstrap</a> styling framework, and had a need
-for some pagination.  I dropped the method for the page links into a 
-<code>.pagination</code> div and saw this:  </p>
-
-<p><img src="/images/bootstrap-will-paginate-before.jpg" alt="twitter-bootstrap-before" /></p>
-
-<p>That was decidedly not what I was looking for, so I reached out to Google and found
-Isaac Bowen’s <a href="http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap">solution</a>, which worked exactly as advertised:  </p>
-
-<p><img src="/images/bootstrap-will-paginate-after.jpg" alt="twitter-bootstrap-after" /></p>
-
-<p>As I’ve already found this solution useful in at least two different projects,
-I decided to wire it all up into a Rails engine and release it as a <a href="http://github.com/yrgoldteeth/bootstrap-will_paginate">gem</a>. 
-Just add <code>bootstrap-will_paginate</code> to your Rails project’s Gemfile
-and you’re ready to go.</p>
-
-
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works'>Dear Congress, It’s No Longer OK To Not Know How The Internet Works</a>
-      </h2>
-      
-      <span class='label'>17 Dec 2011</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2011/12/17/motherboard.vice.com-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>So it was as proponents of the Hollywood-funded bill curmudgeonly shot down all but two amendments proposed by its opponents, who fought to dramatically alter the document to preserve security and free speech on the net. But the chilling takeaway of this whole debacle was the irrefutable air of anti-intellectualism; that inescapable absurdity that we have members of Congress voting on a technical bill who do not posses any technical knowledge on the subject and do not find it imperative to recognize those who do. </p>
-
-<p>This used to be funny, but now it’s really just terrifying. We’re dealing with legislation that will completely change the face of the internet and free speech for years to come. Yet here we are, still at the mercy of underachieving Congressional know-nothings that have more in common with the slacker students sitting in the back of math class than elected representatives. The fact that some of the people charged with representing us must be dragged kicking and screaming out of their complacency on such matters is no longer endearing — it’s just pathetic and sad.  </p>
-
-
-        <small><cite>Joshua Kopstein</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-        <h2><a href='/2011/12/15/life-will-suck-if-they-censor-the-internet.html'>Life will suck if they censor the internet.</a></h2>
-      
-      <span class='label'>15 Dec 2011</span>
-      
-    </div>
-    
-      <p><a href="http://getyourcensoron.com">Get your censor on</a></p>
-
     
   </article>
 
