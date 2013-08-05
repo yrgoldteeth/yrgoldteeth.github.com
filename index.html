@@ -43,6 +43,28 @@
   <article>
     <div class='well'>
       
+        <h2><a href='/2013/08/05/quick-note-regarding-terminal-clearning-and-vi-mode.html'>Quick Note Regarding Terminal Clearning and vi Mode</a></h2>
+      
+      <span class='label'>05 Aug 2013</span>
+      
+    </div>
+    
+      <p>I have switched from using emacs keybindings in my terminal emulator
+into using vi (<code>set -o vi</code>), which feels pure and holy.  The only problem is I was
+missing the screen clearing that <code>Control-L</code> affords.  Fix this by
+creating a <code>.inputrc</code> file in your home directory with the following
+line:</p>
+
+<pre><code>bind -m vi-insert "\C-l":clear-screen
+</code></pre>
+
+
+    
+  </article>
+
+  <article>
+    <div class='well'>
+      
       <h2>
         <a href='http://davidsimon.com/doubling-down/'>Doubling Down</a>
       </h2>
@@ -177,47 +199,6 @@ enormous consequence. These are crucial pieces of the human experience
 we will never recover.</p>
 
         <small><cite>David Atkins</cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='well'>
-      
-      <h2>
-        <a href='http://m.vanityfair.com/hollywood/2013/01/making-of-blues-brothers-budget-for-cocaine'>Making Blues Brothers With John Belushi and Dan Akroyd | Vanity Fair</a>
-      </h2>
-      
-      <span class='label'>02 Jan 2013</span>
-      
-        <span class='label label-info'>From Pinboard</span>
-        <a href='/2013/01/02/making-blues-brothers-with-john-belushi-and-dan-akroyd-we-had-a-budget-for-cocaine-vanity-fair-from-pinboard.html' class='btn btn-mini btn-info'>
-          <i class='icon-bookmark'></i>
-        </a>
-      
-    </div>
-    
-      <blockquote>
-        <p>Then there’s Aykroyd. Yes, Belushi occasionally tries his patience. At
-one point, Aykroyd smashes his wristwatch, shouting, “Do you want to end
-up like this?” But he always protects and never judges. “There was a
-sense that, no matter what John did, Danny wouldn’t abandon him, that he
-didn’t think John was this awful person,” Carrie Fisher says. “He was
-really taking care of John.”</p>
-
-<p>One night at three, while filming on a deserted lot in Harvey, Illinois,
-Belushi disappears. He does this sometimes. On a hunch, Aykroyd follows
-a grassy path until he spies a house with a light on.</p>
-
-<p>“Uh, we’re shooting a film over here,” Aykroyd tells the homeowner.
-“We’re looking for one of our actors.”</p>
-
-<p>“Oh, you mean Belushi?” the man replies. “He came in here an hour ago
-and raided my fridge. He’s asleep on my couch.”</p>
-
-<p>Only Belushi could pull this off. “America’s Guest,” Aykroyd calls him.</p>
-
-        <small><cite>Ned Zeman</cite></small>
       </blockquote>
     
   </article>
