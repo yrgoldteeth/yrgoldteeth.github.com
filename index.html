@@ -53,7 +53,7 @@
 into using vi (<code>set -o vi</code>), which feels pure and holy.  The only problem is I was
 missing the screen clearing that <code>Control-L</code> affords.  Fix this by
 creating a <code>.inputrc</code> file in your home directory with the following
-line:</p>
+line (or appending it to your existing <code>.inputrc</code>):</p>
 
 <pre><code>bind -m vi-insert "\C-l":clear-screen
 </code></pre>

@@ -4,7 +4,7 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2013-08-05T12:22:05-05:00</updated>
+ <updated>2013-08-05T12:24:44-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
@@ -23,7 +23,7 @@
 into using vi (&lt;code&gt;set -o vi&lt;/code&gt;), which feels pure and holy.  The only problem is I was
 missing the screen clearing that &lt;code&gt;Control-L&lt;/code&gt; affords.  Fix this by
 creating a &lt;code&gt;.inputrc&lt;/code&gt; file in your home directory with the following
-line:&lt;/p&gt;
+line (or appending it to your existing &lt;code&gt;.inputrc&lt;/code&gt;):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;bind -m vi-insert &quot;\C-l&quot;:clear-screen
 &lt;/code&gt;&lt;/pre&gt;
