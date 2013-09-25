@@ -4,13 +4,59 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2013-08-05T12:24:44-05:00</updated>
+ <updated>2013-09-24T23:03:10-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>The Inferno of Independence</title>
+   
+   <link href="http://frankchimero.com/blog/2013/09/the-inferno-of-independence/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/09/24/the-inferno-of-independence-from-pinboard.html"/>
+   <author>
+     <name>Frank Chimero</name>
+   </author>
+   
+   <updated>2013-09-24T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2013/09/24/the-inferno-of-independence-from-pinboard</id>
+   <content type="html">&lt;p&gt;A mythology of speed is one of willful ignorance to the small details
+that hold the whole arrangement together. And, I think, if you’re
+building things for the internet, those small details matter, because
+they are repeated ten-fold, hundred-fold, million-fold, as they are
+replicated effortlessly through screens, across the globe, and into
+people’s consciousness for countless hours of exposure. Economies of
+scale make small decisions matter, but speed— both in making those small
+decisions and in interacting them—makes both sides blind to what’s going
+on. We’re thoughtlessly writing things we can’t read, because we’re
+going too fast.&lt;/p&gt;
+
+&lt;p&gt;Has any one ever considered the creepiness of social media’s interface
+copy?&lt;/p&gt;
+
+&lt;p&gt;“View friendship.”&lt;br /&gt;
+“Remember me.”&lt;/p&gt;
+
+&lt;p&gt;It feels perverse, awkward and foreign, yet familiar, like the best
+details in a dystopian story. It’s appealing in that way, but it also
+irritates me, because I love words. Words mold brains, and if you don’t
+believe it, you should look at what sort of language we use about the
+internet and the products (digital and not) that connect to it and are
+part of it.&lt;/p&gt;
+
+&lt;p&gt;Revolutionary, disruptive, magical, wizards, and on and on—contemporary
+digital culture has co-opted the language of revolution and magic
+without the muscle, ethics, conviction, or imagination of either. And
+it’s not that those things aren’t possible, we just aren’t living up to
+their meaning and instead saturating ourselves with hyperbole. These are
+words you have to earn, and slinging them around strips the words of
+their powerful meaning. Can you take a real revolution seriously if you
+are bombarded with messaging that your phone is revolutionary?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Quick Note Regarding Terminal Clearning and vi Mode</title>
@@ -341,21 +387,6 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
    <updated>2012-10-02T00:00:00-05:00</updated>
    <id>http://ndfine.com/2012/10/02/Accidental-Experiment-from-pinboard</id>
    <content type="html">&lt;p&gt;This is a time-honored dodge, which might be called “the Oompa-Loompa defense.” It goes something like this: outsourcing labor to people who will work for less is fine because they are “happy” to do it. Such practices and accompanying rationales have been continually refined—think the helpline that dials a tech in Bangalore. But the fantasy of the happy worker has taken on newer and more mind-bending aspects, as has work itself. It now includes things like the unpaid microlabor of providing content for Web sites. It includes the amateur photographer who provides her images of, say, the police killing a young black man to the local news as an “iReport” for nothing but a credit and a T-shirt. Or a music lover scratching out a review on some hip site for a byline alone. Or consider the subtlest and arguably the most exemplary case: how, in wandering the byways of Facebook and Google, you are diligently rendering gratis a host of information about the preferences and habits of you and your friends—data they sell to advertisers. This, too, is unpaid labor.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Charles Pierce | Presidential Soul</title>
-   
-   <link href="http://www.esquire.com/blogs/politics/The_President_And_The_Blues"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/04/26/Presidential-Soul-from-pinboard.html"/>
-   <author>
-     <name>Charles Pierce</name>
-   </author>
-   
-   <updated>2012-04-26T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/04/26/Presidential-Soul-from-pinboard</id>
-   <content type="html">&lt;p&gt;Much of what the world loves about America was provided by Americans who America didn’t much love for most of its history, and when the music began to batter down the mental walls we’d thrown up between black citizens and white citizens, it was a powerful covert operation that couldn’t be beaten back with police dogs, or fire hoses, or the entire legal, political, and social architecture of American apartheid. And this president knows that, and the people who are sniping at him now know it, too, and it’s driving them around the bend. Because the president knows, as we’ve all come to know, one simple truth that binds us all as Americans, even though it’s not always self-evident — that the blues is about salvage, about a carrying forward, and about recognizing the common hellhounds that stay on all of our trails.&lt;/p&gt;
 </content>
  </entry>
  
