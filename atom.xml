@@ -4,13 +4,98 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-02-07T13:06:12-06:00</updated>
+ <updated>2014-02-07T13:44:15-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Using sequel-rails With A Forking Webserver</title>
+   
+   <link href="http://ndfine.com/2014/02/07/using-sequel-rails-with-a-forking-webserver.html"/>
+   
+   <updated>2014-02-07T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2014/02/07/using-sequel-rails-with-a-forking-webserver</id>
+   <content type="html">&lt;p&gt;I was contracted recently for a rush job on a dashboard-style reporting
+webapp using a postgres database whose schema I did not design or
+control.  I had long intended on looking into the &lt;a href=&quot;https://github.com/jeremyevans/sequel&quot;&gt;Sequel&lt;/a&gt; 
+library for database interactions, and as I was going to be developing
+the application in Rails, I was happy to see that there was also an
+existing &lt;a href=&quot;https://github.com/TalentBox/sequel-rails&quot;&gt;sequel-rails&lt;/a&gt; gem that works almost exactly as
+expected similar to the stock ActiveRecord style of Rails apps.  &lt;/p&gt;
+
+&lt;p&gt;I was able to easily make changes to the database in a migration style,
+and the application in general just went off without a hitch.&lt;/p&gt;
+
+&lt;p&gt;The application needed a staging/demo server that could be provisioned
+quickly, so I went with Heroku in a manner similar to the instructions
+in this &lt;a href=&quot;https://devcenter.heroku.com/articles/rails-unicorn&quot;&gt;article&lt;/a&gt;, which calls for the &lt;a href=&quot;http://unicorn.bogomips.org/&quot;&gt;Unicorn&lt;/a&gt;
+webserver with a configuration like so:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;# config/unicorn.rb
+worker_processes Integer(ENV[&amp;quot;WEB_CONCURRENCY&amp;quot;] || 3)
+timeout 15
+preload_app true
+
+before_fork do |server, worker|
+  Signal.trap &amp;#39;TERM&amp;#39; do
+    puts &amp;#39;Unicorn master intercepting TERM and sending myself QUIT instead&amp;#39;
+    Process.kill &amp;#39;QUIT&amp;#39;, Process.pid
+  end
+
+  defined?(ActiveRecord::Base) and
+    ActiveRecord::Base.connection.disconnect!
+end
+
+after_fork do |server, worker|
+  Signal.trap &amp;#39;TERM&amp;#39; do
+    puts &amp;#39;Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT&amp;#39;
+  end
+
+  defined?(ActiveRecord::Base) and
+    ActiveRecord::Base.establish_connection
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As the application does not use ActiveRecord, I removed those lines and
+gave the deploy a shot, knowing it would likely become a problem.  Soon, 
+it was manifesting itself by throwing 500 errors when a user logged in,
+but would clear up on a refresh.  This irritated me, though, but
+everything I found on the internet about using &lt;a href=&quot;https://github.com/jeremyevans/sequel&quot;&gt;Sequel&lt;/a&gt; with a
+forking webserver referred to reconnecting just using the DB object that
+was always just created globally in the application, which is not how
+&lt;a href=&quot;https://github.com/TalentBox/sequel-rails&quot;&gt;sequel-rails&lt;/a&gt; does things.  So, after digging through the
+code for a while I found that the DB object when using sequel-rails is
+at &lt;code&gt;Sequel::Model.db&lt;/code&gt;, which allowed me to clear up the 500 errors by
+making this adjustment to the config file: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;# config/unicorn.rb
+worker_processes Integer(ENV[&amp;quot;WEB_CONCURRENCY&amp;quot;] || 3)
+timeout 15
+preload_app true
+
+before_fork do |server, worker|
+  Signal.trap &amp;#39;TERM&amp;#39; do
+    puts &amp;#39;Unicorn master intercepting TERM and sending myself QUIT instead&amp;#39;
+    Process.kill &amp;#39;QUIT&amp;#39;, Process.pid
+  end
+
+  defined?(Sequel::Model) and
+    Sequel::Model.db.disconnect
+end
+
+after_fork do |server, worker|
+  Signal.trap &amp;#39;TERM&amp;#39; do
+    puts &amp;#39;Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT&amp;#39;
+  end
+
+  defined?(Sequel::Model) and
+    Sequel::Model.db.connect(SequelRails.configuration.environment_for(Rails.env))
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I hope that this saves some headaches for developers down the line.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>The Inferno of Independence</title>
@@ -360,21 +445,6 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
 &lt;p&gt;ED: I can live with that.&lt;/p&gt;
 
 &lt;p&gt;JH: It’s kind of the best you ask for.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Amanda Palmers Accidental Experiment With Real Communism</title>
-   
-   <link href="http://www.newyorker.com/online/blogs/culture/2012/10/amanda-palmers-kickstarter-scandal.html"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/10/02/Accidental-Experiment-from-pinboard.html"/>
-   <author>
-     <name>Joshua Clover</name>
-   </author>
-   
-   <updated>2012-10-02T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/10/02/Accidental-Experiment-from-pinboard</id>
-   <content type="html">&lt;p&gt;This is a time-honored dodge, which might be called “the Oompa-Loompa defense.” It goes something like this: outsourcing labor to people who will work for less is fine because they are “happy” to do it. Such practices and accompanying rationales have been continually refined—think the helpline that dials a tech in Bangalore. But the fantasy of the happy worker has taken on newer and more mind-bending aspects, as has work itself. It now includes things like the unpaid microlabor of providing content for Web sites. It includes the amateur photographer who provides her images of, say, the police killing a young black man to the local news as an “iReport” for nothing but a credit and a T-shirt. Or a music lover scratching out a review on some hip site for a byline alone. Or consider the subtlest and arguably the most exemplary case: how, in wandering the byways of Facebook and Google, you are diligently rendering gratis a host of information about the preferences and habits of you and your friends—data they sell to advertisers. This, too, is unpaid labor.&lt;/p&gt;
 </content>
  </entry>
  
