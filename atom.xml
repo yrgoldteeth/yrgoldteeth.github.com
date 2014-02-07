@@ -4,7 +4,7 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2013-09-24T23:03:10-05:00</updated>
+ <updated>2014-02-07T13:06:12-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
@@ -37,7 +37,7 @@ going too fast.&lt;/p&gt;
 &lt;p&gt;Has any one ever considered the creepiness of social media’s interface
 copy?&lt;/p&gt;
 
-&lt;p&gt;“View friendship.”&lt;br /&gt;
+&lt;p&gt;“View friendship.”&lt;br&gt;
 “Remember me.”&lt;/p&gt;
 
 &lt;p&gt;It feels perverse, awkward and foreign, yet familiar, like the best
@@ -59,7 +59,7 @@ are bombarded with messaging that your phone is revolutionary?&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Quick Note Regarding Terminal Clearning and vi Mode</title>
+   <title>Quick Note Regarding Terminal Clearing and vi Mode</title>
    
    <link href="http://ndfine.com/2013/08/05/quick-note-regarding-terminal-clearning-and-vi-mode.html"/>
    
@@ -70,11 +70,8 @@ into using vi (&lt;code&gt;set -o vi&lt;/code&gt;), which feels pure and holy.  
 missing the screen clearing that &lt;code&gt;Control-L&lt;/code&gt; affords.  Fix this by
 creating a &lt;code&gt;.inputrc&lt;/code&gt; file in your home directory with the following
 line (or appending it to your existing &lt;code&gt;.inputrc&lt;/code&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;bind -m vi-insert &quot;\C-l&quot;:clear-screen
-&lt;/code&gt;&lt;/pre&gt;
-
-</content>
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;bind -m vi-insert &amp;quot;\C-l&amp;quot;:clear-screen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -128,7 +125,7 @@ siblings, my wife and a few close friends. Then one man of some
 privilege spoke to another man of some privilege and I became a man of
 some privilege with megaphone, which I now employ, across an ocean, to
 bring these thoughts to you. And I love both of these men of
-privilege–power is a fact, it is not morality. Losing is tragic, but it
+privilege--power is a fact, it is not morality. Losing is tragic, but it
 is not noble. How many freedom fighters turned despots in the possession
 of superior guns?&lt;/p&gt;
 </content>
@@ -173,10 +170,10 @@ and statues than about real people. Fine. But generations come and go.
 People live, die and are largely forgotten. History is forever. All of
 humanity is the same species, and our species has survived literally
 countless wars, ethnic cleansings, incursions and imperial aggressions.
-But once an irreplaceable artifact of history is gone, it’s gone
+But once an irreplaceable artifact of history is gone, it&amp;#39;s gone
 forever. Thanks largely to a similarly barbaric cleansing on history on
-the part of early Christians, the world has lost 107 of Livy’s 142 books
-of Roman history, as well as Aristotle’s &lt;em&gt;On Comedy&lt;/em&gt;–both losses of
+the part of early Christians, the world has lost 107 of Livy&amp;#39;s 142 books
+of Roman history, as well as Aristotle&amp;#39;s &lt;em&gt;On Comedy&lt;/em&gt;--both losses of
 enormous consequence. These are crucial pieces of the human experience
 we will never recover.&lt;/p&gt;
 </content>
@@ -293,27 +290,19 @@ different planes, then expression must always be an act of compromise.&lt;/p&gt;
    
    <updated>2012-12-26T00:00:00-06:00</updated>
    <id>http://ndfine.com/2012/12/26/things-that-make-os-x-tolerable-part-one</id>
-   <content type="html">&lt;p&gt;After computing almost exclusively in Linux with &lt;a href=&quot;http://xmonad.org/&quot;&gt;xmonad&lt;/a&gt; and things like &lt;a href=&quot;http://www.xfree86.org/4.2.0/xmodmap.1.html&quot;&gt;xmodmap&lt;/a&gt; making it easy to do things like re-map my caps lock key into something actually useful&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, shifting to a MacBook and OS X is kind of jarring.  I’m collecting together a larger list of my recommendations, but I have two initially that made it actually possible for me to resist throwing the damn thing off the roof.&lt;/p&gt;
+   <content type="html">&lt;p&gt;After computing almost exclusively in Linux with &lt;a href=&quot;http://xmonad.org/&quot;&gt;xmonad&lt;/a&gt; and things like &lt;a href=&quot;http://www.xfree86.org/4.2.0/xmodmap.1.html&quot;&gt;xmodmap&lt;/a&gt; making it easy to do things like re-map my caps lock key into something actually useful[^1], shifting to a MacBook and OS X is kind of jarring.  I&amp;#39;m collecting together a larger list of my recommendations, but I have two initially that made it actually possible for me to resist throwing the damn thing off the roof.&lt;/p&gt;
 
 &lt;p&gt;Both are found at &lt;a href=&quot;http://pqrs.org/index.html.en&quot;&gt;pqrs.org&lt;/a&gt;.  The first
-is the oddly named &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en&quot;&gt;PCKeyboardHack&lt;/a&gt; and its sole purpose is to change the Caps Lock key, which is apparently more involved than your standard key remapping utility.  Caps Lock as Escape is so ingrained in my muscle memory that without it I feel like I’ve lost the ability to type since I hit esc roughly a bajillion times a day in vim.  This was vital.&lt;/p&gt;
+is the oddly named &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en&quot;&gt;PCKeyboardHack&lt;/a&gt; and its sole purpose is to change the Caps Lock key, which is apparently more involved than your standard key remapping utility.  Caps Lock as Escape is so ingrained in my muscle memory that without it I feel like I&amp;#39;ve lost the ability to type since I hit esc roughly a bajillion times a day in vim.  This was vital.&lt;/p&gt;
 
 &lt;p&gt;Somewhat less vital, but still frustrating was my desire to make the
 bottom-left button on the keyboard be left control LIKE ALL THAT IS GOOD
-AND HOLY because I almost never use the Fn key and that’s where control
+AND HOLY because I almost never use the Fn key and that&amp;#39;s where control
 is meant to be.  Since I was so pleased with PCKeyboardHack, I installed
-their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macbook/index.html.en&quot;&gt;KeyRemap4MacBook&lt;/a&gt; which adds a panel to your System Preferences and I mapped Fn to Control L.  One important note, you need Fn to make the Function keys work (sigh) so make sure to choose an additional modifier to cause the Fn signal to be sent&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macbook/index.html.en&quot;&gt;KeyRemap4MacBook&lt;/a&gt; which adds a panel to your System Preferences and I mapped Fn to Control L.  One important note, you need Fn to make the Function keys work (sigh) so make sure to choose an additional modifier to cause the Fn signal to be sent[^2].&lt;/p&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;The Escape key, in my case.&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;Fn to Control_L (+ Option_L+Fn to Fn) is what I chose.&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
+&lt;p&gt;[^1]: The Escape key, in my case.
+[^2]: Fn to Control&lt;em&gt;L (+ Option&lt;/em&gt;L+Fn to Fn) is what I chose.&lt;/p&gt;
 </content>
  </entry>
  
@@ -344,7 +333,6 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
    <updated>2012-12-13T00:00:00-06:00</updated>
    <id>http://ndfine.com/2012/12/13/Hickox-on-design-from-pinboard</id>
    <content type="html">&lt;p&gt;Web development is not typically something that can be done proficiently by one person. The range of tasks requires a level of specialization. But it’s important that we consider all of these specialists as designers working towards meeting our clients’ goals on the web. And most of all, it’s important that we communicate this within our organizations and broadcast it to our clients.&lt;/p&gt;
-
 </content>
  </entry>
  
@@ -363,7 +351,7 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
 
 &lt;p&gt;JH: Exactly. A band like Godspeed throws everyone else into high relief. You get a better sense of the moral topography of the underground.&lt;/p&gt;
 
-&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
 
 &lt;p&gt;ED: So for you, the best-case scenario is that a young band sees the 9.3 rating, wants to learn how to get that, does research into Godspeed You! Black Emperor, and decides, “Maybe we could do that, too”?&lt;/p&gt;
 
