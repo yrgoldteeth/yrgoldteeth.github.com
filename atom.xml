@@ -4,13 +4,38 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-02-07T16:52:09-06:00</updated>
+ <updated>2014-02-24T16:23:56-06:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>By Any Other Name</title>
+   
+   <link href="http://thecodelesscode.com/case/19"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2014/02/24/by-any-other-name-from-pinboard.html"/>
+   <author>
+     <name>Qi</name>
+   </author>
+   
+   <updated>2014-02-24T00:00:00-06:00</updated>
+   <id>http://ndfine.com/2014/02/24/by-any-other-name-from-pinboard</id>
+   <content type="html">&lt;p&gt;The old scribe was asked why, in his official accounts, the temples and the clans were named but the many monks and priests were not.&lt;/p&gt;
+
+&lt;p&gt;“If I gave you a sheet of figures to tally, would you first bestow a name upon each number seven?” asked the scribe, dismissing the questioner with a wave of an ink-stained hand.&lt;/p&gt;
+
+&lt;p&gt;This was mentioned to the Java master, who nodded and finished his tea.&lt;/p&gt;
+
+&lt;p&gt;The next morning the scribe ascended to his office, only to find the following written in thick block letters above the door:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;public static final int NUM_DAYS_IN_WEEK =&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;At this, the old scribe Qi was enlightened.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Using sequel-rails With A Forking Webserver</title>
@@ -418,33 +443,6 @@ their additional utility &lt;a href=&quot;http://pqrs.org/macosx/keyremap4macboo
    <updated>2012-12-13T00:00:00-06:00</updated>
    <id>http://ndfine.com/2012/12/13/Hickox-on-design-from-pinboard</id>
    <content type="html">&lt;p&gt;Web development is not typically something that can be done proficiently by one person. The range of tasks requires a level of specialization. But it’s important that we consider all of these specialists as designers working towards meeting our clients’ goals on the web. And most of all, it’s important that we communicate this within our organizations and broadcast it to our clients.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>A Rational Conversation - Jessica Hopper Parses the Hallowed Return of Godspeed You Black Emperor</title>
-   
-   <link href="http://www.thedailyswarm.com/swarm/rational-conversation-jessica-hopper/"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/10/22/A-Rational-Conversation-from-pinboard.html"/>
-   <author>
-     <name>Eric Drucker and Jessica Hopper</name>
-   </author>
-   
-   <updated>2012-10-22T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2012/10/22/A-Rational-Conversation-from-pinboard</id>
-   <content type="html">&lt;p&gt;ED: It’s been interesting to read the first reviews of the new record. This notion keeps coming up of it being important because nothing out there right now is like it. In Mark Richardson’s Pitchfork review, he wrote, ”[GY!BE] feel out of step in a very necessary way.” It is good to have a band or an artist come around every few years to make you take stock of what you’ve been listening to and why.&lt;/p&gt;
-
-&lt;p&gt;JH: Exactly. A band like Godspeed throws everyone else into high relief. You get a better sense of the moral topography of the underground.&lt;/p&gt;
-
-&lt;p&gt;...&lt;/p&gt;
-
-&lt;p&gt;ED: So for you, the best-case scenario is that a young band sees the 9.3 rating, wants to learn how to get that, does research into Godspeed You! Black Emperor, and decides, “Maybe we could do that, too”?&lt;/p&gt;
-
-&lt;p&gt;JH: Yes.&lt;/p&gt;
-
-&lt;p&gt;ED: I can live with that.&lt;/p&gt;
-
-&lt;p&gt;JH: It’s kind of the best you ask for.&lt;/p&gt;
 </content>
  </entry>
  
