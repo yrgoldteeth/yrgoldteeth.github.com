@@ -38,6 +38,97 @@
           <div class='col-md-12'>
             
             <h3>
+              <a href='/2012/01/03/css3-progress-bars-for-rails.html'>CSS3 Progress Bars for Rails</a>
+            </h3>
+            
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8'>
+            <h4>03 Jan 2012</h4>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      <p><link href='/stylesheets/css3-progress-bar.css' rel='stylesheet' type='text/css' /></p>
+
+<p>When one of us at <a href="http://isotope11.com">Isotope11</a> runs across something interesting or useful on the internet,
+we&#39;ll send the link to all the other devs.  Over the recent holiday, <a href="https://twitter.com/#!/knewter">Josh</a> sent a link to
+another <a href="http://dipperstove.com">Josh</a> and his new fancy <a href="http://dipperstove.com/design/css3-progress-bars.html">CSS3 Progress Bars</a>.  I had an immediate need for 
+something like this in a Rails project, so I wrote some helper methods to generate the HTML with 
+some simple options.  </p>
+
+<p>I created a gem, <a href="https://github.com/yrgoldteeth/css3-progress-bar-rails">css3-progress-bar-rails</a> that can be dropped into a Rails 3.1+ project to
+utilize these status bars.  To install, add &#39;css3-progress-bar-rails&#39; to your Gemfile, and add
+require &#39;css3-progress-bar&#39; into your application.css, so that the CSS is picked up by the Rails
+asset pipeline.  </p>
+
+<p><strong>Examples</strong>  </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;%= progress_bar(55) %&gt;  
+</code></pre></div>
+<div class='bar_container'>
+  <div class='bar_mortice'>
+    <div class='progress' style='width: 55%;'></div>
+  </div>
+</div>  
+
+<p><br /></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;%= progress_bar(33, :color =&gt; &#39;blue&#39;, :rounded =&gt; true) %&gt;  
+</code></pre></div>
+<div class='bar_container rounded_bar_container blue_container'>
+  <div class='bar_mortice rounded blue_mortice'>
+    <div class='progress rounded blue' style='width: 33%;'></div>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;%= progress_bar(83, :color =&gt; &#39;orange&#39;, :rounded =&gt; true, :tiny =&gt; true) %&gt;   
+</code></pre></div>
+<div class='bar_container rounded_bar_container orange_container container_tiny'>
+  <div class='bar_mortice rounded orange_mortice mortice_tiny'>
+    <div class='progress rounded orange progress_tiny' style='width: 83%;'></div>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;%= combo_progress_bar([19, 9, 20, 10]) %&gt;   
+</code></pre></div>
+<div class='bar_container'>
+  <div class='bar_mortice'>
+    <div class='progress green' style='width: 19%;'></div>
+    <div class='progress orange' style='width: 9%;'></div>
+    <div class='progress pink' style='width: 20%;'></div>
+    <div class='progress blue' style='width: 10%;'></div>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;%= combo_progress_bar([12, 15, 18, 22, 10], :tiny =&gt; true) %&gt;   
+</code></pre></div>
+<div class='bar_container container_tiny'>
+  <div class='bar_mortice mortice_tiny'>
+    <div class='progress green progress_tiny' style='width: 12%;'></div>
+    <div class='progress orange progress_tiny' style='width: 15%;'></div>
+    <div class='progress pink progress_tiny' style='width: 18%;'></div>
+    <div class='progress blue progress_tiny' style='width: 22%;'></div>
+    <div class='progress purple progress_tiny' style='width: 10%;'></div>
+  </div>
+</div>
+
+<p><br /></p>
+
+    
+  </article>
+
+  <article>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-12'>
+            
+            <h3>
               <a href='http://bamareport.blogspot.com/2011/12/university-of-alabama-football-report_30.html'>University of Alabama Football Report for 12/30/11</a>
             </h3>
             
@@ -183,48 +274,6 @@
 
         <small><cite><a href='http://www.rollingstone.com/politics/blogs/taibblog/a-christmas-message-from-americas-rich-20111222'>Matt Taibbi</a></cite></small>
       </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <div class='row'>
-          <div class='col-md-12'>
-            
-            <h3>
-              <a href='/2011/12/17/twitter-bootstrap-will-paginate.html'>Will Paginate link renderer for Twitter Bootstrap</a>
-            </h3>
-            
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h4>17 Dec 2011</h4>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    
-      <p>The <a href="http://github.com/mislav/will_paginate">will_paginate</a> library makes adding pagination functionality to 
-Rails apps (and other Ruby frameworks) a breeze.  Recently I have been working
-on an app using Twitter&#39;s <a href="http://twitter.github.com/bootstrap">Bootstrap</a> styling framework, and had a need
-for some pagination.  I dropped the method for the page links into a 
-<code>.pagination</code> div and saw this:  </p>
-
-<p><img src='/images/bootstrap-will-paginate-before.jpg' alt='twitter-bootstrap-before' /></p>
-
-<p>That was decidedly not what I was looking for, so I reached out to Google and found
-Isaac Bowen&#39;s <a href="http://isaacbowen.com/blog/using-will_paginate-action_view-and-bootstrap">solution</a>, which worked exactly as advertised:  </p>
-
-<p><img src='/images/bootstrap-will-paginate-after.jpg' alt='twitter-bootstrap-after' /></p>
-
-<p>As I&#39;ve already found this solution useful in at least two different projects,
-I decided to wire it all up into a Rails engine and release it as a <a href="http://github.com/yrgoldteeth/bootstrap-will_paginate">gem</a>. 
-Just add <code>bootstrap-will_paginate</code> to your Rails project&#39;s Gemfile
-and you&#39;re ready to go.</p>
-
     
   </article>
 
