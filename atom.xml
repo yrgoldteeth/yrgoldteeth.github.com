@@ -4,13 +4,38 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-03-27T09:19:41-05:00</updated>
+ <updated>2014-04-15T11:21:25-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>The Ballad of Geeshie and Elvie</title>
+   
+   <link href="http://www.nytimes.com/interactive/2014/04/13/magazine/blues.html?_r=0"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2014/04/15/the-ballad-of-geeshie-and-elvie-from-pinboard.html"/>
+   <author>
+     <name>John Jeremiah Sullivan</name>
+   </author>
+   
+   <updated>2014-04-15T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2014/04/15/the-ballad-of-geeshie-and-elvie-from-pinboard</id>
+   <content type="html">&lt;p&gt;He asked about everything, not just music but recipes, dances, games,
+ghost stories, and in his note-taking, he realized that the county
+itself, as an organizing geographical principle, had some reality beyond
+a shape on the map, that it retained in some much-diminished but not
+quite extinguished sense, the old contours of the premodern world, the
+world of the commons, how in one county you would have dozens of fiddle
+players, but in the very next county, none — there everyone played
+banjo. He began to intuit a theory of “clusters,” that this was how
+culture worked, emanating outward from vortices where craft-making and
+art-making suddenly rise, under a confluence of various pressures, to
+higher levels.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Seasteading</title>
@@ -505,27 +530,6 @@ powerless are mobilizing to threaten the powerful. So the US government
 during WWI made it illegal to urge people, like the Socialists, not to
 buy war bonds — but it did allow a Wall Street adviser to counsel his
 client not to make a bad investment.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>An Act Of Compromise</title>
-   
-   <link href="http://www.newyorker.com/reporting/2012/12/24/121224fa_fact_foer?currentPage=all&mobify=0"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/28/an-act-of-compromise-from-pinboard.html"/>
-   <author>
-     <name>Joshua Foer</name>
-   </author>
-   
-   <updated>2012-12-28T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2012/12/28/an-act-of-compromise-from-pinboard</id>
-   <content type="html">&lt;p&gt;We can glimpse, glance, visualize, view, look, spy, or ogle. Stare,
-gawk, or gape. Peek, watch, or scrutinize. Each word suggests some
-subtly different quality: looking implies volition; spying suggests
-furtiveness; gawking carries an element of social judgment and a sense
-of surprise. When we try to describe an act of vision, we consider a
-constellation of available meanings. But if thoughts and words exist on
-different planes, then expression must always be an act of compromise.&lt;/p&gt;
 </content>
  </entry>
  
