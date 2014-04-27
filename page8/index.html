@@ -38,6 +38,45 @@
           <div class='col-md-12'>
             
             <h3>
+              <a href='http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works'>Dear Congress, It’s No Longer OK To Not Know How The Internet Works</a>
+            </h3>
+            
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8'>
+            <h4>17 Dec 2011</h4>
+          </div>
+          
+            <div class='col-md-pull-6 col-md-2'>
+              <h4>
+                <a href='/2011/12/17/motherboard.vice.com-from-pinboard.html' class='btn btn-info btn-xs'>
+                  <span class="glyphicon glyphicon-pushpin"></span>
+                </a>
+              </h4>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      <blockquote>
+        <p>So it was as proponents of the Hollywood-funded bill curmudgeonly shot down all but two amendments proposed by its opponents, who fought to dramatically alter the document to preserve security and free speech on the net. But the chilling takeaway of this whole debacle was the irrefutable air of anti-intellectualism; that inescapable absurdity that we have members of Congress voting on a technical bill who do not posses any technical knowledge on the subject and do not find it imperative to recognize those who do. </p>
+
+<p>This used to be funny, but now it’s really just terrifying. We’re dealing with legislation that will completely change the face of the internet and free speech for years to come. Yet here we are, still at the mercy of underachieving Congressional know-nothings that have more in common with the slacker students sitting in the back of math class than elected representatives. The fact that some of the people charged with representing us must be dragged kicking and screaming out of their complacency on such matters is no longer endearing — it’s just pathetic and sad.  </p>
+
+        <small><cite><a href='http://motherboard.vice.com/2011/12/16/dear-congress-it-s-no-longer-ok-to-not-know-how-the-internet-works'>Joshua Kopstein</a></cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-12'>
+            
+            <h3>
               <a href='/2011/12/15/life-will-suck-if-they-censor-the-internet.html'>Life will suck if they censor the internet.</a>
             </h3>
             
@@ -167,61 +206,6 @@
 
         <small><cite><a href='http://www.newyorker.com/online/blogs/comment/2011/12/foreclosed-futures.html'>George Packer</a></cite></small>
       </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <div class='row'>
-          <div class='col-md-12'>
-            
-            <h3>
-              <a href='/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers.html'>One line of sed for Rails 3.1 asset path helpers</a>
-            </h3>
-            
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h4>27 Nov 2011</h4>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    
-      <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to 
-convert many stylesheets into erb templates to make use of the asset_path(&#39;/path/to/img&#39;)
-helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>, 
-so I pulled this together.</p>
-
-<p>Say you have a stylesheet from the <a href="http://jqueryui.com">jQuery UI</a> project that looks like
-<a href="/stylesheets/jquery-ui-1.8.14.custom.css">this</a>.  Type the following on a command line on
-a system with sed installed:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">sed &#39;s/url(\([^(]*\))/url(&lt;%= asset_path(&quot;\1&quot;) %&gt;)/g&#39; jquery-ui-1.8.14.custom.css &gt; jquery-ui-1.8.14.custom.css.erb
-</code></pre></div>
-<p>You should get results like this partial diff of the two files:</p>
-
-<pre class='prettyprint'>    
-  62c62
-  < .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
-  ---
-  > .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(<%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %>) 50% top repeat-x; color: #333333; }
-  64c64
-  < .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  ---
-  > .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(<%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %>) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  69c69
-  < .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  ---
-  > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(<%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  71c71
-  < .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-  ---
-  > .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(<%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-</pre>
-
     
   </article>
 

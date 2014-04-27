@@ -4,13 +4,32 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-04-15T11:21:25-05:00</updated>
+ <updated>2014-04-27T14:58:39-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Programming Sucks</title>
+   
+   <link href="http://stilldrinking.org/programming-sucks"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2014/04/27/programming-sucks-from-pinboard.html"/>
+   <author>
+     <name>Peter Welch</name>
+   </author>
+   
+   <updated>2014-04-27T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2014/04/27/programming-sucks-from-pinboard</id>
+   <content type="html">&lt;p&gt;Every programmer occasionally, when nobody&amp;#39;s home, turns off the lights, pours a glass of scotch, puts on some light German electronica, and opens up a file on their computer. It&amp;#39;s a different file for every programmer. Sometimes they wrote it, sometimes they found it and knew they had to save it. They read over the lines, and weep at their beauty, then the tears turn bitter as they remember the rest of the files and the inevitable collapse of all that is good and true in the world.&lt;/p&gt;
+
+&lt;p&gt;This file is Good Code. It has sensible and consistent names for functions and variables. It&amp;#39;s concise. It doesn&amp;#39;t do anything obviously stupid. It has never had to live in the wild, or answer to a sales team. It does exactly one, mundane, specific thing, and it does it well. It was written by a single person, and never touched by another. It reads like poetry written by someone over thirty.&lt;/p&gt;
+
+&lt;p&gt;Every programmer starts out writing some perfect little snowflake like this. Then they&amp;#39;re told on Friday they need to have six hundred snowflakes written by Tuesday, so they cheat a bit here and there and maybe copy a few snowflakes and try to stick them together or they have to ask a coworker to work on one who melts it and then all the programmers&amp;#39; snowflakes get dumped together in some inscrutable shape and somebody leans a Picasso on it because nobody wants to see the cat urine soaking into all your broken snowflakes melting in the light of day. Next week, everybody shovels more snow on it to keep the Picasso from falling over.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>The Ballad of Geeshie and Elvie</title>
@@ -498,38 +517,6 @@ the best window into the soul of humanity, but it certainly is a bit
 depressing sometimes. The lack of sympathy or empathy for basically
 anyone is quite stunning. Everything is always the fault of victims,
 basically.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Yours, Mine, but Not Ours | Jacobin</title>
-   
-   <link href="http://jacobinmag.com/2012/12/yours-mine-but-not-ours/"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2012/12/29/yours-mine-but-not-ours-jacobin-from-pinboard.html"/>
-   <author>
-     <name>Corey Robin</name>
-   </author>
-   
-   <updated>2012-12-29T00:00:00-06:00</updated>
-   <id>http://ndfine.com/2012/12/29/yours-mine-but-not-ours-jacobin-from-pinboard</id>
-   <content type="html">&lt;p&gt;Because the rhetoric of security is one of universality and neutrality
-while the reality is one of conflict and division, state officials and
-elites have every motivation, and justification, to suppress heterodox
-and dissenting definitions of security. And so they have, as Hobbes
-predicted they could and would. But because a neutral, universal
-definition of security is impossible to achieve in practice, repression
-for the sake of security must be necessarily selective: only certain
-groups or certain kinds of dissent will be targeted. The question then
-becomes: which groups, which dissent?&lt;/p&gt;
-
-&lt;p&gt;Because government officials are themselves connected with particular
-constituencies in society — often the most powerful — they will seldom
-suppress challenges to security that come from the powerful; instead
-they will target the powerless and the marginal, particularly if the
-powerless are mobilizing to threaten the powerful. So the US government
-during WWI made it illegal to urge people, like the Socialists, not to
-buy war bonds — but it did allow a Wall Street adviser to counsel his
-client not to make a bad investment.&lt;/p&gt;
 </content>
  </entry>
  
