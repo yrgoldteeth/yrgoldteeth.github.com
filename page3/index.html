@@ -38,6 +38,37 @@
           <div class='col-md-12'>
             
             <h3>
+              <a href='/2013/08/05/quick-note-regarding-terminal-clearning-and-vi-mode.html'>Quick Note Regarding Terminal Clearing and vi Mode</a>
+            </h3>
+            
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8'>
+            <h4>05 Aug 2013</h4>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      <p>I have switched from using emacs keybindings in my terminal emulator
+into using vi (<code>set -o vi</code>), which feels pure and holy.  The only problem is I was
+missing the screen clearing that <code>Control-L</code> affords.  Fix this by
+creating a <code>.inputrc</code> file in your home directory with the following
+line (or appending it to your existing <code>.inputrc</code>):</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">bind -m vi-insert &quot;\C-l&quot;:clear-screen
+</code></pre></div>
+    
+  </article>
+
+  <article>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-12'>
+            
+            <h3>
               <a href='http://davidsimon.com/doubling-down/'>Doubling Down</a>
             </h3>
             
@@ -220,60 +251,6 @@ enormous consequence. These are crucial pieces of the human experience
 we will never recover.</p>
 
         <small><cite><a href='http://digbysblog.blogspot.com/2013/01/crimes-against-history-are-crimes.html'>David Atkins</a></cite></small>
-      </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <div class='row'>
-          <div class='col-md-12'>
-            
-            <h3>
-              <a href='http://m.vanityfair.com/hollywood/2013/01/making-of-blues-brothers-budget-for-cocaine'>Making Blues Brothers With John Belushi and Dan Akroyd | Vanity Fair</a>
-            </h3>
-            
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h4>02 Jan 2013</h4>
-          </div>
-          
-            <div class='col-md-pull-6 col-md-2'>
-              <h4>
-                <a href='/2013/01/02/making-blues-brothers-with-john-belushi-and-dan-akroyd-we-had-a-budget-for-cocaine-vanity-fair-from-pinboard.html' class='btn btn-info btn-xs'>
-                  <span class="glyphicon glyphicon-pushpin"></span>
-                </a>
-              </h4>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-    
-      <blockquote>
-        <p>Then there’s Aykroyd. Yes, Belushi occasionally tries his patience. At
-one point, Aykroyd smashes his wristwatch, shouting, “Do you want to end
-up like this?” But he always protects and never judges. “There was a
-sense that, no matter what John did, Danny wouldn’t abandon him, that he
-didn’t think John was this awful person,” Carrie Fisher says. “He was
-really taking care of John.”</p>
-
-<p>One night at three, while filming on a deserted lot in Harvey, Illinois,
-Belushi disappears. He does this sometimes. On a hunch, Aykroyd follows
-a grassy path until he spies a house with a light on.</p>
-
-<p>“Uh, we’re shooting a film over here,” Aykroyd tells the homeowner.
-“We’re looking for one of our actors.”</p>
-
-<p>“Oh, you mean Belushi?” the man replies. “He came in here an hour ago
-and raided my fridge. He’s asleep on my couch.”</p>
-
-<p>Only Belushi could pull this off. “America’s Guest,” Aykroyd calls him.</p>
-
-        <small><cite><a href='http://m.vanityfair.com/hollywood/2013/01/making-of-blues-brothers-budget-for-cocaine'>Ned Zeman</a></cite></small>
       </blockquote>
     
   </article>
