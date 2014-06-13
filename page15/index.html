@@ -38,6 +38,43 @@
           <div class='col-md-12'>
             
             <h3>
+              <a href='http://www.economist.com/node/18648254'>Osama bin Laden | The Economist</a>
+            </h3>
+            
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8'>
+            <h4>06 May 2011</h4>
+          </div>
+          
+            <div class='col-md-pull-6 col-md-2'>
+              <h4>
+                <a href='/2011/05/06/www.economist.com-from-pinboard.html' class='btn btn-info btn-xs'>
+                  <span class="glyphicon glyphicon-pushpin"></span>
+                </a>
+              </h4>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      <blockquote>
+        <p>The price set on his head for more than a decade never bothered him, for Allah determined every breath in his body, and could ensure that the bombs dropped on his hideout at Tora Bora, or on his convoy through the mountains, never touched him. His martyr’s time would come when it came. The difference between pure Muslims and Americans, he said, was that Americans loved life, whereas Muslims loved death. Whether or not he resisted when the Crusaders’ special forces arrived, their bullets could only exalt him.  </p>
+
+        <small><cite><a href='http://www.economist.com/node/18648254'>The Economist</a></cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-12'>
+            
+            <h3>
               <a href='http://www.economist.com/blogs/democracyinamerica/2011/04/tornadoes_american_south'>visits (After The Storm)</a>
             </h3>
             
@@ -189,69 +226,6 @@
     
   </article>
 
-  <article>
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <div class='row'>
-          <div class='col-md-12'>
-            
-            <h3>
-              <a href='/2011/02/24/groupwise-max-rails3.html'>Finding The Group-wise Maximum in Rails3 / Arel</a>
-            </h3>
-            
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h4>24 Feb 2011</h4>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    
-      <p><a href="http://www.isotope11.com/blog/group-wise-max-rails3">cross posted at Isotope11&#39;s blog</a></p>
-
-<p>Recently at work we ran across a situation where we needed an efficient way
-to find the <a href="http://dev.mysql.com/doc/refman/5.0/en/example-maximum-column-group-row.html">Group-wise maximum of a certain column</a>
-in an efficient manner.  After fighting with and realizing that there is apparently no way to make MySQL
-combine an ORDER BY statement with a GROUP BY statement, we were able to get the results with two queries,
-but due to the volume of data, this would eventually have too much overhead to be sustainable.<br>
-Once I determined that using a left join on itself would be the way to go at the problem, I set 
-out to figure out the solution using the new <a href="https://github.com/rails/arel">Arel syntax</a>.</p>
-
-<h5>Example</h5>
-
-<p>This example uses two models, ParentThing and ChildThing, with ChildThing being a basic key-value store.
-ChildThings can have duplicate rows with the same key, and we were looking to return only the newest
-results for each distinct key found in the ParentThing&#39;s ChildThings.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">class ParentThing &lt; ActiveRecord::Base
-  has_many :child_things
-end
-
-class ChildThing &lt; ActiveRecord::Base
-  belongs_to :parent_thing
-end
-</code></pre></div>
-<p>The solution was to add a single named scope to the ChildThing class:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">class ChildThing &lt; ActiveRecord::Base
-  belongs_to :parent_thing
-
-  scope :newest_results, 
-    joins(&#39;LEFT JOIN child_things c2 ON child_things.key = c2.key AND child_things.created_at &gt; c2.created_at&#39;),
-    where(&#39;c2.key is NULL&#39;)
-
-end
-</code></pre></div>
-<p>So, now if p is an instance of ParentThing: </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">p.child_things.newest_results 
-</code></pre></div>
-<p>will return a collection that contains the newest created ChildThing for each disparate key in the ParentThing&#39;s ChildThing
-full collection.</p>
-
-    
-  </article>
-
 
 <ul class='pager'>
   
@@ -289,6 +263,9 @@ full collection.</p>
             </a>
             <a class='list-group-item' href='mailto:nick@ndfine.com'>
               Email
+            </a>
+            <a class='list-group-item' href='http://shots.ndf.es/ndfine.asc'>
+              Public Key
             </a>
             <a class='list-group-item' href='http://feeds.feedburner.com/ndfine'>
               Feed

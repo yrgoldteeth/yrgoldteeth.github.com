@@ -19,7 +19,7 @@
         })();
       //]]>
     </script>
-    <title>One line of sed for Rails 3.1 asset path helpers</title>
+    <title>PGP Key</title>
   </head>
   <body>
     <div class='navbar'>
@@ -37,50 +37,55 @@
         <div class='col-md-12'>
           
           <h3>
-            <a href='/2011/11/27/one-line-of-sed-for-rails-asset-path-helpers.html'>One line of sed for Rails 3.1 asset path helpers</a>
+            <a href='/2014/06/12/pgp-key.html'>PGP Key</a>
           </h3>
           
         </div>
       </div>
       <div class='row'>
         <div class='col-md-8'>
-          <h4>27 Nov 2011</h4>
+          <h4>12 Jun 2014</h4>
         </div>
         
       </div>
     </div>
   </div>
   
-  <p>With the advent of the new asset pipeline in Rails 3.1.x, I have had to 
-convert many stylesheets into erb templates to make use of the asset_path(&#39;/path/to/img&#39;)
-helpers.  This seemed like an obvious job for a little <a href="http://www.gnu.org/software/sed/manual/sed.html">sed</a>, 
-so I pulled this together.</p>
+  <p>If you need to send me anything via email that only I can decrypt, you
+can encrypt it with my public key:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
 
-<p>Say you have a stylesheet from the <a href="http://jqueryui.com">jQuery UI</a> project that looks like
-<a href="/stylesheets/jquery-ui-1.8.14.custom.css">this</a>.  Type the following on a command line on
-a system with sed installed:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">sed &#39;s/url(\([^(]*\))/url(&lt;%= asset_path(&quot;\1&quot;) %&gt;)/g&#39; jquery-ui-1.8.14.custom.css &gt; jquery-ui-1.8.14.custom.css.erb
+mQENBFOKdmUBCADdShn+UywEmjew5pqdD4x6T0aFl+kcnsp3Us8t0OEX4dOPOfWo
+I1XttIMV+2UYYdWxNt7ukerMDHfCniANWoN08Kl6GUKwotj/MZNN6ngE4VqGgufz
+rHyN/t+aN+WJG/FCaeSXWZxsVxRC1d3vzH3HsGHmqT+aj9GmnHpGRAzOB5R8kU4U
+yrS66W/LnGW5NXXcK+GOjlPQvUh7XGUM4g+GeUFk8GP7G1nKH3ovwB28cdW5OEHh
+Dq+kpaD83NT57dHEaF4+hr6ZGXNWJZBa+IjxhaQkVh+4jiaaS8QxwZAq3KA4a0lS
+LFRWVy75ROhvSX9LiVqRk1s6BdqgDs07flG/ABEBAAG0H05pY2hvbGFzIEZpbmUg
+PG5pY2tAbmRmaW5lLmNvbT6JAT0EEwEKACcFAlOKdmUCGwMFCQeGH4AFCwkIBwMF
+FQoJCAsFFgIDAQACHgECF4AACgkQYWPAS88f028rLQf/fvcPCsKCDDDhgMoH8/f4
+QSdfudfEFyvTtjXTvFE8+UVc5rpJRPgqZD+OMA6eGNdFk2BMfZ8zEQ2jJOBOxwMd
+dbV5zkK/KTXoDjEHVjebcoFtjb08zDc75sXUCYZg/RZpxHAxhKZv9E5eCp3ekHV/
+WKunjLohZmldPp2GDCNixvRn16RWkYLzKxicOMz19fmZjZlAAE8I34RV/u+sMyJS
+NC9LCHzXPvr1z4HJhdrifntEkkYpBlIJ/xhDCv9sXZ855aaK2HaBRVuFrn6qx/10
+GjcY3kBLgPLPxl6pqGi1XGLvQ6TPtEOAMJwb7di4xbnDe5mYjH5FFrvqbsGH+TPX
+4LkBDQRTinZlAQgA/DhBlVx1NZQfwPJR505XIual7QPcADI7dmbmZq4mN0s9uA9k
+XFhEseDZsFo2mLJm5HDYubkgi6/8MY0pnpUlICL0lFKiOqMf5zPWrU7ZWycDIOyg
+YtGzRnCER0gQmQsdCOkewj0Dr+YJTzLNnTuLgPHe/T9YonBNm9WY7t2a0HV+f1vN
+ZY+Ynnvd6gcpbiLIJ92T9ei34y+u0m1peuBK20ulgfUniAdOeHP/SwZmT3ABmo1b
+i3qmcOCO4uol42qFwPzKGx9WtEKJ6wG2m8NXRsaCnWAOW5dAT1Aq4Pq1hZuK2ZMc
+ZbHle6GQeQvkuSXGCygM58L+kQr9MtQRCYVFdwARAQABiQElBBgBCgAPBQJTinZl
+AhsMBQkHhh+AAAoJEGFjwEvPH9Nv5MMIAI9NDAHJEX8kT6kCyE3W164VJfvfbUn+
+CnnCTTjoiiiBV50biCDQ0SYC6NQqR3RWnlAxCr684b6vDbd+YOk4pg9cEkwagz+f
+l3px8lLAotGhMkUw7CCiGPNYpB+ny2YSbDVV9ipBAsBLYPiHs8q8e39wsx20018t
+onG/48dZVWdVSbJGcB6KYAie7nPyNBJdhcm0LuFHE7S+VBkI98M9L4DzW85dQrFn
+4DXGyNVJOSUfjPdh3DbH6bihqmaRLOgfcMWDyBlFHeHWqzmwVGpcCl3rdt7WbpWa
+F//wZ8GHmAg7gmoh4q2wMpqp/kuSZliC97PnYjFmFtJ7PdNXuRbL/mk=
+=3pHs
+-----END PGP PUBLIC KEY BLOCK-----
 </code></pre></div>
-<p>You should get results like this partial diff of the two files:</p>
-
-<pre class='prettyprint'>    
-  62c62
-  < .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
-  ---
-  > .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(<%= asset_path("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") %>) 50% top repeat-x; color: #333333; }
-  64c64
-  < .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  ---
-  > .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(<%= asset_path("images/ui-bg_gloss-wave_35_f6a828_500x100.png") %>) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
-  69c69
-  < .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  ---
-  > .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(<%= asset_path("images/ui-bg_glass_100_f6f6f6_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; }
-  71c71
-  < .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-  ---
-  > .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(<%= asset_path("images/ui-bg_glass_100_fdf5ce_1x400.png") %>) 50% 50% repeat-x; font-weight: bold; color: #c77405; }
-</pre>
+<p>You can also find it linked <a href="http://shots.ndf.es/ndfine.asc">here</a>.</p>
 
   
 </article>
