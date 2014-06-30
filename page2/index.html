@@ -38,6 +38,53 @@
           <div class='col-md-12'>
             
             <h3>
+              <a href='http://www.nytimes.com/interactive/2014/04/13/magazine/blues.html?_r=0'>The Ballad of Geeshie and Elvie</a>
+            </h3>
+            
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8'>
+            <h4>15 Apr 2014</h4>
+          </div>
+          
+            <div class='col-md-pull-6 col-md-2'>
+              <h4>
+                <a href='/2014/04/15/the-ballad-of-geeshie-and-elvie-from-pinboard.html' class='btn btn-info btn-xs'>
+                  <span class="glyphicon glyphicon-pushpin"></span>
+                </a>
+              </h4>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      <blockquote>
+        <p>He asked about everything, not just music but recipes, dances, games,
+ghost stories, and in his note-taking, he realized that the county
+itself, as an organizing geographical principle, had some reality beyond
+a shape on the map, that it retained in some much-diminished but not
+quite extinguished sense, the old contours of the premodern world, the
+world of the commons, how in one county you would have dozens of fiddle
+players, but in the very next county, none — there everyone played
+banjo. He began to intuit a theory of “clusters,” that this was how
+culture worked, emanating outward from vortices where craft-making and
+art-making suddenly rise, under a confluence of various pressures, to
+higher levels.</p>
+
+        <small><cite><a href='http://www.nytimes.com/interactive/2014/04/13/magazine/blues.html?_r=0'>John Jeremiah Sullivan</a></cite></small>
+      </blockquote>
+    
+  </article>
+
+  <article>
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+        <div class='row'>
+          <div class='col-md-12'>
+            
+            <h3>
               <a href='http://tinyletter.com/vruba/letters/6-3-seasteading'>Seasteading</a>
             </h3>
             
@@ -277,106 +324,6 @@ Obsolescence that is, for us all: destiny.</p>
 
         <small><cite><a href='http://thecodelesscode.com/case/19'>Qi</a></cite></small>
       </blockquote>
-    
-  </article>
-
-  <article>
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <div class='row'>
-          <div class='col-md-12'>
-            
-            <h3>
-              <a href='/2014/02/07/using-sequel-rails-with-a-forking-webserver.html'>Using sequel-rails With A Forking Webserver</a>
-            </h3>
-            
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h4>07 Feb 2014</h4>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    
-      <p>I was contracted recently for a rush job on a dashboard-style reporting
-webapp using a postgres database whose schema I did not design or
-control.  I had long intended on looking into the <a href="https://github.com/jeremyevans/sequel">Sequel</a> 
-library for database interactions, and as I was going to be developing
-the application in Rails, I was happy to see that there was also an
-existing <a href="https://github.com/TalentBox/sequel-rails">sequel-rails</a> gem that works almost exactly as
-expected similar to the stock ActiveRecord style of Rails apps.  </p>
-
-<p>I was able to easily make changes to the database in a migration style,
-and the application in general just went off without a hitch.</p>
-
-<p>The application needed a staging/demo server that could be provisioned
-quickly, so I went with Heroku in a manner similar to the instructions
-in this <a href="https://devcenter.heroku.com/articles/rails-unicorn">article</a>, which calls for the <a href="http://unicorn.bogomips.org/">Unicorn</a>
-webserver with a configuration like so:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text"># config/unicorn.rb
-worker_processes Integer(ENV[&quot;WEB_CONCURRENCY&quot;] || 3)
-timeout 15
-preload_app true
-
-before_fork do |server, worker|
-  Signal.trap &#39;TERM&#39; do
-    puts &#39;Unicorn master intercepting TERM and sending myself QUIT instead&#39;
-    Process.kill &#39;QUIT&#39;, Process.pid
-  end
-
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.connection.disconnect!
-end
-
-after_fork do |server, worker|
-  Signal.trap &#39;TERM&#39; do
-    puts &#39;Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT&#39;
-  end
-
-  defined?(ActiveRecord::Base) and
-    ActiveRecord::Base.establish_connection
-end
-</code></pre></div>
-<p>As the application does not use ActiveRecord, I removed those lines and
-gave the deploy a shot, knowing it would likely become a problem.  Soon, 
-it was manifesting itself by throwing 500 errors when a user logged in,
-but would clear up on a refresh.  This irritated me, though, but
-everything I found on the internet about using <a href="https://github.com/jeremyevans/sequel">Sequel</a> with a
-forking webserver referred to reconnecting just using the DB object that
-was always just created globally in the application, which is not how
-<a href="https://github.com/TalentBox/sequel-rails">sequel-rails</a> does things.  So, after digging through the
-code for a while I found that the DB object when using sequel-rails is
-at <code>Sequel::Model.db</code>, which allowed me to clear up the 500 errors by
-making this adjustment to the config file: </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text"># config/unicorn.rb
-worker_processes Integer(ENV[&quot;WEB_CONCURRENCY&quot;] || 3)
-timeout 15
-preload_app true
-
-before_fork do |server, worker|
-  Signal.trap &#39;TERM&#39; do
-    puts &#39;Unicorn master intercepting TERM and sending myself QUIT instead&#39;
-    Process.kill &#39;QUIT&#39;, Process.pid
-  end
-
-  defined?(Sequel::Model) and
-    Sequel::Model.db.disconnect
-end
-
-after_fork do |server, worker|
-  Signal.trap &#39;TERM&#39; do
-    puts &#39;Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT&#39;
-  end
-
-  defined?(Sequel::Model) and
-    Sequel::Model.db.connect(SequelRails.configuration.environment_for(Rails.env))
-end
-</code></pre></div>
-<p>I hope that this saves some headaches for developers down the line.</p>
-
     
   </article>
 
