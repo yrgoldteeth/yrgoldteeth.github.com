@@ -4,13 +4,32 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-06-30T16:26:56-05:00</updated>
+ <updated>2014-07-01T13:26:28-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>The Illogic of Employer-Sponsored Health Insurance</title>
+   
+   <link href="http://www.nytimes.com/2014/07/03/upshot/the-illogic-of-employer-sponsored-health-insurance.html"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2014/07/01/the-illogic-of-employer-sponsored-health-insurance-from-pinboard.html"/>
+   <author>
+     <name>Uwe E. Reinhardt</name>
+   </author>
+   
+   <updated>2014-07-01T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2014/07/01/the-illogic-of-employer-sponsored-health-insurance-from-pinboard</id>
+   <content type="html">&lt;p&gt;The ruling raises the question of why, uniquely in the industrialized world, Americans have for so long favored an arrangement in health insurance that endows their employers with the quasi-parental power to choose the options that employees may be granted in the market for health insurance. For many smaller firms, that choice is narrowed to one or two alternatives – not much more choice than that afforded citizens under a single-payer health insurance system.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, the arrangement induces employers to intervene in many other ways in their employees’ personal life – for example, in wellness programs that can range from the benign to annoyingly intrusive, depending upon the employers’ wishes.&lt;/p&gt;
+
+&lt;p&gt;And what kind of health “insurance” have Americans gotten under this strange arrangement? Once again, uniquely in the industrialized world, it has been ephemeral coverage that is lost with the job or changed at the employer’s whim. Citizens in any other industrialized country have permanent, portable insurance not tied to a particular job in a particular country.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Big Hobby and Lobbying Power</title>
@@ -499,29 +518,6 @@ internalized only with a grown-up understanding that even a good or
 great nation, while deserving of our allegiance and civic commitment,
 can indeed shame itself. Saying so when it happens is a fundamental of
 self-governance, as all dissent is a fundamental of self-governance.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>The Paris Bureau -- Dispatch</title>
-   
-   <link href="http://www.theatlantic.com/international/archive/2013/07/the-paris-bureau-dispatch-1/277559/"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/07/06/the-paris-bureau-dispatch-1-from-pinboard.html"/>
-   <author>
-     <name>Ta-Nehisi Coates</name>
-   </author>
-   
-   <updated>2013-07-06T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2013/07/06/the-paris-bureau-dispatch-1-from-pinboard</id>
-   <content type="html">&lt;p&gt;But the game is rigged. I know this because I loved my craft for many
-years and it meant nothing to anyone save my mother, my father, my
-siblings, my wife and a few close friends. Then one man of some
-privilege spoke to another man of some privilege and I became a man of
-some privilege with megaphone, which I now employ, across an ocean, to
-bring these thoughts to you. And I love both of these men of
-privilege--power is a fact, it is not morality. Losing is tragic, but it
-is not noble. How many freedom fighters turned despots in the possession
-of superior guns?&lt;/p&gt;
 </content>
  </entry>
  
