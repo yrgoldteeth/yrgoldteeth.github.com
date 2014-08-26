@@ -4,13 +4,32 @@
  <title>Nicholas Fine</title>
  <link href="http://ndfine.com/atom.xml" rel="self"/>
  <link href="http://ndfine.com/"/>
- <updated>2014-07-01T13:26:28-05:00</updated>
+ <updated>2014-08-26T14:03:24-05:00</updated>
  <id>http://ndfine.com/</id>
  <author>
    <name>Nicholas Fine</name>
    <email>nicholas.fine@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Venal, Selfish, and Essentially Monstrous</title>
+   
+   <link href="http://bombmagazine.org/article/3327/"/>
+   <link rel="alternate" type="text/html" href="http://ndfine.com/2014/08/26/venal-selfish-and-essentially-monstrous-from-pinboard.html"/>
+   <author>
+     <name>Rebecca Solnit</name>
+   </author>
+   
+   <updated>2014-08-26T00:00:00-05:00</updated>
+   <id>http://ndfine.com/2014/08/26/venal-selfish-and-essentially-monstrous-from-pinboard</id>
+   <content type="html">&lt;p&gt;Elites tend to believe in a venal, selfish, and essentially monstrous version of human nature, which I sometimes think is their own human nature. I mean, people don’t become incredibly wealthy and powerful by being angelic, necessarily. They believe that only their power keeps the rest of us in line and that when it somehow shrinks away, our seething violence will rise to the surface—that was very clear in Katrina. Timothy Garton Ash and Maureen Dowd and all these other people immediately jumped on the bandwagon and started writing commentaries based on the assumption that the rumors of mass violence during Katrina were true. A lot of people have never understood that the rumors were dispelled and that those things didn’t actually happen; it’s tragic.&lt;/p&gt;
+
+&lt;p&gt;...&lt;/p&gt;
+
+&lt;p&gt;There is no such thing as a natural disaster. In earthquakes the architecture fails. If you’re out in a grassy meadow, it doesn’t matter how big the earthquake is: it might knock you down, but if nothing falls on top of you and nothing catches fire from broken gas mains or power lines, then you’re probably okay. Architecture is the first casualty of earthquakes, and human beings under the architecture are the casualties of the architecture. Even with a wholly natural disaster, whatever that might be—a tsunami, maybe—who gets help, who has resources to rebuild, who is treated as a threat or a malingerer—those are not natural but social phenomena. With Katrina you need to talk about the role of climate change in making the hurricane; of the crappy levees built by the US Army Corps of Engineers and not adequately maintained; of the lack of evacuation resources for the poor; of the demonization of those left behind; of the transformation of New Orleans into a prison-city preventing evacuation...nothing could be less natural. The natural disaster was the least of what happened to the people of New Orleans, if not the rest of the Gulf, that week.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>The Illogic of Employer-Sponsored Health Insurance</title>
@@ -485,40 +504,6 @@ creating a &lt;code&gt;.inputrc&lt;/code&gt; file in your home directory with th
 line (or appending it to your existing &lt;code&gt;.inputrc&lt;/code&gt;):&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;bind -m vi-insert &amp;quot;\C-l&amp;quot;:clear-screen
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
- </entry>
- 
- <entry>
-   <title>Doubling Down</title>
-   
-   <link href="http://davidsimon.com/doubling-down/"/>
-   <link rel="alternate" type="text/html" href="http://ndfine.com/2013/07/17/doubling-down-from-pinboard.html"/>
-   <author>
-     <name>David Simon</name>
-   </author>
-   
-   <updated>2013-07-17T00:00:00-05:00</updated>
-   <id>http://ndfine.com/2013/07/17/doubling-down-from-pinboard</id>
-   <content type="html">&lt;p&gt;Why not? Because just as good cannot be truly understood to the marrow
-without a corresponding sense of evil, pride in one’s country — if it is
-substantive pride, and not merely the rote, pledge-allegiance mouthings
-of patriotic cliche — requires the sober knowledge that American
-greatness is neither assured, nor heaven-sent. It comes to us from our
-national premise and ideals — and our willingness to maintain those
-things at all hazards. And if you’ve never felt ashamed for us for
-having strayed from our core values in even the most appalling ways —
-say, the wartime detention of Japanese-Americans, or a My Lai or Kent
-State , or Bull Conner, or COINTELPRO, or life sentences for juvenile
-defendants, or prisons-for-profit — then maybe you’ve never really
-acknowledged what the actual stakes are for a republic, or how much
-work, rather than platitude, is required to assure an honorable,
-democratic future. Yes, you claim an all-encompassing pride and you
-wallow in it, brooking not even a mention of anything shameful that
-happens on our watch as citizens. But in fact, real pride is earned and
-internalized only with a grown-up understanding that even a good or
-great nation, while deserving of our allegiance and civic commitment,
-can indeed shame itself. Saying so when it happens is a fundamental of
-self-governance, as all dissent is a fundamental of self-governance.&lt;/p&gt;
-</content>
  </entry>
  
  
